@@ -1,0 +1,450 @@
+player id: 3
+turn started:1
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 2 2 2 2 2 
+
+------------------------------------------------------------
+
+turn started:2
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:3
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:4
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:5
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:6
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:7
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:8
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:9
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:10
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:11
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 2 2 2 2 2 
+
+------------------------------------------------------------
+
+turn started:12
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:13
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:14
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:15
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:16
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:17
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:18
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:19
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:20
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:21
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 2 2 2 2 2 
+
+------------------------------------------------------------
+
+turn started:22
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:23
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:24
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:25
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:26
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:27
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:28
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:29
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:30
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 2 2 2 2 2 
+
+------------------------------------------------------------
+
+turn started:31
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:32
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:33
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:34
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:35
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:36
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:37
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:38
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:39
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:40
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 2 2 2 2 2 
+
+------------------------------------------------------------
+
+turn started:41
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:42
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:43
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:44
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:45
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:46
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:47
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:48
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 2 2 2 2 2 
+
+------------------------------------------------------------
+
+turn started:49
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:50
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:51
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:52
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:53
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:54
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:55
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:56
+Enemy Units:
+best path id: 2
+
+Path for my units in turn: 
+
+------------------------------------------------------------
+
+turn started:57
