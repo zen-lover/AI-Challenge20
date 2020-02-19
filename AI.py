@@ -6,12 +6,13 @@ import datetime
 
 class AI:
 
-
     def __init__(self):
 
         self.rows = 0
         self.cols = 0
         self.path_for_my_units = None
+
+        self.state = 1
 
 
 
@@ -93,21 +94,28 @@ class AI:
         # aval az hame 4,0 ro mifresim too :)
         # enter first hand
 
-        if world.get_current_turn() == 1:
+
+        if  self.state == 1:
             world.put_unit(base_unit=world.base_units[1], path=world.get_me().paths_from_player[0])
             print('hero 1')
-        if world.get_current_turn() == 2:
+            self.state = 2
+        elif self.state == 2:
             world.put_unit(base_unit=world.base_units[5], path=world.get_me().paths_from_player[0])
             print('hero 2')
-        if world.get_current_turn() == 3:
+            self.state = 3
+        elif self.state == 3:
             world.put_unit(base_unit=world.base_units[0], path=world.get_me().paths_from_player[0])
             print('hero 3')
-        if world.get_current_turn() == 5:
+            self.state = 4
+        elif self.state == 4:
             world.put_unit(base_unit=world.base_units[6], path=world.get_me().paths_from_player[0])
             print('hero 4')
-        if world.get_current_turn() == 7:
+            self.state = 5
+        elif self.state == 5:
             world.put_unit(base_unit=world.base_units[2], path=world.get_me().paths_from_player[0])
             print('hero 5')
+
+        
 
 
 
