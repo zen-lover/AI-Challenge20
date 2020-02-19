@@ -114,8 +114,27 @@ class AI:
         elif self.state == 5:
             world.put_unit(base_unit=world.base_units[2], path=world.get_me().paths_from_player[0])
             print('hero 5')
+            self.state = 6
 
-        
+        max_hp = 0
+        max_damage = 0
+        if self.state == 6 :
+            for max_hp_unit in world.get_me().hand :
+                if max_hp_unit.max_hp >= max_hp and max_hp_unit.type_id != 4 :
+                    max_hp = max_hp_unit.max_hp
+                    max_hp_unit_select = max_hp_unit
+            world.put_unit(base_unit=max_hp_unit_select, path=world.get_me().paths_from_player[0])
+            self.status = 7
+        if self.state == 7 :
+            for max_damage_unit in world.get_me().hand :
+                if max_damage_unit.base_attack >= max_damage :
+                    max_damage = max_damage_unit.base_attack
+                    max_damage_unit_select = max_damage_unit
+            world.put_unit(base_unit=max_damage_unit_select, path=world.get_me().paths_from_player[0])
+            self.status = 6
+
+
+
 
 
 
@@ -142,7 +161,7 @@ class AI:
         # this code tries to cast the received spell
         received_spell = world.get_received_spell()
         if received_spell is not None:
-            if received_spell.is_area_spell():
+            if received_spell.is_area_spell():  # age area bood
                 if received_spell.target == SpellTarget.ENEMY:
                     enemy_units = world.get_first_enemy().units
                     if len(enemy_units) > 0:
@@ -164,6 +183,7 @@ class AI:
                     size = len(path.cells)
                     cell = path.cells[int((size + 1) / 2)]
                     world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
+
 
         # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
         if len(myself.units) > 0:
