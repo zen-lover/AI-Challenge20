@@ -1,3 +1,4 @@
+#بسم الله الرحمن الرحیم
 import random
 
 from model import *
@@ -5,6 +6,8 @@ import datetime
 
 
 class AI:
+
+
 
     def __init__(self):
 
@@ -68,17 +71,27 @@ class AI:
     def turn(self, world):
         f = self.f
         f.write(f"turn started:{world.get_current_turn()}\n")
+        print("turn started:", world.get_current_turn())
+
+
+        print('turn to upgrade')
+        print(world.get_remaining_turns_to_upgrade())
+
+
         myself = world.get_me()
        # max_ap = world.game_constants().max_ap
-        print("print ap :")
-        print(world.get_me().ap)
+
+       #  print("print ap :")
+       #  print(world.get_me().ap)
 
         f.write('Enemy Units:\n')
         enemy_units = world.get_first_enemy().units
+        enemy_units.append(world.get_second_enemy())
+
         #min_enemy_health_unit_value = 100000
         #best_path = world.get_me().paths_from_player[0]
-        for unit in enemy_units:
-              f.write(f'\nunit id is: {unit.unit_id}, unit cell is: {unit.cell}\n')
+        # for unit in enemy_units:
+        #       f.write(f'\nunit id is: {unit.unit_id}, unit cell is: {unit.cell}\n')
             # enemy_unit_cell = unit.cell
             # # print(world.get_paths_crossing_cell(enemy_unit_cell))
             # if unit.hp < min_enemy_health_unit_value:
@@ -101,7 +114,6 @@ class AI:
 
         if  self.state == 1:
             world.put_unit(base_unit=world._base_units[1], path=world.get_me().paths_from_player[0])
-
             print('hero 1')
             self.state = 2
         elif self.state == 2:
@@ -123,79 +135,67 @@ class AI:
 
         max_hp = 0
         max_damage = 0
-        if self.state == 6 :
-            for max_hp_unit in world.get_me().hand :
-                if max_hp_unit.max_hp >= max_hp and max_hp_unit.type_id != 4 :
+        if self.state == 6:
+            for max_hp_unit in world.get_me().hand:
+                if max_hp_unit.max_hp >= max_hp and max_hp_unit.type_id != 4:
                     max_hp = max_hp_unit.max_hp
                     max_hp_unit_select = max_hp_unit
             world.put_unit(base_unit=max_hp_unit_select, path=world.get_me().paths_from_player[0])
             self.status = 7
-        if self.state == 7 :
-            for max_damage_unit in world.get_me().hand :
-                if max_damage_unit.base_attack >= max_damage :
+        if self.state == 7:
+            for max_damage_unit in world.get_me().hand:
+                if max_damage_unit.base_attack >= max_damage:
                     max_damage = max_damage_unit.base_attack
                     max_damage_unit_select = max_damage_unit
             world.put_unit(base_unit=max_damage_unit_select, path=world.get_me().paths_from_player[0])
             self.status = 6
 
-
-
-
-
-
-
-
-
-        print('each turn')
-        print(world._current_turn)
-
-        print(world.get_me().ap)
-
-
-
-
-
-
-
-
+        # print('each turn')
+        # print(world._current_turn)
+        # print(world.get_me().ap)
 
 
         # for base_unit in myself.hand:
         #     world.put_unit(base_unit=base_unit, path=world.get_friend().paths_from_player[0])
             #     f.write(str(best_path.id) + ' ')
         #f.write('\n\n------------------------------------------------------------\n\n')
-        # this code tries to cast the received spell
+
+
+## berim soraghe in ke spell bendazim :))
+
         received_spell = world.get_received_spell()
         if received_spell is not None:
-            if received_spell.is_area_spell():  # age area bood
+            if received_spell.is_area_spell():     # age area bood              :  hame be joz tele
+
+
+                # spell enemy               : damage va poison bood         : zarar be doshman
                 if received_spell.target == SpellTarget.ENEMY:
-                    enemy_units = world.get_first_enemy().units
-                    if len(enemy_units) > 0:
-                        world.cast_area_spell(center=enemy_units[0].cell, spell=received_spell)
+                     world.cast_area_spell(center = self.return_best_cell_for_spell(world, received_spell), spell=received_spell)
+
+
+                # spell allied          : ye khoobi bara khodemoon dasht
                 elif received_spell.target == SpellTarget.ALLIED:
-                    friend_units = world.get_friend().units
-                    if len(friend_units) > 0:
-                        world.cast_area_spell(center=friend_units[0].cell, spell=received_spell)
+                    world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),spell=received_spell)
+
+
+
                 elif received_spell.target == SpellTarget.SELF:
-                    my_units = myself.units
-                    if len(my_units) > 0:
-                        world.cast_area_spell(center=my_units[0].cell, spell=received_spell)
-            else:
-                my_units = myself.units
-                if len(my_units) > 0:
-                    unit = my_units[0]
-                    my_paths = myself.paths_from_player
-                    path = my_paths[random.randint(0, len(my_paths) - 1)]
-                    size = len(path.cells)
-                    cell = path.cells[int((size + 1) / 2)]
-                    world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
+                    world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),spell=received_spell)
+
+
+
 
 
         # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
-        if len(myself.units) > 0:
-            unit = myself.units[0]
-            world.upgrade_unit_damage(unit=unit)
-            world.upgrade_unit_range(unit=unit)
+
+        if world.get_current_turn() >= 23:
+            if len(myself.units) > 0:
+                for last_unit in world.get_me().units:
+                    unit = last_unit
+                world.upgrade_unit_range(unit=unit)
+                print('upgrade token')
+                world.upgrade_unit_damage(unit=unit)
+
 
     # it is called after the game ended and it does not affect the game.
     # using this function you can access the result of the game.
@@ -204,3 +204,53 @@ class AI:
         print("end started!")
         print("My score:", scores[world.get_me().player_id])
 #        self.f.close()
+
+
+    def get_max_hp(self ,units):
+        max_hp = 0
+        for max_hp_unit in units:
+            if max_hp_unit.hp >= max_hp and max_hp_unit.base_unit.type_id != 4:
+                max_hp = max_hp_unit.hp
+                max_hp_unit_select = max_hp_unit
+        return max_hp_unit_select
+
+    def get_max_damage(self, units):
+        max_damage = 0
+        for max_damage_unit in units:
+            if max_damage_unit.attack >= max_damage:
+                max_damage = max_damage_unit.attack
+                max_damage_unit_select = max_damage_unit
+        return max_damage_unit_select
+
+
+    def return_best_cell_for_spell(self, world, received_spell):
+        map = world.get_map()
+        row_of_map = map.row_num
+        column_of_map = map.col_num
+        number_of_unit_in_best_cell = 0
+        row_of_best_cell = 0
+        col_of_best_cell = 0
+        best_cell_we_can_choose = Cell()
+
+        for column_index in range(0, column_of_map):
+            for row_index in range(0, row_of_map):
+                if number_of_unit_in_best_cell < len(
+                        world.get_area_spell_targets(row_index, column_index, received_spell)):
+                    number_of_unit_in_best_cell = len(
+                        world.get_area_spell_targets(row_index, column_index, received_spell))
+                    row_of_best_cell = row_index
+                    col_of_best_cell = column_index
+                    best_cell_we_can_choose = Cell(row_of_best_cell, col_of_best_cell)
+        return best_cell_we_can_choose
+
+
+
+
+
+
+
+
+
+
+
+
