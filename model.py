@@ -56,6 +56,7 @@ class Player:
         return self.king.hp
 
     def set_spells(self, spells):
+        self._spells_dict.clear()
         self.spells = spells
         for spell in spells:
             if spell.type_id in self._spells_dict:
@@ -342,3 +343,8 @@ class TurnUpdates:
             self.got_damage_upgrade = turn_updates.got_damage_upgrade
             self.available_damage_upgrade = turn_updates.available_damage_upgrades
             self.available_range_upgrade = turn_updates.available_range_upgrades
+
+class Logs:
+    @staticmethod
+    def show_log(message):
+        print("Client Log message: ", message)

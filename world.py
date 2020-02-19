@@ -1,14 +1,14 @@
 import copy
 import time
-from abc import ABC
 
 from model import BaseUnit, Map, King, Cell, Path, Player, GameConstants, TurnUpdates, \
-    CastAreaSpell, CastUnitSpell, Unit, Spell, Message, UnitTarget, SpellType, SpellTarget
+    CastAreaSpell, CastUnitSpell, Unit, Spell, Message, UnitTarget, SpellType, SpellTarget, Logs
 
 
-class World(ABC):
+class World:
     DEBUGGING_MODE = False
     LOG_FILE_POINTER = None
+    _shortest_path = dict()
 
     def __init__(self, world=None, queue=None):
         self.game_constants = None
@@ -47,6 +47,46 @@ class World(ABC):
             self.queue = world.queue
         else:
             self.queue = queue
+
+        if len(World._shortest_path) == 0:
+            self._pre_process_shortest_path()
+
+    def _pre_process_shortest_path(self):
+        def path_count(paths_from_player, paths_from_friend, path_to_friend):
+            shortest_path = [[None for i in range(self.map.col_num)] for j in range(self.map.row_num)]
+            shortest_dist = [[0 for i in range(self.map.col_num)] for j in range(self.map.row_num)]
+            for p in paths_from_player:
+                num = 0
+                for c in p.cells:
+                    row = c.row
+                    col = c.col
+                    if shortest_path[row][col] is None:
+                        shortest_path[row][col] = p
+                        shortest_dist[row][col] = num
+                    elif shortest_dist[row][col] > num:
+                        shortest_dist[row][col] = num
+                        shortest_path[row][col] = p
+                    num += 1
+
+            l = len(path_to_friend.cells)
+            for p in paths_from_friend:
+                num = l - 1
+                for c in p.cells:
+                    row = c.row
+                    col = c.col
+                    if shortest_path[row][col] is None:
+                        shortest_path[row][col] = p
+                        shortest_dist[row][col] = num
+                    elif shortest_dist[row][col] > num:
+                        shortest_dist[row][col] = num
+                        shortest_path[row][col] = p
+                    num += 1
+            return shortest_path
+
+        for player in self.players:
+            World._shortest_path.update({player.player_id: path_count(player.paths_from_player
+                                                                      , self._get_friend_by_id(
+                    player.player_id).paths_from_player, player.path_to_friend)})
 
     def _get_current_time_millis(self):
         return int(round(time.time() * 1000))
@@ -212,7 +252,7 @@ class World(ABC):
             if unit.target == -1 or unit.target_if_king is not None:
                 unit.target = None
             else:
-                unit.target = self.map.get_unit_by_id(unit.target)
+                unit.target = self.get_unit_by_id(unit.target)
 
     def _handle_turn_cast_spells(self, msg):
         self.cast_spells = []
@@ -265,18 +305,31 @@ class World(ABC):
 
         self.start_time = self._get_current_time_millis()
 
-    def choose_deck_by_id(self, type_ids):
+    def choose_hand_by_id(self, type_ids):
         message = Message(type="pick", turn=self.get_current_turn(), info=None)
         if type_ids is not None:
+            for type_id in type_ids:
+                if type(type_id) is not int:
+                    Logs.show_log("type_ids are not int")
+                    return
+
             message.info = {"units": type_ids}
             self.queue.put(message)
+        else:
+            Logs.show_log("choose_hand_by_id function called with None type_eds")
 
     # in the first turn 'deck picking' give unit_ids or list of unit names to pick in that turn
-    def choose_deck(self, base_units):
+    def choose_hand(self, base_units):
         message = Message(type="pick", turn=self.get_current_turn(), info=None)
         if base_units is not None:
+            for base_unit in base_units:
+                if type(base_unit) is not BaseUnit:
+                    Logs.show_log("base_units is not an array of BaseUnits")
+                    return
             message.info = {"units": [unit.type_id for unit in base_units]}
             self.queue.put(message)
+        else:
+            Logs.show_log("choose_hand function called with None base_units")
 
     def get_me(self):
         return self.player
@@ -284,7 +337,7 @@ class World(ABC):
     def get_friend(self):
         return self.player_friend
 
-    def get_friend_by_id(self, player_id):
+    def _get_friend_by_id(self, player_id):
         if self.player.player_id == player_id:
             return self.player_friend
         elif self.player_friend.player_id == player_id:
@@ -294,6 +347,7 @@ class World(ABC):
         elif self.player_second_enemy.player_id == player_id:
             return self.player_first_enemy
         else:
+            Logs.show_log("get_friend_by_id function no player with given player_id")
             return None
 
     def get_first_enemy(self):
@@ -309,8 +363,13 @@ class World(ABC):
     def get_paths_crossing_cell(self, cell=None, row=None, col=None):
         if cell is None:
             if row is None or col is None:
+                Logs.show_log("get_paths_crossing cell function called with no valid argument")
                 return
             cell = self.map.get_cell(row, col)
+
+        if not isinstance(cell, Cell):
+            Logs.show_log("Given cell is invalid!")
+            return
 
         paths = []
         for p in self.map.paths:
@@ -322,51 +381,53 @@ class World(ABC):
     def get_cell_units(self, cell=None, row=None, col=None):
         if cell is None:
             if row is None and col is None:
+                Logs.show_log("get_paths_crossing cell function called with no valid argument")
                 return None
             cell = self.map.get_cell(row, col)
+        if not isinstance(cell, Cell):
+            Logs.show_log("Given cell is invalid!")
+            return
         return cell.units
 
     # return the shortest path from player_id fortress to cell
     # this path is in the available path list
     # path may cross from friend
     def get_shortest_path_to_cell(self, from_player_id=None, from_player=None, cell=None, row=None, col=None):
-        def path_count(paths):
-            shortest_path = None
-            count = 0
-            for p in paths:
-                count_num = 0
-                for c in p.cells:
-                    if c == cell:
-                        if shortest_path is None:
-                            count = count_num
-                            shortest_path = p
-
-                        elif count_num < count:
-                            count = count_num
-                            shortest_path = p
-                    count_num += 1
-            return shortest_path
-
         if from_player is not None:
             from_player_id = from_player.player_id
+        elif from_player_id is None:
+            return None
+
+        if self.get_player_by_id(from_player_id) is None:
+            return None
+
         if cell is None:
             if row is None or col is None:
-                return
+                return None
             cell = self.map.get_cell(row, col)
-        p = path_count(self.get_player_by_id(from_player_id).paths_from_player)
-        if p is None:
-            ls = [self.get_player_by_id(from_player_id).path_to_friend]
-            ptf = path_count(ls)
-            if ptf is None:
-                pff = path_count(self.get_friend_by_id(from_player_id).paths_from_player)
-                if pff is None:
-                    return None
-                return pff
-            return ptf
-        return p
+        shortest_path_from_player = World._shortest_path.get(from_player_id, None)
+        if shortest_path_from_player is None:
+            return None
+        return shortest_path_from_player[cell.row][cell.col]
 
     # place unit with type_id in path_id
     def put_unit(self, type_id=None, path_id=None, base_unit=None, path=None):
+        fail = False
+        if type_id is not None and type(type_id) is not int:
+            Logs.show_log("put_unit function called with invalid type_id argument!")
+            fail = True
+        if path_id is not None and type(path_id) is not int:
+            Logs.show_log("put_unit function called with invalid path_id argument!")
+            fail = True
+        if base_unit is not None and type(base_unit) is not BaseUnit:
+            Logs.show_log("put_unit function called with invalid base_unit argument")
+            fail = True
+        if path is not None and type(path) is not Path:
+            Logs.show_log("put_unit function called with invalid path argument")
+            fail = True
+        if fail is True:
+            return
+
         if base_unit is not None:
             type_id = base_unit.type_id
         if path is not None:
@@ -393,15 +454,39 @@ class World(ABC):
                         spell=None,
                         spell_id=None):
         if spell is None and spell_id is None:
+            Logs.show_log("cast_unit_spell function called with no spell input!")
             return None
         if spell is None:
+            if type(spell_id) is not int:
+                Logs.show_log("spell_id is not an integer in cast_unit_spell function call!")
+                return
             spell = self.get_spell_by_id(spell_id)
+
         if row is not None and col is not None:
+            if type(row) is not int or type(col) is not int:
+                Logs.show_log("row and column arguments are invalid in cast_unit_spell function call")
+                return
             cell = Cell(row, col)
+
         if unit is not None:
+            if type(unit) is not Unit:
+                Logs.show_log("unit argument is invalid in cast_unit_spell function call")
+                return
             unit_id = unit.unit_id
         if path is not None:
+            if type(path) is not Path:
+                Logs.show_log("path argument is invalid in cast_unit_spell function call")
+                return
             path_id = path.id
+
+        if type(unit_id) is not int:
+            Logs.show_log("unit_id argument is invalid in cast_unit_spell function call")
+            return
+
+        if type(path_id) is not int:
+            Logs.show_log("path_id argument is invalid in cast_unit_spell function call")
+            return
+
         message = Message(type="castSpell", turn=self.get_current_turn(),
                           info={
                               "typeId": spell.type_id,
@@ -417,7 +502,14 @@ class World(ABC):
     # cast spell in the cell 'center'
     def cast_area_spell(self, center=None, row=None, col=None, spell=None, spell_id=None):
         if spell is None:
+            if spell_id is None or type(spell_id) is not int:
+                Logs.show_log("no valid spell selected in cast_area_spell!")
+                return
             spell = self.get_spell_by_id(spell_id)
+        if type(spell) is not Spell:
+            Logs.show_log("no valid spell selected in cast_area_spell!")
+            return
+
         if row is not None and col is not None:
             center = self.map.get_cell(row, col)
 
@@ -434,6 +526,8 @@ class World(ABC):
                                   "pathId": -1
                               })
             self.queue.put(message)
+        else:
+            Logs.show_log("invalid cell selected in cast_area_spell")
 
     # returns a list of units the spell casts effects on
     def get_area_spell_targets(self, center, row=None, col=None, spell=None, type_id=None):
@@ -442,6 +536,9 @@ class World(ABC):
                 spell = self.get_cast_spell_by_id(type_id)
             else:
                 return []
+        if type(spell) is not Spell:
+            Logs.show_log("invalid spell chosen in get_area_spell_targets")
+            return []
         if not spell.is_area_spell():
             return []
         if center is None:
@@ -453,15 +550,16 @@ class World(ABC):
                 for u in cell.units:
                     if self._is_unit_targeted(u, spell.target):
                         ls.append(u)
+        return ls
 
     def _is_unit_targeted(self, unit, spell_target):
-        if spell_target == 1:
+        if spell_target == SpellTarget.SELF:
             if unit in self.player.units:
                 return True
-        elif spell_target == 2:
+        elif spell_target == SpellTarget.ALLIED:
             if unit in self.player_friend or unit in self.player.units:
                 return True
-        elif spell_target == 3:
+        elif spell_target == SpellTarget.ENEMY:
             if unit in self.player_first_enemy or unit in self.player_second_enemy:
                 return True
         return False
@@ -503,25 +601,29 @@ class World(ABC):
         if unit is not None:
             unit_id = unit.unit_id
 
-        if unit_id is not None:
+        if unit_id is not None and type(unit_id) is int:
             self.queue.put(Message(type="rangeUpgrade",
                                    turn=self.get_current_turn(),
                                    info={
                                        "unitId": unit_id
                                    }))
+        else:
+            Logs.show_log("invalid unit or unit_id in upgrade_unit_range")
 
     def upgrade_unit_damage(self, unit=None, unit_id=None):
         if unit is not None:
             unit_id = unit.unit_id
 
-        if unit_id is not None:
+        if unit_id is not None and type(unit_id) is int:
             self.queue.put(Message(type="damageUpgrade",
                                    turn=self.get_current_turn(),
                                    info={
                                        "unitId": unit_id
                                    }))
+        else:
+            Logs.show_log("invalid unit or unit_id in upgrade_unit_damage")
 
-    def get_all_base_unit(self):
+    def get_all_base_units(self):
         return copy.deepcopy(self.base_units)
 
     def get_all_spells(self):

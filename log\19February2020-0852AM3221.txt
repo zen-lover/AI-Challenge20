@@ -1,0 +1,743 @@
+player id: 3
+Paths from my palyer:0turn started:1
+Enemy Units:
+turn started:2
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 15)>
+turn started:3
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 14)>
+turn started:4
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 13)>
+turn started:5
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 12)>
+turn started:6
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 11)>
+turn started:7
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 10)>
+turn started:8
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 9)>
+turn started:9
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 7)>
+turn started:10
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 5)>
+turn started:11
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 4)>
+turn started:12
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (3, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 15)>
+turn started:13
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (4, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 14)>
+turn started:14
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (5, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 13)>
+turn started:15
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (6, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 12)>
+turn started:16
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (7, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 11)>
+turn started:17
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (8, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 10)>
+turn started:18
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (9, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 9)>
+turn started:19
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (10, 3)>
+
+unit id is: 41, unit cell is: <Cell | (3, 8)>
+turn started:20
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (10, 4)>
+
+unit id is: 41, unit cell is: <Cell | (3, 7)>
+turn started:21
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (11, 4)>
+
+unit id is: 41, unit cell is: <Cell | (3, 6)>
+
+unit id is: 52, unit cell is: <Cell | (11, 4)>
+turn started:22
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (12, 4)>
+
+unit id is: 41, unit cell is: <Cell | (3, 5)>
+
+unit id is: 52, unit cell is: <Cell | (12, 4)>
+
+unit id is: 53, unit cell is: <Cell | (3, 15)>
+
+unit id is: 54, unit cell is: <Cell | (3, 15)>
+turn started:23
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (12, 5)>
+
+unit id is: 41, unit cell is: <Cell | (3, 4)>
+
+unit id is: 53, unit cell is: <Cell | (3, 14)>
+
+unit id is: 54, unit cell is: <Cell | (3, 14)>
+turn started:24
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (13, 5)>
+
+unit id is: 41, unit cell is: <Cell | (3, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 13)>
+
+unit id is: 54, unit cell is: <Cell | (3, 13)>
+turn started:25
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (14, 6)>
+
+unit id is: 41, unit cell is: <Cell | (4, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 12)>
+
+unit id is: 54, unit cell is: <Cell | (3, 12)>
+turn started:26
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (16, 6)>
+
+unit id is: 41, unit cell is: <Cell | (5, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 11)>
+
+unit id is: 54, unit cell is: <Cell | (3, 11)>
+turn started:27
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (16, 7)>
+
+unit id is: 41, unit cell is: <Cell | (6, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 10)>
+
+unit id is: 54, unit cell is: <Cell | (3, 10)>
+turn started:28
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (17, 7)>
+
+unit id is: 41, unit cell is: <Cell | (7, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 9)>
+
+unit id is: 54, unit cell is: <Cell | (3, 9)>
+turn started:29
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (18, 8)>
+
+unit id is: 41, unit cell is: <Cell | (8, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 8)>
+
+unit id is: 54, unit cell is: <Cell | (3, 8)>
+
+unit id is: 57, unit cell is: <Cell | (3, 15)>
+
+unit id is: 58, unit cell is: <Cell | (3, 15)>
+turn started:30
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (20, 8)>
+
+unit id is: 41, unit cell is: <Cell | (9, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 7)>
+
+unit id is: 54, unit cell is: <Cell | (3, 7)>
+
+unit id is: 57, unit cell is: <Cell | (3, 14)>
+
+unit id is: 58, unit cell is: <Cell | (3, 14)>
+turn started:31
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (20, 8)>
+
+unit id is: 41, unit cell is: <Cell | (10, 3)>
+
+unit id is: 53, unit cell is: <Cell | (3, 6)>
+
+unit id is: 54, unit cell is: <Cell | (3, 6)>
+
+unit id is: 57, unit cell is: <Cell | (3, 13)>
+
+unit id is: 58, unit cell is: <Cell | (3, 13)>
+turn started:32
+Enemy Units:
+
+unit id is: 37, unit cell is: <Cell | (20, 8)>
+
+unit id is: 41, unit cell is: <Cell | (10, 4)>
+
+unit id is: 53, unit cell is: <Cell | (3, 5)>
+
+unit id is: 54, unit cell is: <Cell | (3, 5)>
+
+unit id is: 57, unit cell is: <Cell | (3, 12)>
+
+unit id is: 58, unit cell is: <Cell | (3, 12)>
+turn started:33
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (11, 4)>
+
+unit id is: 53, unit cell is: <Cell | (3, 4)>
+
+unit id is: 54, unit cell is: <Cell | (3, 4)>
+
+unit id is: 57, unit cell is: <Cell | (3, 11)>
+
+unit id is: 58, unit cell is: <Cell | (3, 11)>
+turn started:34
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (12, 4)>
+
+unit id is: 53, unit cell is: <Cell | (3, 3)>
+
+unit id is: 54, unit cell is: <Cell | (3, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 10)>
+
+unit id is: 58, unit cell is: <Cell | (3, 10)>
+turn started:35
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (12, 5)>
+
+unit id is: 53, unit cell is: <Cell | (4, 3)>
+
+unit id is: 54, unit cell is: <Cell | (4, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 9)>
+
+unit id is: 58, unit cell is: <Cell | (3, 9)>
+turn started:36
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (13, 5)>
+
+unit id is: 53, unit cell is: <Cell | (5, 3)>
+
+unit id is: 54, unit cell is: <Cell | (5, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 8)>
+
+unit id is: 58, unit cell is: <Cell | (3, 8)>
+turn started:37
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (14, 5)>
+
+unit id is: 53, unit cell is: <Cell | (6, 3)>
+
+unit id is: 54, unit cell is: <Cell | (6, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 7)>
+
+unit id is: 58, unit cell is: <Cell | (3, 7)>
+turn started:38
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (14, 6)>
+
+unit id is: 53, unit cell is: <Cell | (7, 3)>
+
+unit id is: 54, unit cell is: <Cell | (7, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 6)>
+
+unit id is: 58, unit cell is: <Cell | (3, 6)>
+turn started:39
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (15, 6)>
+
+unit id is: 53, unit cell is: <Cell | (8, 3)>
+
+unit id is: 54, unit cell is: <Cell | (8, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 5)>
+
+unit id is: 58, unit cell is: <Cell | (3, 5)>
+
+unit id is: 61, unit cell is: <Cell | (3, 15)>
+turn started:40
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (16, 6)>
+
+unit id is: 53, unit cell is: <Cell | (9, 3)>
+
+unit id is: 54, unit cell is: <Cell | (9, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 4)>
+
+unit id is: 58, unit cell is: <Cell | (3, 4)>
+
+unit id is: 61, unit cell is: <Cell | (3, 14)>
+turn started:41
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (16, 6)>
+
+unit id is: 53, unit cell is: <Cell | (10, 3)>
+
+unit id is: 54, unit cell is: <Cell | (10, 3)>
+
+unit id is: 57, unit cell is: <Cell | (3, 3)>
+
+unit id is: 58, unit cell is: <Cell | (3, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 13)>
+turn started:42
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (16, 7)>
+
+unit id is: 53, unit cell is: <Cell | (10, 4)>
+
+unit id is: 54, unit cell is: <Cell | (10, 4)>
+
+unit id is: 57, unit cell is: <Cell | (4, 3)>
+
+unit id is: 58, unit cell is: <Cell | (4, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 12)>
+turn started:43
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (17, 7)>
+
+unit id is: 53, unit cell is: <Cell | (11, 4)>
+
+unit id is: 54, unit cell is: <Cell | (11, 4)>
+
+unit id is: 57, unit cell is: <Cell | (5, 3)>
+
+unit id is: 58, unit cell is: <Cell | (5, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 11)>
+
+unit id is: 65, unit cell is: <Cell | (3, 15)>
+turn started:44
+Enemy Units:
+
+unit id is: 41, unit cell is: <Cell | (18, 7)>
+
+unit id is: 53, unit cell is: <Cell | (12, 4)>
+
+unit id is: 54, unit cell is: <Cell | (12, 4)>
+
+unit id is: 57, unit cell is: <Cell | (6, 3)>
+
+unit id is: 58, unit cell is: <Cell | (6, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 10)>
+
+unit id is: 65, unit cell is: <Cell | (3, 14)>
+turn started:45
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (12, 5)>
+
+unit id is: 54, unit cell is: <Cell | (12, 5)>
+
+unit id is: 57, unit cell is: <Cell | (7, 3)>
+
+unit id is: 58, unit cell is: <Cell | (7, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 9)>
+
+unit id is: 65, unit cell is: <Cell | (3, 13)>
+turn started:46
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (13, 5)>
+
+unit id is: 54, unit cell is: <Cell | (13, 5)>
+
+unit id is: 57, unit cell is: <Cell | (8, 3)>
+
+unit id is: 58, unit cell is: <Cell | (8, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 8)>
+
+unit id is: 65, unit cell is: <Cell | (3, 12)>
+
+unit id is: 66, unit cell is: <Cell | (3, 15)>
+turn started:47
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (14, 5)>
+
+unit id is: 54, unit cell is: <Cell | (14, 5)>
+
+unit id is: 57, unit cell is: <Cell | (9, 3)>
+
+unit id is: 58, unit cell is: <Cell | (9, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 7)>
+
+unit id is: 65, unit cell is: <Cell | (3, 11)>
+
+unit id is: 66, unit cell is: <Cell | (3, 14)>
+turn started:48
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (14, 6)>
+
+unit id is: 54, unit cell is: <Cell | (14, 6)>
+
+unit id is: 57, unit cell is: <Cell | (10, 3)>
+
+unit id is: 58, unit cell is: <Cell | (10, 3)>
+
+unit id is: 61, unit cell is: <Cell | (3, 6)>
+
+unit id is: 65, unit cell is: <Cell | (3, 10)>
+
+unit id is: 66, unit cell is: <Cell | (3, 13)>
+turn started:49
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (15, 6)>
+
+unit id is: 54, unit cell is: <Cell | (15, 6)>
+
+unit id is: 57, unit cell is: <Cell | (10, 4)>
+
+unit id is: 58, unit cell is: <Cell | (10, 4)>
+
+unit id is: 61, unit cell is: <Cell | (3, 5)>
+
+unit id is: 65, unit cell is: <Cell | (3, 9)>
+
+unit id is: 66, unit cell is: <Cell | (3, 12)>
+turn started:50
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (16, 6)>
+
+unit id is: 54, unit cell is: <Cell | (16, 6)>
+
+unit id is: 57, unit cell is: <Cell | (11, 4)>
+
+unit id is: 58, unit cell is: <Cell | (11, 4)>
+
+unit id is: 61, unit cell is: <Cell | (3, 4)>
+
+unit id is: 65, unit cell is: <Cell | (3, 8)>
+
+unit id is: 66, unit cell is: <Cell | (3, 11)>
+
+unit id is: 67, unit cell is: <Cell | (3, 15)>
+turn started:51
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (16, 7)>
+
+unit id is: 54, unit cell is: <Cell | (16, 7)>
+
+unit id is: 57, unit cell is: <Cell | (12, 4)>
+
+unit id is: 58, unit cell is: <Cell | (12, 4)>
+
+unit id is: 61, unit cell is: <Cell | (3, 3)>
+
+unit id is: 65, unit cell is: <Cell | (3, 7)>
+
+unit id is: 66, unit cell is: <Cell | (3, 10)>
+
+unit id is: 67, unit cell is: <Cell | (3, 14)>
+turn started:52
+Enemy Units:
+
+unit id is: 53, unit cell is: <Cell | (16, 7)>
+
+unit id is: 54, unit cell is: <Cell | (16, 7)>
+
+unit id is: 57, unit cell is: <Cell | (12, 5)>
+
+unit id is: 58, unit cell is: <Cell | (12, 5)>
+
+unit id is: 61, unit cell is: <Cell | (4, 3)>
+
+unit id is: 65, unit cell is: <Cell | (3, 6)>
+
+unit id is: 66, unit cell is: <Cell | (3, 9)>
+
+unit id is: 67, unit cell is: <Cell | (3, 13)>
+turn started:53
+Enemy Units:
+
+unit id is: 54, unit cell is: <Cell | (17, 7)>
+
+unit id is: 57, unit cell is: <Cell | (13, 5)>
+
+unit id is: 58, unit cell is: <Cell | (13, 5)>
+
+unit id is: 61, unit cell is: <Cell | (5, 3)>
+
+unit id is: 65, unit cell is: <Cell | (3, 5)>
+
+unit id is: 66, unit cell is: <Cell | (3, 8)>
+
+unit id is: 67, unit cell is: <Cell | (3, 12)>
+turn started:54
+Enemy Units:
+
+unit id is: 57, unit cell is: <Cell | (14, 5)>
+
+unit id is: 58, unit cell is: <Cell | (14, 5)>
+
+unit id is: 61, unit cell is: <Cell | (6, 3)>
+
+unit id is: 65, unit cell is: <Cell | (3, 4)>
+
+unit id is: 66, unit cell is: <Cell | (3, 7)>
+
+unit id is: 67, unit cell is: <Cell | (3, 11)>
+turn started:55
+Enemy Units:
+
+unit id is: 57, unit cell is: <Cell | (14, 6)>
+
+unit id is: 58, unit cell is: <Cell | (14, 6)>
+
+unit id is: 61, unit cell is: <Cell | (7, 3)>
+
+unit id is: 65, unit cell is: <Cell | (3, 3)>
+
+unit id is: 66, unit cell is: <Cell | (3, 6)>
+
+unit id is: 67, unit cell is: <Cell | (3, 10)>
+turn started:56
+Enemy Units:
+
+unit id is: 57, unit cell is: <Cell | (15, 6)>
+
+unit id is: 58, unit cell is: <Cell | (15, 6)>
+
+unit id is: 61, unit cell is: <Cell | (8, 3)>
+
+unit id is: 65, unit cell is: <Cell | (4, 3)>
+
+unit id is: 66, unit cell is: <Cell | (3, 5)>
+
+unit id is: 67, unit cell is: <Cell | (3, 9)>
+
+unit id is: 70, unit cell is: <Cell | (3, 15)>
+turn started:57
+Enemy Units:
+
+unit id is: 58, unit cell is: <Cell | (16, 6)>
+
+unit id is: 61, unit cell is: <Cell | (9, 3)>
+
+unit id is: 65, unit cell is: <Cell | (5, 3)>
+
+unit id is: 66, unit cell is: <Cell | (3, 4)>
+
+unit id is: 67, unit cell is: <Cell | (3, 8)>
+
+unit id is: 70, unit cell is: <Cell | (3, 14)>
+turn started:58
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (10, 3)>
+
+unit id is: 65, unit cell is: <Cell | (6, 3)>
+
+unit id is: 66, unit cell is: <Cell | (3, 3)>
+
+unit id is: 67, unit cell is: <Cell | (3, 7)>
+
+unit id is: 70, unit cell is: <Cell | (3, 13)>
+turn started:59
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (10, 4)>
+
+unit id is: 65, unit cell is: <Cell | (7, 3)>
+
+unit id is: 66, unit cell is: <Cell | (4, 3)>
+
+unit id is: 67, unit cell is: <Cell | (3, 6)>
+
+unit id is: 70, unit cell is: <Cell | (3, 12)>
+
+unit id is: 71, unit cell is: <Cell | (3, 15)>
+turn started:60
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (11, 4)>
+
+unit id is: 65, unit cell is: <Cell | (8, 3)>
+
+unit id is: 66, unit cell is: <Cell | (5, 3)>
+
+unit id is: 67, unit cell is: <Cell | (3, 5)>
+
+unit id is: 70, unit cell is: <Cell | (3, 11)>
+
+unit id is: 71, unit cell is: <Cell | (3, 14)>
+turn started:61
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (12, 5)>
+
+unit id is: 65, unit cell is: <Cell | (9, 3)>
+
+unit id is: 66, unit cell is: <Cell | (6, 3)>
+
+unit id is: 67, unit cell is: <Cell | (3, 4)>
+
+unit id is: 70, unit cell is: <Cell | (3, 10)>
+
+unit id is: 71, unit cell is: <Cell | (3, 13)>
+turn started:62
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (12, 5)>
+
+unit id is: 65, unit cell is: <Cell | (10, 3)>
+
+unit id is: 66, unit cell is: <Cell | (7, 3)>
+
+unit id is: 67, unit cell is: <Cell | (3, 3)>
+
+unit id is: 70, unit cell is: <Cell | (3, 9)>
+
+unit id is: 71, unit cell is: <Cell | (3, 12)>
+turn started:63
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (13, 5)>
+
+unit id is: 65, unit cell is: <Cell | (10, 4)>
+
+unit id is: 66, unit cell is: <Cell | (8, 3)>
+
+unit id is: 67, unit cell is: <Cell | (4, 3)>
+
+unit id is: 70, unit cell is: <Cell | (3, 8)>
+
+unit id is: 71, unit cell is: <Cell | (3, 11)>
+turn started:64
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (14, 5)>
+
+unit id is: 65, unit cell is: <Cell | (11, 4)>
+
+unit id is: 66, unit cell is: <Cell | (9, 3)>
+
+unit id is: 67, unit cell is: <Cell | (5, 3)>
+
+unit id is: 70, unit cell is: <Cell | (3, 7)>
+
+unit id is: 71, unit cell is: <Cell | (3, 10)>
+turn started:65
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (14, 6)>
+
+unit id is: 65, unit cell is: <Cell | (12, 4)>
+
+unit id is: 66, unit cell is: <Cell | (10, 3)>
+
+unit id is: 67, unit cell is: <Cell | (6, 3)>
+
+unit id is: 70, unit cell is: <Cell | (3, 6)>
+
+unit id is: 71, unit cell is: <Cell | (3, 9)>
+
+unit id is: 72, unit cell is: <Cell | (3, 15)>
+turn started:66
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (14, 6)>
+
+unit id is: 65, unit cell is: <Cell | (12, 5)>
+
+unit id is: 66, unit cell is: <Cell | (10, 4)>
+
+unit id is: 67, unit cell is: <Cell | (7, 3)>
+
+unit id is: 70, unit cell is: <Cell | (3, 5)>
+
+unit id is: 71, unit cell is: <Cell | (3, 8)>
+
+unit id is: 72, unit cell is: <Cell | (3, 14)>
+turn started:67
+Enemy Units:
+
+unit id is: 61, unit cell is: <Cell | (14, 6)>
+
+unit id is: 65, unit cell is: <Cell | (13, 5)>
+
+unit id is: 66, unit cell is: <Cell | (11, 4)>
+
+unit id is: 67, unit cell is: <Cell | (8, 3)>
+
+unit id is: 70, unit cell is: <Cell | (3, 4)>
+
+unit id is: 71, unit cell is: <Cell | (3, 7)>
+
+unit id is: 72, unit cell is: <Cell | (3, 13)>
