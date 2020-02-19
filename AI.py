@@ -47,7 +47,8 @@ class AI:
         #     print(i.type_id)
 
         # picking the chosen deck - rest of the deck will automatically be filled with random base_units
-        world.choose_hand(base_units = my_hand)  # (base_units=my_deck)
+        world.choose_hand(base_units = my_hand)
+                           # (base_units=my_deck)
 
         print('After choose hand:')
         for i in my_hand:
@@ -68,7 +69,9 @@ class AI:
         f = self.f
         f.write(f"turn started:{world.get_current_turn()}\n")
         myself = world.get_me()
-        max_ap = world.game_constants().max_ap
+       # max_ap = world.game_constants().max_ap
+        print("print ap :")
+        print(world.get_me().ap)
 
         f.write('Enemy Units:\n')
         enemy_units = world.get_first_enemy().units
@@ -97,23 +100,24 @@ class AI:
 
 
         if  self.state == 1:
-            world.put_unit(base_unit=world.base_units[1], path=world.get_me().paths_from_player[0])
+            world.put_unit(base_unit=world._base_units[1], path=world.get_me().paths_from_player[0])
+
             print('hero 1')
             self.state = 2
         elif self.state == 2:
-            world.put_unit(base_unit=world.base_units[5], path=world.get_me().paths_from_player[0])
+            world.put_unit(base_unit=world._base_units[5], path=world.get_me().paths_from_player[0])
             print('hero 2')
             self.state = 3
         elif self.state == 3:
-            world.put_unit(base_unit=world.base_units[0], path=world.get_me().paths_from_player[0])
+            world.put_unit(base_unit=world._base_units[0], path=world.get_me().paths_from_player[0])
             print('hero 3')
             self.state = 4
         elif self.state == 4:
-            world.put_unit(base_unit=world.base_units[6], path=world.get_me().paths_from_player[0])
+            world.put_unit(base_unit=world._base_units[6], path=world.get_me().paths_from_player[0])
             print('hero 4')
             self.state = 5
         elif self.state == 5:
-            world.put_unit(base_unit=world.base_units[2], path=world.get_me().paths_from_player[0])
+            world.put_unit(base_unit=world._base_units[2], path=world.get_me().paths_from_player[0])
             print('hero 5')
             self.state = 6
 
@@ -143,7 +147,8 @@ class AI:
 
 
         print('each turn')
-        print(world.current_turn)
+        print(world._current_turn)
+
         print(world.get_me().ap)
 
 
