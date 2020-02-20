@@ -1,0 +1,963 @@
+----------------------------Pick-------------------------------
+Player id: 1
+MAP SIZE:0*0
+HAND:  1 5 0 6 2
+Paths from my palyer: 24
+turn started:1
+Enemy Units:
+turn started:2
+Enemy Units:
+Id: 37    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:3
+Enemy Units:
+Id: 37    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 41    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:4
+Enemy Units:
+Id: 37    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 41    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 45    Cell: <Cell | (3, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+turn started:5
+Enemy Units:
+Id: 37    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 41    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 45    Cell: <Cell | (4, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (3, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+turn started:6
+Enemy Units:
+Id: 37    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 41    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 45    Cell: <Cell | (5, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (4, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+Id: 53    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:7
+Enemy Units:
+Id: 37    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 41    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 45    Cell: <Cell | (6, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (5, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+Id: 53    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 57    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:8
+Enemy Units:
+Id: 37    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 41    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 45    Cell: <Cell | (7, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (6, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+Id: 53    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 57    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:9
+Enemy Units:
+Id: 37    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 5      Spells: [] 
+Id: 41    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 45    Cell: <Cell | (7, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (7, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+Id: 53    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 57    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 62    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:10
+Enemy Units:
+Id: 41    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 45    Cell: <Cell | (7, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (7, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+Id: 53    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 57    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 62    Cell: <Cell | (4, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:11
+Enemy Units:
+Id: 45    Cell: <Cell | (7, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (7, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+Id: 53    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 57    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 62    Cell: <Cell | (5, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:12
+Enemy Units:
+Id: 45    Cell: <Cell | (8, 2)>       BaseUnit: 0      HP: 15      Spells: [] 
+Id: 49    Cell: <Cell | (8, 2)>       BaseUnit: 6      HP: 15      Spells: [] 
+Id: 53    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 57    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 62    Cell: <Cell | (6, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 67    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:13
+Enemy Units:
+Id: 49    Cell: <Cell | (8, 2)>       BaseUnit: 6      HP: 5      Spells: [] 
+Id: 53    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 57    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 62    Cell: <Cell | (7, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 67    Cell: <Cell | (4, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:14
+Enemy Units:
+Id: 53    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 57    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 15      Spells: [] 
+Id: 62    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 67    Cell: <Cell | (5, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 70    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:15
+Enemy Units:
+Id: 53    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 10      Spells: [] 
+Id: 57    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 62    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 67    Cell: <Cell | (6, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 70    Cell: <Cell | (4, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:16
+Enemy Units:
+Id: 53    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 5      Spells: [] 
+Id: 57    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 62    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 67    Cell: <Cell | (7, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 70    Cell: <Cell | (5, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:17
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 62    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 10      Spells: [] 
+Id: 67    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 70    Cell: <Cell | (6, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:18
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 67    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 70    Cell: <Cell | (7, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 77    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:19
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 67    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 70    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 77    Cell: <Cell | (4, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:20
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 70    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 77    Cell: <Cell | (5, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 81    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:21
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 70    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 73    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 77    Cell: <Cell | (6, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 81    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 84    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:22
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 11)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 73    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 77    Cell: <Cell | (7, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 81    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 84    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:23
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 12)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 73    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 77    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 81    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 84    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:24
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 13)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 73    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 77    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 10      Spells: [] 
+Id: 81    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 84    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 89    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:25
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 14)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 73    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 81    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 84    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 89    Cell: <Cell | (4, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:26
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 73    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 81    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 84    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 89    Cell: <Cell | (5, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:27
+Enemy Units:
+Id: 57    Cell: <Cell | (9, 16)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 73    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 81    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 84    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 89    Cell: <Cell | (6, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 93    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:28
+Enemy Units:
+Id: 73    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 17      Spells: [] 
+Id: 81    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 22      Spells: [] 
+Id: 84    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 22      Spells: [] 
+Id: 89    Cell: <Cell | (7, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 93    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:29
+Enemy Units:
+Id: 73    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 9      Spells: [] 
+Id: 81    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 14      Spells: [] 
+Id: 84    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 14      Spells: [] 
+Id: 89    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 93    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 97    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:30
+Enemy Units:
+Id: 73    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 1      Spells: [] 
+Id: 81    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 6      Spells: [] 
+Id: 84    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 6      Spells: [] 
+Id: 89    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 93    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 97    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:31
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 3)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 93    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 97    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:32
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 4)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 93    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:33
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 5)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 93    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 9      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 106    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:34
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 6)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 106    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:35
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 7)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 106    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:36
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 8)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 106    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 111    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:37
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 9)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 106    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 111    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:38
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 9)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 106    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 111    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:39
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 10)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 25      Spells: [] 
+Id: 106    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 13      Spells: [] 
+Id: 110    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 111    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:40
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 11)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 111    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:41
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 12)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 111    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:42
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 13)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 97    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 111    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:43
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 14)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 97    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 111    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 115    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 123    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:44
+Enemy Units:
+Id: 89    Cell: <Cell | (9, 15)>       BaseUnit: 7      HP: 5      Spells: [] 
+Id: 97    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 99    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 123    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:45
+Enemy Units:
+Id: 97    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 8      Spells: [] 
+Id: 99    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 123    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:46
+Enemy Units:
+Id: 128    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 99    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 123    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:47
+Enemy Units:
+Id: 128    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 131    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 99    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 13      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:48
+Enemy Units:
+Id: 128    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 131    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 99    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 13      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:49
+Enemy Units:
+Id: 128    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 131    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 99    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 110    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:50
+Enemy Units:
+Id: 128    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 131    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 135    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 3)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:51
+Enemy Units:
+Id: 128    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 131    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 135    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 4)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:52
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 131    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 135    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 5)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:53
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 3)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (9, 11)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 11)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 6)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:54
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 4)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (9, 12)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 12)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 7)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:55
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 5)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 110    Cell: <Cell | (9, 13)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 13)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 119    Cell: <Cell | (9, 8)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:56
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 6)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 140    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 147    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 110    Cell: <Cell | (9, 14)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 14)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 119    Cell: <Cell | (9, 9)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:57
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 7)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 3      Spells: [] 
+Id: 140    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 147    Cell: <Cell | (4, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 110    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 119    Cell: <Cell | (9, 10)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:58
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 8)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 147    Cell: <Cell | (5, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 152    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 119    Cell: <Cell | (9, 11)>       BaseUnit: 3      HP: 5      Spells: [] 
+Id: 123    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 15      Spells: [] 
+turn started:59
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 9)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 147    Cell: <Cell | (6, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 152    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 16)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 16)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 123    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 10      Spells: [] 
+turn started:60
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 10)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 3)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (7, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 152    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 110    Cell: <Cell | (9, 17)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 111    Cell: <Cell | (9, 17)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 123    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 5      Spells: [] 
+turn started:61
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 11)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 4)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 152    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:62
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 12)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 5)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 152    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:63
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 13)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 6)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 3)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:64
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 14)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 7)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 4)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:65
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 15)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 8)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 5)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:66
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 16)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 9)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 6)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:67
+Enemy Units:
+Id: 128    Cell: <Cell | (9, 17)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: <Cell | (9, 10)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 7)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 3)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 3)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:68
+Enemy Units:
+Id: 128    Cell: <Cell | (10, 17)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 140    Cell: <Cell | (9, 11)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 8)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 4)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 4)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:69
+Enemy Units:
+Id: 128    Cell: <Cell | (11, 17)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 140    Cell: <Cell | (9, 12)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 9)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 5)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 5)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 3)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 173    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+turn started:70
+Enemy Units:
+Id: 140    Cell: <Cell | (9, 13)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 10)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 6)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 6)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 4)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 173    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 20      Spells: [] 
+turn started:71
+Enemy Units:
+Id: 140    Cell: <Cell | (9, 14)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 11)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 7)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 7)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 5)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 173    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 15      Spells: [] 
+turn started:72
+Enemy Units:
+Id: 140    Cell: <Cell | (9, 15)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 12)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 8)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 8)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 6)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 173    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 15      Spells: [] 
+turn started:73
+Enemy Units:
+Id: 140    Cell: <Cell | (9, 16)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 147    Cell: <Cell | (9, 13)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 9)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 9)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 7)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 15      Spells: [] 
+turn started:74
+Enemy Units:
+Id: 140    Cell: <Cell | (9, 17)>       BaseUnit: 3      HP: 15      Spells: [] 
+Id: 147    Cell: <Cell | (9, 14)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 10)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 10)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 8)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 181    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 15      Spells: [] 
+turn started:75
+Enemy Units:
+Id: 140    Cell: <Cell | (10, 17)>       BaseUnit: 3      HP: 10      Spells: [] 
+Id: 147    Cell: <Cell | (9, 15)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 11)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 11)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 9)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 181    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 15      Spells: [] 
+turn started:76
+Enemy Units:
+Id: 147    Cell: <Cell | (9, 16)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 12)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 12)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 10)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 3)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 181    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 185    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 15      Spells: [] 
+turn started:77
+Enemy Units:
+Id: 147    Cell: <Cell | (9, 17)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 13)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 13)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 11)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 4)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 181    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 185    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 187    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 115    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 15      Spells: [] 
+turn started:78
+Enemy Units:
+Id: 147    Cell: <Cell | (10, 17)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 14)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 14)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 12)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 11)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 5)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 3)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 181    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 185    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 187    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:79
+Enemy Units:
+Id: 147    Cell: <Cell | (11, 17)>       BaseUnit: 7      HP: 15      Spells: [] 
+Id: 152    Cell: <Cell | (9, 15)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 15)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 13)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 12)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 6)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 4)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 181    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 185    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 187    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:80
+Enemy Units:
+Id: 147    Cell: <Cell | (11, 17)>       BaseUnit: 7      HP: 5      Spells: [] 
+Id: 152    Cell: <Cell | (9, 16)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 155    Cell: <Cell | (9, 16)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 159    Cell: <Cell | (9, 14)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 13)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 11)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 7)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 5)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 181    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 8      Spells: [] 
+Id: 185    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 187    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:81
+Enemy Units:
+Id: 152    Cell: <Cell | (9, 17)>       BaseUnit: 2      HP: 10      Spells: [] 
+Id: 155    Cell: <Cell | (9, 17)>       BaseUnit: 2      HP: 10      Spells: [] 
+Id: 159    Cell: <Cell | (9, 15)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 14)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 12)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 11)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 8)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 6)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 181    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 3      Spells: [] 
+Id: 185    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 187    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:82
+Enemy Units:
+Id: 159    Cell: <Cell | (9, 16)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 161    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 13)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 12)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 9)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 7)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 187    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 190    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (4, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+turn started:83
+Enemy Units:
+Id: 159    Cell: <Cell | (9, 17)>       BaseUnit: 2      HP: 10      Spells: [] 
+Id: 161    Cell: <Cell | (9, 16)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 14)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 13)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 10)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 8)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (5, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 199    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:84
+Enemy Units:
+Id: 161    Cell: <Cell | (9, 17)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 14)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 11)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 9)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (6, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 199    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 201    Cell: <Cell | (3, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:85
+Enemy Units:
+Id: 161    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 164    Cell: <Cell | (9, 16)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 15)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 12)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 10)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (7, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 199    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 201    Cell: <Cell | (4, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+turn started:86
+Enemy Units:
+Id: 161    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 22      Spells: [] 
+Id: 164    Cell: <Cell | (9, 17)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 16)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 13)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 11)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (8, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 199    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 201    Cell: <Cell | (5, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:87
+Enemy Units:
+Id: 161    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 14      Spells: [] 
+Id: 164    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (9, 17)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 14)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 174    Cell: <Cell | (9, 12)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
+Id: 199    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 201    Cell: <Cell | (6, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:88
+Enemy Units:
+Id: 161    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 1      Spells: [] 
+Id: 164    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 173    Cell: <Cell | (9, 15)>       BaseUnit: 3      HP: 15      Spells: [] 
+Id: 174    Cell: <Cell | (9, 13)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 190    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 194    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 20      Spells: [] 
+Id: 199    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 201    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:89
+Enemy Units:
+Id: 164    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 167    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 174    Cell: <Cell | (9, 14)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 185    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 194    Cell: <Cell | (9, 2)>       BaseUnit: 7      HP: 10      Spells: [] 
+Id: 199    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 201    Cell: <Cell | (7, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:90
+Enemy Units:
+Id: 164    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 167    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 5      Spells: [] 
+Id: 174    Cell: <Cell | (9, 15)>       BaseUnit: 2      HP: 10      Spells: [] 
+Id: 185    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (8, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 213    Cell: <Cell | (3, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:91
+Enemy Units:
+Id: 164    Cell: <Cell | (10, 17)>       BaseUnit: 5      HP: 10      Spells: [] 
+Id: 174    Cell: <Cell | (9, 15)>       BaseUnit: 2      HP: 10      Spells: [] 
+Id: 185    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 213    Cell: <Cell | (4, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:92
+Enemy Units:
+Id: 174    Cell: <Cell | (9, 16)>       BaseUnit: 2      HP: 10      Spells: [] 
+Id: 185    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 2)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 213    Cell: <Cell | (5, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+turn started:93
+Enemy Units:
+Id: 185    Cell: <Cell | (9, 3)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 3)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 6)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 3)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 213    Cell: <Cell | (6, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 219    Cell: <Cell | (3, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:94
+Enemy Units:
+Id: 185    Cell: <Cell | (9, 4)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 4)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 7)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 4)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 213    Cell: <Cell | (7, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 219    Cell: <Cell | (4, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+turn started:95
+Enemy Units:
+Id: 185    Cell: <Cell | (9, 5)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 5)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 8)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 5)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 208    Cell: <Cell | (8, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 213    Cell: <Cell | (8, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 219    Cell: <Cell | (5, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 221    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:96
+Enemy Units:
+Id: 185    Cell: <Cell | (9, 6)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 6)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 9)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 6)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (9, 3)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 208    Cell: <Cell | (9, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 213    Cell: <Cell | (9, 2)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 219    Cell: <Cell | (6, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 221    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:97
+Enemy Units:
+Id: 185    Cell: <Cell | (9, 7)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 7)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 10)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 7)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (9, 4)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 208    Cell: <Cell | (9, 3)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 213    Cell: <Cell | (9, 3)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 219    Cell: <Cell | (7, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 221    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 224    Cell: <Cell | (3, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:98
+Enemy Units:
+Id: 185    Cell: <Cell | (9, 8)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 8)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 11)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 8)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (9, 5)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 208    Cell: <Cell | (9, 4)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 213    Cell: <Cell | (9, 4)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 219    Cell: <Cell | (8, 2)>       BaseUnit: 3      HP: 25      Spells: [] 
+Id: 221    Cell: <Cell | (6, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 224    Cell: <Cell | (4, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+turn started:99
+Enemy Units:
+Id: 185    Cell: <Cell | (9, 9)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 190    Cell: <Cell | (9, 9)>       BaseUnit: 1      HP: 25      Spells: [] 
+Id: 199    Cell: <Cell | (9, 12)>       BaseUnit: 5      HP: 20      Spells: [] 
+Id: 201    Cell: <Cell | (9, 9)>       BaseUnit: 1      HP: 30      Spells: [] 
+Id: 205    Cell: <Cell | (9, 6)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 208    Cell: <Cell | (9, 5)>       BaseUnit: 2      HP: 15      Spells: [] 
+Id: 213    Cell: <Cell | (9, 5)>       BaseUnit: 5      HP: 30      Spells: [] 
+Id: 219    Cell: <Cell | (9, 2)>       BaseUnit: 3      HP: 20      Spells: [] 
+Id: 221    Cell: <Cell | (7, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 224    Cell: <Cell | (5, 2)>       BaseUnit: 2      HP: 20      Spells: [] 
+Id: 229    Cell: <Cell | (3, 2)>       BaseUnit: 7      HP: 30      Spells: [] 
