@@ -24,8 +24,8 @@ class AI:
 
         '''sahar log'''
         now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
-        now = 'log\\' + now       # sahar to ino bzn va khat paiin o coment kon
-        #now = 'log/' + now          # mn o parsa ino mizanim
+        # now = 'log\\' + now       # sahar to ino bzn va khat paiin o coment kon
+        now = 'log/' + now          # mn o parsa ino mizanim
         now = now + '.txt'
         self.f = open(now, "w+")
     ''' sahar log'''
@@ -97,7 +97,6 @@ class AI:
         f.write('\n')
 
         myself = world.get_me()
-        # max_ap = world.game_constants().max_ap
 
         enemy_units = world.get_first_enemy().units
         enemy_units.append(world.get_second_enemy())
@@ -131,27 +130,6 @@ class AI:
             f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
         f.write('\n')
 
-        #min_enemy_health_unit_value = 100000
-        #best_path = world.get_me().paths_from_player[0]
-        # for unit in enemy_units:
-        #       f.write(f'\nunit id is: {unit.unit_id}, unit cell is: {unit.cell}\n')
-        # enemy_unit_cell = unit.cell
-        # # print(world.get_paths_crossing_cell(enemy_unit_cell))
-        # if unit.hp < min_enemy_health_unit_value:
-        #     for path_can_choose in world.get_me().paths_from_player :
-        #         for path_to_enemy in world.get_paths_crossing_cell(unit.cell):
-        #             f.write(f'  our path: {path_can_choose.id} path to enemy: {path_to_enemy.id}\n')
-        #             if path_can_choose == path_to_enemy:
-        #                 min_enemy_health_unit_value = unit.hp
-        #                 min_enemy_health_unit_cell = unit.cell
-        #                 best_path = path_to_enemy
-
-        #f.write(f'best path id: {best_path.id}\n')
-        # play all of hand once your ap reaches maximum. if ap runs out, putUnit doesn't do anything
-        #f.write('\nPath for my units in turn: ')
-
-
-        # aval az hame 4,0 ro mifresim too :)
         # enter first hand
 
 
@@ -202,82 +180,83 @@ class AI:
                     max_range_unit_select = max_range_unit
             world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
             f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-
             self.status = 6
 
         # print('each turn')
         # print(world._current_turn)
         # print(world.get_me().ap)
-
-
-        # for base_unit in myself.hand:
-        #     world.put_unit(base_unit=base_unit, path=world.get_friend().paths_from_player[0])
-        #     f.write(str(best_path.id) + ' ')
-        #f.write('\n\n------------------------------------------------------------\n\n')
-
-
         ## berim soraghe in ke spell bendazim :))
 
         received_spell = world.get_received_spell()
-
-        column_of_map = world.get_map().col_num
-        row_of_map = world.get_map().row_num
-
-        for column_index in range(0, column_of_map):
-            for row_index in range(0, row_of_map):
-                print('khorooji tabe')
-                print(world.get_area_spell_targets(row_index, column_index, received_spell))
-
         if received_spell is not None:
-            if received_spell.is_area_spell():     # age area bood              :  hame be joz tele
-
+            if received_spell.is_area_spell():  # age area bood              :  hame be joz tele
 
                 # spell enemy               : damage va poison bood         : zarar be doshman
                 if received_spell.target == SpellTarget.ENEMY:
-                    world.cast_area_spell(center = self.return_best_cell_for_spell(world, received_spell), spell=received_spell)
+                    world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),
+                                          spell=received_spell)
 
 
                 # spell allied          : ye khoobi bara khodemoon dasht
                 elif received_spell.target == SpellTarget.ALLIED:
-                    world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),spell=received_spell)
+                    world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),
+                                          spell=received_spell)
 
 
 
                 elif received_spell.target == SpellTarget.SELF:
-                    world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),spell=received_spell)
+                    world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),
+                                          spell=received_spell)
+
+                # age tele bood spell :) miad balatarin hp ro jolo tarin halate momken midaze !
+            else:
+                my_units = myself.units
+                unit = self.find_max_hp_between_our_unit(my_units)
+                my_paths = myself.paths_from_player
+                path = my_paths[random.randint(0, len(my_paths) - 1)]
+                size = len(path.cells)
+                cell = path.cells[int((size + 1) / 2)]
+                world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
 
 
 
+         # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
 
-
-            # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
-            # if world.get_current_turn() >= 23:
+        print('\nturn to upgrade')
+        print(world.get_remaining_turns_to_upgrade())
 
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
             print(f'\nwe have {world.get_range_upgrade_number()} range upgrade')
-            print('current turn :', world.get_current_turn())
             if len(myself.units) > 0:
-                unit = myself.units[0]
-                for last_unit in myself.units:
-                    unit = last_unit
-                print(f'before upgrade {unit.range}')
-                world.upgrade_unit_range(unit=unit)
-                print(f'after upgrade {unit.range}')
-                print(f'range upgrade token {unit.unit_id}\n')
+                units_max_range = []
+                for unit_range in myself.units:
+                    if unit_range.range == 4:
+                        units_max_range.append(unit_range)
+                # print(units_max_range)
+                unit = self.get_max_hp(units_max_range)
+                # for upgrade_unit in myself.units:
+                #     unit = upgrade_unit
+                if unit is not None:
+                    world.upgrade_unit_range(unit_id=unit.unit_id)
+                    print(world.upgrade_unit_range(unit_id=unit.unit_id))
+                    print(f'range upgrade token {unit.unit_id}\n')
 
         # for damage upgrade
         if world.get_damage_upgrade_number() > 0:
             print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
-            print('current turn :', world.get_current_turn())
             if len(myself.units) > 0:
-                unit = myself.units[0]
-                for last_unit in myself.units:
-                    unit = last_unit
-                print(f'before upgrade {unit.attack}')
-                world.upgrade_unit_damage(unit=unit)
-                print(f'after upgrade {unit.attack}')
-                print(f'damage upgrade token {unit.unit_id}\n')
+                units_max_damage = []
+                for unit_damage in myself.units:
+                    if unit_damage.range >= 15:
+                        units_max_damage.append(unit_damage)
+                unit = self.get_max_hp(units_max_damage)
+                # for upgrade_unit in myself.units:
+                #     unit = upgrade_unit
+                if unit is not None:
+                    world.upgrade_unit_damage(unit_id=unit.unit_id)
+                    print(world.upgrade_unit_damage(unit_id=unit.unit_id))
+                    print(f'damage upgrade token {unit.unit_id}\n')
 
 
 
@@ -293,24 +272,46 @@ class AI:
         self.f.close()
 
 
-
-
+     # added function
 
     def get_max_hp(self ,units):
         max_hp = 0
-        for max_hp_unit in units:
-            if max_hp_unit.hp >= max_hp and max_hp_unit.base_unit.type_id != 4:
-                max_hp = max_hp_unit.hp
-                max_hp_unit_select = max_hp_unit
-        return max_hp_unit_select
+        if len(units) > 0:
+            max_hp_unit_select = units[0]
+            for max_hp_unit in units:
+                if max_hp_unit.hp >= max_hp and max_hp_unit.base_unit.type_id != 4:
+                    max_hp = max_hp_unit.hp
+                    max_hp_unit_select = max_hp_unit
+            if max_hp_unit_select is not None:
+                return max_hp_unit_select
+        else:
+            return None
 
     def get_max_damage(self, units):
         max_damage = 0
-        for max_damage_unit in units:
-            if max_damage_unit.attack >= max_damage:
-                max_damage = max_damage_unit.attack
-                max_damage_unit_select = max_damage_unit
-        return max_damage_unit_select
+        if len(units) > 0:
+            max_damage_unit_select = units[0]
+            for max_damage_unit in units:
+                if max_damage_unit.attack >= max_damage:
+                    max_damage = max_damage_unit.attack
+                    max_damage_unit_select = max_damage_unit
+            if max_damage_unit_select is not None:
+                return max_damage_unit_select
+        else:
+            return None
+
+    def get_max_range(self, units):
+        max_range = 0
+        if len(units) > 0:
+            max_range_unit_select = units[0]
+            for max_range_unit in units:
+                if max_range_unit.range >= max_range:
+                    max_range = max_range_unit.range
+                    max_range_unit_select = max_range_unit
+            if max_range_unit_select is not None:
+                return max_range_unit_select
+        else:
+            return None
 
 
     def return_best_cell_for_spell(self, world, received_spell):
@@ -333,6 +334,48 @@ class AI:
                     best_cell_we_can_choose = Cell(row_of_best_cell, col_of_best_cell)
         return best_cell_we_can_choose
 
+
+
+
+    def find_max_hp_between_our_unit(self, my_units):
+        max_hp = 0
+        unit_of_max_hp = my_units[0]
+        for unit in my_units:
+            if unit.hp > max_hp:
+                max_hp = unit.hp
+                unit_of_max_hp = unit
+        return unit_of_max_hp
+
+
+
+
+    def return_best_cell_for_spell(self, world, received_spell):
+        map = world.get_map()
+        row_of_map = map.row_num
+        column_of_map = map.col_num
+        number_of_unit_in_best_cell = 0
+        row_of_best_cell = 0
+        col_of_best_cell = 0
+        best_cell_we_can_choose = Cell()
+        for column_index in range(0, column_of_map):
+            for row_index in range(0, row_of_map):
+                cell_for_our_loop = Cell(row_index, column_index)
+                if number_of_unit_in_best_cell < len(
+                        world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
+                                                     spell=received_spell)):
+                    print('tedad niroo jaii ke mizanim')
+                    print(len(world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
+                                                           spell=received_spell)))
+                    number_of_unit_in_best_cell = len(
+                        world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
+                                                     spell=received_spell))
+                    row_of_best_cell = row_index
+                    col_of_best_cell = column_index
+                    print('jaii ke mizanim ')
+                    best_cell_we_can_choose = Cell(row_of_best_cell, col_of_best_cell)
+        print(best_cell_we_can_choose.row)
+        print(best_cell_we_can_choose.col)
+        return best_cell_we_can_choose
 
 
 
