@@ -24,8 +24,8 @@ class AI:
 
         '''sahar log'''
         now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
-        # now = 'log\\' + now       # sahar to ino bzn va khat paiin o coment kon
-        now = 'log/' + now          # mn o parsa ino mizanim
+        now = 'log\\' + now       # sahar to ino bzn va khat paiin o coment kon
+        #now = 'log/' + now          # mn o parsa ino mizanim
         now = now + '.txt'
         self.f = open(now, "w+")
     ''' sahar log'''
@@ -163,7 +163,7 @@ class AI:
                     max_hp = max_hp_unit.max_hp
                     max_hp_unit_select = max_hp_unit
             world.put_unit(base_unit=max_hp_unit_select, path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id} WITH COST {max_hp_unit_select.ap}\n')
             self.status = 7
         if self.state == 7:
             for max_damage_unit in world.get_me().hand:
@@ -171,7 +171,7 @@ class AI:
                     max_damage = max_damage_unit.base_attack
                     max_damage_unit_select = max_damage_unit
             world.put_unit(base_unit=max_damage_unit_select, path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id} WITH COST {max_hp_unit_select.ap}\n')
             self.status = 8
         if self.state == 8:
             for max_range_unit in world.get_me().hand:
@@ -179,7 +179,7 @@ class AI:
                     max_range = max_range_unit.base_range
                     max_range_unit_select = max_range_unit
             world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id} WITH COST {max_hp_unit_select.ap}\n')
             self.status = 6
 
         # print('each turn')
@@ -266,9 +266,10 @@ class AI:
     # using this function you can access the result of the game.
     # scores is a map from int to int which the key is player_id and value is player_score
     def end(self, world: World, scores):
+        self.f.write('---------------------------------END-------------------------------------\n')
         print("end started!")
         print("My score:", scores[world.get_me().player_id])
-
+        self.f.write(f'MY SCORE: {scores[world.get_me().player_id]}\n')
         self.f.close()
 
 
