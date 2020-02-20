@@ -1,0 +1,3272 @@
+----------------------------Pick-------------------------------
+Player id: 2
+MAP SIZE:20*20
+ALL PATHS:
+PATH ID: 0
+     PATH CELLS: (2, 2), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (2, 10), (2, 11), (2, 12), (2, 13), (2, 14), (2, 15), (2, 16), (2, 17), 
+PATH ID: 1
+     PATH CELLS: (17, 2), (17, 3), (17, 4), (17, 5), (17, 6), (17, 7), (17, 8), (17, 9), (17, 10), (17, 11), (17, 12), (17, 13), (17, 14), (17, 15), (17, 16), (17, 17), 
+PATH ID: 2
+     PATH CELLS: (2, 17), (3, 17), (4, 17), (5, 17), (6, 17), (7, 17), (8, 17), (9, 17), (9, 16), (9, 15), (9, 14), (9, 13), (9, 12), (9, 11), (9, 10), (9, 9), (9, 8), (9, 7), (9, 6), (9, 5), (9, 4), (9, 3), (9, 2), (10, 2), (11, 2), (12, 2), (13, 2), (14, 2), (15, 2), (16, 2), (17, 2), 
+PATH ID: 3
+     PATH CELLS: (2, 2), (3, 2), (4, 2), (5, 2), (6, 2), (7, 2), (8, 2), (9, 2), (9, 3), (9, 4), (9, 5), (9, 6), (9, 7), (9, 8), (9, 9), (9, 10), (9, 11), (9, 12), (9, 13), (9, 14), (9, 15), (9, 16), (9, 17), (10, 17), (11, 17), (12, 17), (13, 17), (14, 17), (15, 17), (16, 17), (17, 17), 
+PATH ID: 4
+     PATH CELLS: (2, 17), (2, 16), (2, 15), (2, 14), (2, 13), (2, 12), (2, 11), (2, 10), (3, 10), (4, 10), (5, 10), (6, 10), (7, 10), (8, 10), (9, 10), (10, 10), (11, 10), (12, 10), (13, 10), (14, 10), (15, 10), (16, 10), (17, 10), (17, 9), (17, 8), (17, 7), (17, 6), (17, 5), (17, 4), (17, 3), (17, 2), 
+
+HAND:  1 5 0 6 2
+Paths from my palyer: 3
+-------------------------------Turn-----------------------------------
+turn 1 started
+REMAINING TURNS TO UPGRADE: 22
+AP: 10
+HAND: 1 5 0 6 2 
+Enemy Units:
+
+My Units:
+
+Friend Units:
+
+-------------------------------Turn-----------------------------------
+turn 2 started
+REMAINING TURNS TO UPGRADE: 21
+AP: 9
+HAND: 5 0 6 2 1 
+Enemy Units:
+Id: 38    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+
+My Units:
+
+Friend Units:
+
+-------------------------------Turn-----------------------------------
+turn 3 started
+REMAINING TURNS TO UPGRADE: 20
+AP: 8
+HAND: 0 6 2 1 5 
+Enemy Units:
+Id: 42    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 38    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 40    Cell: (15, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 39    Cell: (4, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 37    Cell: (4, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+
+-------------------------------Turn-----------------------------------
+turn 4 started
+REMAINING TURNS TO UPGRADE: 19
+AP: 6
+HAND: 6 2 1 5 8 
+Enemy Units:
+Id: 46    Cell: (16, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 42    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 38    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 44    Cell: (15, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 40    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 43    Cell: (4, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 39    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 41    Cell: (4, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 37    Cell: (5, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+
+-------------------------------Turn-----------------------------------
+turn 5 started
+REMAINING TURNS TO UPGRADE: 18
+AP: 6
+HAND: 2 1 5 8 3 
+Enemy Units:
+Id: 50    Cell: (16, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (15, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 42    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 38    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 48    Cell: (15, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+Id: 44    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 40    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 47    Cell: (4, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 43    Cell: (5, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 39    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 45    Cell: (4, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 41    Cell: (5, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 37    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 6 started
+REMAINING TURNS TO UPGRADE: 17
+AP: 4
+HAND: 1 5 8 3 2 
+Enemy Units:
+Id: 54    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (15, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (14, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 42    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 38    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 52    Cell: (15, 2)        BaseUnit: 6      HP: 15      Spells: [] 2nd enemy
+Id: 48    Cell: (14, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+Id: 44    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 40    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 51    Cell: (4, 17)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 47    Cell: (5, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 43    Cell: (6, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 39    Cell: (7, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 49    Cell: (4, 2)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 45    Cell: (5, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 41    Cell: (6, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 37    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 7 started
+REMAINING TURNS TO UPGRADE: 16
+AP: 3
+HAND: 1 8 3 2 7 
+Enemy Units:
+Id: 54    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (14, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (13, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 42    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 38    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 56    Cell: (15, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 52    Cell: (14, 2)        BaseUnit: 6      HP: 15      Spells: [] 2nd enemy
+Id: 48    Cell: (13, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+Id: 44    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 40    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 55    Cell: (4, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 51    Cell: (5, 17)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 47    Cell: (6, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 43    Cell: (7, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 39    Cell: (8, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 53    Cell: (4, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 49    Cell: (5, 2)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 45    Cell: (6, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 41    Cell: (7, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 37    Cell: (8, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 8 started
+REMAINING TURNS TO UPGRADE: 15
+AP: 5
+HAND: 1 8 3 2 7 
+Enemy Units:
+Id: 61    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 54    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (13, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (12, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 42    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 38    Cell: (11, 17)       BaseUnit: 1      HP: 25      Spells: [] 1st enemy
+Id: 56    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 52    Cell: (13, 2)        BaseUnit: 6      HP: 15      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+Id: 44    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 40    Cell: (11, 2)        BaseUnit: 1      HP: 25      Spells: [] 2nd enemy
+
+My Units:
+Id: 55    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 51    Cell: (6, 17)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 47    Cell: (7, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 43    Cell: (8, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 39    Cell: (8, 17)        BaseUnit: 1      HP: 25      Spells: [] 
+
+Friend Units:
+Id: 57    Cell: (4, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 53    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 49    Cell: (6, 2)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 41    Cell: (8, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 37    Cell: (8, 2)        BaseUnit: 1      HP: 25      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 9 started
+REMAINING TURNS TO UPGRADE: 14
+AP: 2
+HAND: 1 8 3 2 0 
+Enemy Units:
+Id: 61    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 54    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (12, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (12, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 42    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 38    Cell: (11, 17)       BaseUnit: 1      HP: 5      Spells: [] 1st enemy
+Id: 59    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 56    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 52    Cell: (12, 2)        BaseUnit: 6      HP: 15      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+Id: 44    Cell: (10, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 40    Cell: (11, 2)        BaseUnit: 1      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 58    Cell: (5, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 55    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 51    Cell: (7, 17)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 47    Cell: (7, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 43    Cell: (9, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 39    Cell: (8, 17)        BaseUnit: 1      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 57    Cell: (5, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 53    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 49    Cell: (7, 2)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 41    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 37    Cell: (8, 2)        BaseUnit: 1      HP: 5      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 10 started
+REMAINING TURNS TO UPGRADE: 13
+AP: 4
+HAND: 1 8 3 2 0 
+Enemy Units:
+Id: 61    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 54    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (12, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (12, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 42    Cell: (10, 17)       BaseUnit: 5      HP: 10      Spells: [] 1st enemy
+Id: 59    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 56    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 52    Cell: (12, 2)        BaseUnit: 6      HP: 15      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+Id: 44    Cell: (10, 2)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+
+My Units:
+Id: 58    Cell: (6, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 55    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 51    Cell: (7, 17)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 47    Cell: (7, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 43    Cell: (9, 17)        BaseUnit: 5      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 57    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 53    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 49    Cell: (7, 2)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+Id: 41    Cell: (9, 2)        BaseUnit: 5      HP: 10      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 11 started
+REMAINING TURNS TO UPGRADE: 12
+AP: 3
+HAND: 8 3 2 0 5 
+Enemy Units:
+Id: 65    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 61    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 54    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (12, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (12, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 63    Cell: (14, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 59    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [None] 2nd enemy
+Id: 56    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [None] 2nd enemy
+Id: 52    Cell: (12, 2)        BaseUnit: 6      HP: 15      Spells: [None] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [None] 2nd enemy
+
+My Units:
+Id: 62    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 58    Cell: (7, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 55    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 51    Cell: (7, 17)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 47    Cell: (7, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+
+Friend Units:
+Id: 60    Cell: (6, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 57    Cell: (8, 2)        BaseUnit: 1      HP: 30      Spells: [None] 
+Id: 53    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [None] 
+Id: 49    Cell: (7, 2)        BaseUnit: 6      HP: 15      Spells: [None] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [None] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 12 started
+REMAINING TURNS TO UPGRADE: 11
+AP: 2
+HAND: 8 3 2 0 4 
+Enemy Units:
+Id: 65    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 61    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (11, 17)       BaseUnit: 6      HP: 15      Spells: [] 1st enemy
+Id: 46    Cell: (11, 17)       BaseUnit: 0      HP: 15      Spells: [] 1st enemy
+Id: 63    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 59    Cell: (11, 2)        BaseUnit: 1      HP: 5      Spells: [] 2nd enemy
+Id: 56    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 52    Cell: (12, 2)        BaseUnit: 6      HP: 15      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 66    Cell: (4, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 62    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 58    Cell: (8, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 55    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 51    Cell: (8, 17)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 47    Cell: (8, 17)        BaseUnit: 0      HP: 15      Spells: [] 
+
+Friend Units:
+Id: 60    Cell: (7, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 57    Cell: (8, 2)        BaseUnit: 1      HP: 5      Spells: [] 
+Id: 53    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 49    Cell: (7, 2)        BaseUnit: 6      HP: 15      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 13 started
+REMAINING TURNS TO UPGRADE: 10
+AP: 4
+HAND: 8 3 2 0 4 
+Enemy Units:
+Id: 65    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 61    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 50    Cell: (11, 17)       BaseUnit: 6      HP: 5      Spells: [] 1st enemy
+Id: 67    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 63    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 56    Cell: (11, 2)        BaseUnit: 2      HP: 15      Spells: [] 2nd enemy
+Id: 52    Cell: (12, 2)        BaseUnit: 6      HP: 5      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 66    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 62    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 58    Cell: (9, 17)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 55    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 51    Cell: (8, 17)        BaseUnit: 6      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 64    Cell: (5, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 60    Cell: (8, 2)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 53    Cell: (8, 2)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 49    Cell: (7, 2)        BaseUnit: 6      HP: 5      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 14 started
+REMAINING TURNS TO UPGRADE: 9
+AP: 6
+HAND: 8 3 2 0 4 
+Enemy Units:
+Id: 72    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 65    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 61    Cell: (10, 17)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 67    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 63    Cell: (11, 2)        BaseUnit: 7      HP: 20      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 66    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 62    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 58    Cell: (9, 16)        BaseUnit: 5      HP: 15      Spells: [] 
+Id: 55    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+
+Friend Units:
+Id: 69    Cell: (4, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 64    Cell: (6, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 60    Cell: (9, 2)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 15 started
+REMAINING TURNS TO UPGRADE: 8
+AP: 2
+HAND: 8 2 0 4 7 
+Enemy Units:
+Id: 72    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 65    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 61    Cell: (9, 17)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 70    Cell: (14, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 67    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 63    Cell: (10, 2)        BaseUnit: 7      HP: 5      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 68    Cell: (6, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 66    Cell: (7, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 62    Cell: (9, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 58    Cell: (9, 15)        BaseUnit: 5      HP: 5      Spells: [] 
+Id: 55    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+
+Friend Units:
+Id: 69    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 64    Cell: (7, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 60    Cell: (9, 3)        BaseUnit: 5      HP: 5      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 16 started
+REMAINING TURNS TO UPGRADE: 7
+AP: 4
+HAND: 8 2 0 4 7 
+Enemy Units:
+Id: 76    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 72    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 65    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 70    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 67    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 68    Cell: (7, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 66    Cell: (8, 17)        BaseUnit: 1      HP: 22      Spells: [] 
+Id: 62    Cell: (9, 16)        BaseUnit: 7      HP: 20      Spells: [] 
+Id: 58    Cell: (9, 14)        BaseUnit: 5      HP: 5      Spells: [] 
+Id: 55    Cell: (7, 17)        BaseUnit: 2      HP: 12      Spells: [] 
+
+Friend Units:
+Id: 71    Cell: (5, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 69    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 64    Cell: (8, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 17 started
+REMAINING TURNS TO UPGRADE: 6
+AP: 6
+HAND: 8 2 0 4 7 
+Enemy Units:
+Id: 76    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 72    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 65    Cell: (10, 17)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 74    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 70    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 67    Cell: (10, 2)        BaseUnit: 5      HP: 15      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 68    Cell: (8, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 66    Cell: (8, 17)        BaseUnit: 1      HP: 22      Spells: [] 
+Id: 62    Cell: (9, 15)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 13)        BaseUnit: 5      HP: 5      Spells: [] 
+Id: 55    Cell: (8, 17)        BaseUnit: 2      HP: 12      Spells: [] 
+
+Friend Units:
+Id: 71    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 64    Cell: (9, 2)        BaseUnit: 7      HP: 15      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 18 started
+REMAINING TURNS TO UPGRADE: 5
+AP: 3
+HAND: 8 2 0 4 7 
+Enemy Units:
+Id: 76    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 72    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 65    Cell: (9, 17)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 74    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 70    Cell: (11, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 48    Cell: (12, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 73    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 68    Cell: (9, 17)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 66    Cell: (8, 17)        BaseUnit: 1      HP: 22      Spells: [] 
+Id: 62    Cell: (9, 14)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 12)        BaseUnit: 5      HP: 5      Spells: [] 
+Id: 55    Cell: (9, 17)        BaseUnit: 2      HP: 12      Spells: [] 
+
+Friend Units:
+Id: 75    Cell: (5, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 71    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 19 started
+REMAINING TURNS TO UPGRADE: 4
+AP: 5
+HAND: 8 2 0 4 7 
+Enemy Units:
+Id: 80    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 76    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 72    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 65    Cell: (9, 17)       BaseUnit: 3      HP: 10      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 77    Cell: (14, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 74    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 70    Cell: (10, 2)        BaseUnit: 7      HP: 5      Spells: [] 2nd enemy
+Id: 48    Cell: (11, 2)        BaseUnit: 0      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 73    Cell: (7, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 68    Cell: (9, 16)        BaseUnit: 5      HP: 10      Spells: [] 
+Id: 66    Cell: (8, 17)        BaseUnit: 1      HP: 22      Spells: [] 
+Id: 62    Cell: (9, 13)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 11)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 75    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 71    Cell: (8, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 20 started
+REMAINING TURNS TO UPGRADE: 3
+AP: 2
+HAND: 8 2 0 4 6 
+Enemy Units:
+Id: 82    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 76    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 72    Cell: (10, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 65    Cell: (9, 17)       BaseUnit: 3      HP: 5      Spells: [] 1st enemy
+Id: 54    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 81    Cell: (15, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 77    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 74    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 48    Cell: (11, 2)        BaseUnit: 0      HP: 10      Spells: [] 2nd enemy
+
+My Units:
+Id: 79    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: (8, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 66    Cell: (8, 17)        BaseUnit: 1      HP: 10      Spells: [] 
+Id: 62    Cell: (9, 12)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 10)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 75    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 71    Cell: (8, 2)        BaseUnit: 1      HP: 7      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 21 started
+REMAINING TURNS TO UPGRADE: 2
+AP: 4
+HAND: 8 2 0 4 6 
+Enemy Units:
+Id: 82    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 76    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 72    Cell: (9, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 54    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 81    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 77    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 74    Cell: (10, 2)        BaseUnit: 5      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 79    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: (8, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 62    Cell: (9, 11)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 9)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 78    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 75    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 22 started
+REMAINING TURNS TO UPGRADE: 1
+AP: 2
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 82    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 76    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 72    Cell: (9, 17)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 54    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 84    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 81    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 77    Cell: (11, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 83    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 79    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: (8, 17)        BaseUnit: 3      HP: 13      Spells: [] 
+Id: 62    Cell: (9, 10)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 8)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 78    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 75    Cell: (8, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 23 started
+REMAINING TURNS TO UPGRADE: 23
+AP: 4
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 88    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 82    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 76    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 54    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 84    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 81    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 77    Cell: (10, 2)        BaseUnit: 7      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 83    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 79    Cell: (7, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 73    Cell: (8, 17)        BaseUnit: 3      HP: 1      Spells: [] 
+Id: 62    Cell: (9, 9)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 7)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 78    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 75    Cell: (9, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 24 started
+REMAINING TURNS TO UPGRADE: 22
+AP: 3
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 90    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 82    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 76    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 54    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 84    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 81    Cell: (12, 2)        BaseUnit: 1      HP: 25      Spells: [] 2nd enemy
+
+My Units:
+Id: 86    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 83    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 73    Cell: (9, 17)        BaseUnit: 3      HP: 1      Spells: [] 
+Id: 62    Cell: (9, 8)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 6)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 85    Cell: (6, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 78    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 75    Cell: (9, 2)        BaseUnit: 1      HP: 12      Spells: [] 
+Id: 69    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (7, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 25 started
+REMAINING TURNS TO UPGRADE: 21
+AP: 2
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 90    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 82    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (10, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 76    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 54    Cell: (10, 17)       BaseUnit: 2      HP: 8      Spells: [] 1st enemy
+Id: 87    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 84    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 81    Cell: (12, 2)        BaseUnit: 1      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 91    Cell: (4, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 86    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 83    Cell: (8, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 62    Cell: (9, 7)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 5)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 85    Cell: (7, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 78    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 69    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 45    Cell: (8, 2)        BaseUnit: 0      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 26 started
+REMAINING TURNS TO UPGRADE: 20
+AP: 4
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 90    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 82    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (9, 17)       BaseUnit: 3      HP: 17      Spells: [] 1st enemy
+Id: 76    Cell: (10, 17)       BaseUnit: 2      HP: 12      Spells: [] 1st enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 84    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 81    Cell: (12, 2)        BaseUnit: 1      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 91    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 86    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 62    Cell: (9, 6)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 4)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 85    Cell: (8, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 78    Cell: (9, 2)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 69    Cell: (9, 2)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 45    Cell: (8, 2)        BaseUnit: 0      HP: 10      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 27 started
+REMAINING TURNS TO UPGRADE: 19
+AP: 6
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 95    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 82    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (9, 16)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 76    Cell: (9, 17)       BaseUnit: 2      HP: 12      Spells: [] 1st enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 84    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 91    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 86    Cell: (8, 17)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 62    Cell: (9, 5)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 3)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 89    Cell: (6, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 85    Cell: (9, 2)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 78    Cell: (9, 3)        BaseUnit: 2      HP: 5      Spells: [] 
+Id: 69    Cell: (9, 3)        BaseUnit: 2      HP: 5      Spells: [] 
+Id: 45    Cell: (8, 2)        BaseUnit: 0      HP: 5      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 28 started
+REMAINING TURNS TO UPGRADE: 18
+AP: 2
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 95    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (11, 17)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 82    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (9, 15)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 76    Cell: (9, 17)       BaseUnit: 2      HP: 7      Spells: [] 1st enemy
+Id: 93    Cell: (13, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 84    Cell: (12, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 92    Cell: (6, 17)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 91    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 86    Cell: (8, 17)        BaseUnit: 2      HP: 10      Spells: [] 
+Id: 62    Cell: (9, 4)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (9, 2)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 94    Cell: (4, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 89    Cell: (7, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 85    Cell: (9, 3)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 45    Cell: (8, 2)        BaseUnit: 0      HP: 5      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 29 started
+REMAINING TURNS TO UPGRADE: 17
+AP: 4
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 99    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (10, 17)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 82    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (9, 14)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 76    Cell: (9, 17)       BaseUnit: 2      HP: 2      Spells: [] 1st enemy
+Id: 93    Cell: (12, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 92    Cell: (7, 17)        BaseUnit: 5      HP: 10      Spells: [] 
+Id: 91    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 62    Cell: (9, 3)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (10, 2)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 94    Cell: (5, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 89    Cell: (8, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 85    Cell: (9, 4)        BaseUnit: 3      HP: 20      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 30 started
+REMAINING TURNS TO UPGRADE: 16
+AP: 6
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 100    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (9, 17)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 82    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (9, 13)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 98    Cell: (14, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 93    Cell: (11, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 91    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 62    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 58    Cell: (11, 2)        BaseUnit: 5      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 94    Cell: (6, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 89    Cell: (9, 2)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 85    Cell: (9, 5)        BaseUnit: 3      HP: 20      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 31 started
+REMAINING TURNS TO UPGRADE: 15
+AP: 2
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 100    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (9, 16)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 82    Cell: (9, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 80    Cell: (9, 12)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 98    Cell: (12, 2)        BaseUnit: 3      HP: 25      Spells: [None, None] 2nd enemy
+Id: 93    Cell: (10, 2)        BaseUnit: 3      HP: 17      Spells: [] 2nd enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [None, None] 2nd enemy
+
+My Units:
+Id: 97    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 91    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 62    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 96    Cell: (7, 2)        BaseUnit: 5      HP: 30      Spells: [None, None] 
+Id: 94    Cell: (8, 2)        BaseUnit: 3      HP: 25      Spells: [None, None] 
+Id: 89    Cell: (9, 3)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 85    Cell: (9, 6)        BaseUnit: 3      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 32 started
+REMAINING TURNS TO UPGRADE: 14
+AP: 4
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 100    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (9, 15)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 82    Cell: (9, 17)       BaseUnit: 1      HP: 25      Spells: [] 1st enemy
+Id: 80    Cell: (9, 11)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 101    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (10, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 93    Cell: (9, 2)        BaseUnit: 3      HP: 9      Spells: [] 2nd enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 97    Cell: (7, 17)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 91    Cell: (6, 17)        BaseUnit: 1      HP: 20      Spells: [] 
+Id: 62    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 96    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 94    Cell: (9, 3)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 89    Cell: (9, 4)        BaseUnit: 3      HP: 10      Spells: [] 
+Id: 85    Cell: (9, 7)        BaseUnit: 3      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 33 started
+REMAINING TURNS TO UPGRADE: 13
+AP: 6
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 106    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (10, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (9, 14)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 82    Cell: (9, 17)       BaseUnit: 1      HP: 20      Spells: [] 1st enemy
+Id: 80    Cell: (9, 10)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 101    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 97    Cell: (8, 17)        BaseUnit: 3      HP: 5      Spells: [] 
+Id: 91    Cell: (6, 17)        BaseUnit: 1      HP: 20      Spells: [] 
+Id: 62    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 102    Cell: (5, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 96    Cell: (9, 3)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 94    Cell: (9, 3)        BaseUnit: 3      HP: 8      Spells: [] 
+Id: 89    Cell: (9, 5)        BaseUnit: 3      HP: 10      Spells: [] 
+Id: 85    Cell: (9, 8)        BaseUnit: 3      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 34 started
+REMAINING TURNS TO UPGRADE: 12
+AP: 3
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 106    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (9, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 90    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (9, 13)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 82    Cell: (9, 17)       BaseUnit: 1      HP: 3      Spells: [] 1st enemy
+Id: 80    Cell: (9, 9)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 101    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 2)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 87    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 103    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 91    Cell: (6, 17)        BaseUnit: 1      HP: 20      Spells: [] 
+
+Friend Units:
+Id: 102    Cell: (6, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 96    Cell: (9, 4)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 89    Cell: (9, 6)        BaseUnit: 3      HP: 10      Spells: [] 
+Id: 85    Cell: (9, 9)        BaseUnit: 3      HP: 20      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 35 started
+REMAINING TURNS TO UPGRADE: 11
+AP: 5
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 106    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (9, 16)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 90    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (9, 12)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 104    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 3)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 87    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 103    Cell: (7, 17)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 91    Cell: (6, 17)        BaseUnit: 1      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 105    Cell: (5, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 102    Cell: (7, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 96    Cell: (9, 5)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 89    Cell: (9, 7)        BaseUnit: 3      HP: 10      Spells: [] 
+Id: 85    Cell: (9, 9)        BaseUnit: 3      HP: 8      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 36 started
+REMAINING TURNS TO UPGRADE: 10
+AP: 3
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 110    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (9, 15)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 90    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 88    Cell: (9, 11)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 104    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 4)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 87    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 107    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 103    Cell: (8, 17)        BaseUnit: 3      HP: 5      Spells: [] 
+Id: 91    Cell: (6, 17)        BaseUnit: 1      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 105    Cell: (6, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 102    Cell: (8, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 96    Cell: (9, 6)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 89    Cell: (9, 8)        BaseUnit: 3      HP: 10      Spells: [] 
+Id: 85    Cell: (9, 10)        BaseUnit: 3      HP: 8      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 37 started
+REMAINING TURNS TO UPGRADE: 9
+AP: 5
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 112    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (9, 14)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 90    Cell: (10, 17)       BaseUnit: 1      HP: 25      Spells: [] 1st enemy
+Id: 88    Cell: (9, 11)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 104    Cell: (11, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 5)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 87    Cell: (10, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 107    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 105    Cell: (7, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 102    Cell: (9, 2)        BaseUnit: 7      HP: 20      Spells: [] 
+Id: 96    Cell: (9, 7)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 89    Cell: (9, 9)        BaseUnit: 3      HP: 10      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 38 started
+REMAINING TURNS TO UPGRADE: 8
+AP: 2
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 112    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (9, 13)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 90    Cell: (9, 17)       BaseUnit: 1      HP: 25      Spells: [] 1st enemy
+Id: 88    Cell: (9, 11)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 109    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 104    Cell: (10, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 6)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 87    Cell: (10, 2)        BaseUnit: 1      HP: 22      Spells: [] 2nd enemy
+
+My Units:
+Id: 111    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 107    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 108    Cell: (6, 2)        BaseUnit: 1      HP: 25      Spells: [] 
+Id: 105    Cell: (8, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 102    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 96    Cell: (9, 8)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 89    Cell: (9, 10)        BaseUnit: 3      HP: 2      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 39 started
+REMAINING TURNS TO UPGRADE: 7
+AP: 4
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 116    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 112    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (10, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (9, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 99    Cell: (9, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 95    Cell: (9, 12)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 90    Cell: (9, 17)       BaseUnit: 1      HP: 17      Spells: [] 1st enemy
+Id: 88    Cell: (9, 11)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 115    Cell: (15, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 109    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 7)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 87    Cell: (10, 2)        BaseUnit: 1      HP: 1      Spells: [] 2nd enemy
+
+My Units:
+Id: 111    Cell: (6, 17)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 107    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 108    Cell: (6, 2)        BaseUnit: 1      HP: 20      Spells: [] 
+Id: 105    Cell: (8, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 96    Cell: (9, 9)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 40 started
+REMAINING TURNS TO UPGRADE: 6
+AP: 3
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 119    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 116    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 112    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (9, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 100    Cell: (9, 17)       BaseUnit: 1      HP: 22      Spells: [] 1st enemy
+Id: 99    Cell: (9, 17)       BaseUnit: 1      HP: 22      Spells: [] 1st enemy
+Id: 95    Cell: (9, 11)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 90    Cell: (9, 17)       BaseUnit: 1      HP: 9      Spells: [] 1st enemy
+Id: 88    Cell: (9, 10)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 115    Cell: (14, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 109    Cell: (11, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 3)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 8)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 114    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 107    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 113    Cell: (5, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 108    Cell: (6, 2)        BaseUnit: 1      HP: 15      Spells: [] 
+Id: 105    Cell: (8, 2)        BaseUnit: 7      HP: 20      Spells: [] 
+Id: 96    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 41 started
+REMAINING TURNS TO UPGRADE: 5
+AP: 5
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 119    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 116    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 112    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (9, 16)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 16)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 16)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 10)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 88    Cell: (9, 9)       BaseUnit: 7      HP: 5      Spells: [] 1st enemy
+Id: 117    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (13, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 109    Cell: (10, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 4)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 9)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 114    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 107    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 113    Cell: (6, 2)        BaseUnit: 3      HP: 21      Spells: [] 
+Id: 108    Cell: (7, 2)        BaseUnit: 1      HP: 11      Spells: [] 
+Id: 105    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 96    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 42 started
+REMAINING TURNS TO UPGRADE: 4
+AP: 2
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 122    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 116    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 112    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (9, 15)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 15)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 15)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 9)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 117    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (12, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 109    Cell: (9, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 5)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (11, 2)        BaseUnit: 2      HP: 7      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 10)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 120    Cell: (5, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 114    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 107    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 113    Cell: (7, 2)        BaseUnit: 3      HP: 21      Spells: [] 
+Id: 108    Cell: (7, 2)        BaseUnit: 1      HP: 11      Spells: [] 
+Id: 96    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 43 started
+REMAINING TURNS TO UPGRADE: 3
+AP: 4
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 122    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 116    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 112    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (9, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (9, 14)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 14)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 14)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 8)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 117    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (11, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 109    Cell: (9, 2)        BaseUnit: 7      HP: 20      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 6)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 101    Cell: (10, 2)        BaseUnit: 2      HP: 2      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 11)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 120    Cell: (6, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 114    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 107    Cell: (9, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 118    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 113    Cell: (8, 2)        BaseUnit: 3      HP: 13      Spells: [] 
+Id: 108    Cell: (7, 2)        BaseUnit: 1      HP: 3      Spells: [] 
+Id: 96    Cell: (9, 11)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 44 started
+REMAINING TURNS TO UPGRADE: 2
+AP: 3
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 125    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 116    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 112    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (9, 16)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (9, 13)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 13)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 13)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 7)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 121    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 117    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (10, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 109    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 7)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 12)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 123    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 120    Cell: (7, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 114    Cell: (9, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 107    Cell: (9, 16)        BaseUnit: 7      HP: 25      Spells: [] 
+
+Friend Units:
+Id: 118    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 113    Cell: (9, 2)        BaseUnit: 3      HP: 8      Spells: [] 
+Id: 96    Cell: (9, 12)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 45 started
+REMAINING TURNS TO UPGRADE: 1
+AP: 5
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 125    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 116    Cell: (10, 17)       BaseUnit: 1      HP: 22      Spells: [] 1st enemy
+Id: 112    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (9, 15)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (9, 12)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 12)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 12)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 6)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 121    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 117    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (10, 2)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 8)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 98    Cell: (9, 13)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 123    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 120    Cell: (8, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 114    Cell: (9, 17)        BaseUnit: 7      HP: 25      Spells: [] 
+Id: 107    Cell: (9, 15)        BaseUnit: 7      HP: 25      Spells: [] 
+
+Friend Units:
+Id: 118    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 96    Cell: (9, 13)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 46 started
+REMAINING TURNS TO UPGRADE: 23
+AP: 2
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 125    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 116    Cell: (9, 17)       BaseUnit: 1      HP: 14      Spells: [] 1st enemy
+Id: 112    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 110    Cell: (9, 14)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 106    Cell: (9, 11)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 11)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 11)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 5)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 129    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 2)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 9)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (16, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 123    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 120    Cell: (9, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 114    Cell: (9, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 107    Cell: (9, 15)        BaseUnit: 7      HP: 25      Spells: [] 
+Id: 130    Cell: (3, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 118    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 96    Cell: (9, 14)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 128    Cell: (3, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 47 started
+REMAINING TURNS TO UPGRADE: 22
+AP: 4
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 125    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (9, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 112    Cell: (10, 17)       BaseUnit: 5      HP: 25      Spells: [] 1st enemy
+Id: 110    Cell: (9, 13)       BaseUnit: 7      HP: 25      Spells: [] 1st enemy
+Id: 106    Cell: (9, 10)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 10)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 10)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 4)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 129    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 3)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 10)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (15, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 123    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 120    Cell: (9, 17)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 107    Cell: (9, 15)        BaseUnit: 7      HP: 25      Spells: [] 
+Id: 130    Cell: (4, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 118    Cell: (7, 2)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 96    Cell: (9, 14)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 132    Cell: (3, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 128    Cell: (4, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 48 started
+REMAINING TURNS TO UPGRADE: 21
+AP: 6
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 125    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (9, 16)       BaseUnit: 1      HP: 14      Spells: [] 1st enemy
+Id: 112    Cell: (10, 17)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 12)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 9)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 9)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 9)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 3)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 133    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 4)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 11)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (16, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (14, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 123    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 120    Cell: (9, 17)        BaseUnit: 5      HP: 5      Spells: [] 
+Id: 107    Cell: (9, 15)        BaseUnit: 7      HP: 25      Spells: [] 
+Id: 130    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 118    Cell: (8, 2)        BaseUnit: 2      HP: 10      Spells: [] 
+Id: 96    Cell: (9, 14)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 132    Cell: (4, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 128    Cell: (5, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 49 started
+REMAINING TURNS TO UPGRADE: 20
+AP: 3
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 119    Cell: (9, 15)       BaseUnit: 1      HP: 6      Spells: [] 1st enemy
+Id: 112    Cell: (10, 17)       BaseUnit: 5      HP: 15      Spells: [] 1st enemy
+Id: 110    Cell: (9, 11)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 8)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 8)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 8)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 95    Cell: (9, 2)       BaseUnit: 3      HP: 15      Spells: [] 1st enemy
+Id: 133    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 3)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 5)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 12)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 136    Cell: (16, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (15, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 123    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 107    Cell: (9, 15)        BaseUnit: 7      HP: 25      Spells: [] 
+Id: 135    Cell: (3, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 130    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 118    Cell: (8, 2)        BaseUnit: 2      HP: 5      Spells: [] 
+Id: 96    Cell: (9, 15)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 132    Cell: (5, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 128    Cell: (6, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 50 started
+REMAINING TURNS TO UPGRADE: 19
+AP: 5
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 112    Cell: (9, 17)       BaseUnit: 5      HP: 15      Spells: [] 1st enemy
+Id: 110    Cell: (9, 10)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 7)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 7)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 7)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 133    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 4)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 6)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 13)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 136    Cell: (15, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 123    Cell: (9, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 107    Cell: (9, 15)        BaseUnit: 7      HP: 25      Spells: [] 
+Id: 135    Cell: (4, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 130    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 96    Cell: (9, 16)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 137    Cell: (3, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 132    Cell: (5, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 128    Cell: (7, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 51 started
+REMAINING TURNS TO UPGRADE: 18
+AP: 7
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 112    Cell: (9, 17)       BaseUnit: 5      HP: 5      Spells: [] 1st enemy
+Id: 110    Cell: (9, 9)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 6)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 6)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 6)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 138    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 5)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 7)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 14)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 139    Cell: (16, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (11, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 107    Cell: (9, 14)        BaseUnit: 7      HP: 25      Spells: [] 
+Id: 135    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 130    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 137    Cell: (4, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 132    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 128    Cell: (8, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 52 started
+REMAINING TURNS TO UPGRADE: 17
+AP: 3
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 8)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 5)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 5)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 5)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 138    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 6)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 8)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 15)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 139    Cell: (15, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (10, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 141    Cell: (3, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 130    Cell: (9, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 140    Cell: (3, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 137    Cell: (5, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 132    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 128    Cell: (9, 2)        BaseUnit: 3      HP: 12      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 53 started
+REMAINING TURNS TO UPGRADE: 16
+AP: 5
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 7)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 4)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 5)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 5)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 142    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 138    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 7)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 25      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 9)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 16)        BaseUnit: 7      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (10, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 141    Cell: (4, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 130    Cell: (9, 16)        BaseUnit: 7      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 140    Cell: (4, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 137    Cell: (6, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 132    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 54 started
+REMAINING TURNS TO UPGRADE: 15
+AP: 7
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 6)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 3)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 4)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 4)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 143    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 142    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 138    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 8)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 20      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 10)        BaseUnit: 3      HP: 13      Spells: [] 2nd enemy
+Id: 104    Cell: (9, 17)        BaseUnit: 7      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (16, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (10, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 141    Cell: (5, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 140    Cell: (5, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 137    Cell: (7, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 132    Cell: (7, 2)        BaseUnit: 1      HP: 25      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 55 started
+REMAINING TURNS TO UPGRADE: 14
+AP: 3
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 125    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 5)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (9, 2)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 4)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 4)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 143    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 142    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 138    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (9, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 8)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (11, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 115    Cell: (9, 11)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 104    Cell: (8, 17)        BaseUnit: 7      HP: 15      Spells: [] 2nd enemy
+Id: 144    Cell: (15, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (10, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 146    Cell: (3, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 141    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 135    Cell: (9, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 140    Cell: (6, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 56 started
+REMAINING TURNS TO UPGRADE: 13
+AP: 2
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 125    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 4)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (8, 2)       BaseUnit: 3      HP: 13      Spells: [] 1st enemy
+Id: 100    Cell: (9, 3)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 3)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 143    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 142    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 138    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (9, 16)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 8)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (10, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 104    Cell: (8, 17)        BaseUnit: 7      HP: 5      Spells: [] 2nd enemy
+Id: 148    Cell: (16, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (14, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 3)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 3)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 147    Cell: (3, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 146    Cell: (4, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 141    Cell: (7, 17)        BaseUnit: 3      HP: 17      Spells: [] 
+Id: 135    Cell: (9, 16)        BaseUnit: 7      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 140    Cell: (7, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 57 started
+REMAINING TURNS TO UPGRADE: 12
+AP: 4
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 125    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 3)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 106    Cell: (7, 2)       BaseUnit: 3      HP: 3      Spells: [] 1st enemy
+Id: 100    Cell: (9, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 150    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 142    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 138    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (9, 15)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 8)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 148    Cell: (15, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (13, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 3)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 4)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 4)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 146    Cell: (5, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 141    Cell: (8, 17)        BaseUnit: 3      HP: 9      Spells: [] 
+
+Friend Units:
+Id: 145    Cell: (5, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 140    Cell: (8, 2)        BaseUnit: 5      HP: 20      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 58 started
+REMAINING TURNS TO UPGRADE: 11
+AP: 2
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (9, 16)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (9, 2)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 100    Cell: (9, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 151    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 150    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 142    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 138    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (9, 14)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 9)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 153    Cell: (16, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (12, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 4)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 5)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 5)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 147    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 146    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 141    Cell: (9, 17)        BaseUnit: 3      HP: 1      Spells: [] 
+
+Friend Units:
+Id: 145    Cell: (6, 2)        BaseUnit: 3      HP: 10      Spells: [] 
+Id: 140    Cell: (9, 2)        BaseUnit: 5      HP: 10      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 59 started
+REMAINING TURNS TO UPGRADE: 10
+AP: 4
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (9, 15)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 110    Cell: (8, 2)       BaseUnit: 7      HP: 15      Spells: [] 1st enemy
+Id: 100    Cell: (9, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (9, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 151    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 150    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 142    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 138    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (9, 13)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 121    Cell: (9, 10)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 153    Cell: (15, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (11, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 5)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 6)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 6)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 147    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 146    Cell: (7, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+
+Friend Units:
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 60 started
+REMAINING TURNS TO UPGRADE: 9
+AP: 6
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (9, 14)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 17)       BaseUnit: 2      HP: 15      Spells: [] 1st enemy
+Id: 110    Cell: (7, 2)       BaseUnit: 7      HP: 5      Spells: [] 1st enemy
+Id: 100    Cell: (8, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 99    Cell: (8, 2)       BaseUnit: 1      HP: 10      Spells: [] 1st enemy
+Id: 155    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 150    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 142    Cell: (9, 17)       BaseUnit: 2      HP: 15      Spells: [] 1st enemy
+Id: 138    Cell: (9, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 133    Cell: (9, 12)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 129    Cell: (9, 17)       BaseUnit: 2      HP: 15      Spells: [] 1st enemy
+Id: 121    Cell: (9, 11)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 3)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 156    Cell: (16, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (10, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 6)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 7)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 7)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 147    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 146    Cell: (8, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+
+Friend Units:
+Id: 149    Cell: (6, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 61 started
+REMAINING TURNS TO UPGRADE: 8
+AP: 2
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 125    Cell: (9, 13)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 16)       BaseUnit: 2      HP: 6      Spells: [] 1st enemy
+Id: 100    Cell: (7, 2)       BaseUnit: 1      HP: 2      Spells: [] 1st enemy
+Id: 99    Cell: (7, 2)       BaseUnit: 1      HP: 2      Spells: [] 1st enemy
+Id: 155    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 150    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (9, 17)       BaseUnit: 5      HP: 26      Spells: [] 1st enemy
+Id: 142    Cell: (9, 16)       BaseUnit: 2      HP: 6      Spells: [] 1st enemy
+Id: 138    Cell: (9, 17)       BaseUnit: 7      HP: 16      Spells: [] 1st enemy
+Id: 133    Cell: (9, 11)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 121    Cell: (9, 12)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 4)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 156    Cell: (15, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 7)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 8)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 8)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 152    Cell: (5, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (6, 17)        BaseUnit: 1      HP: 26      Spells: [] 
+Id: 146    Cell: (8, 17)        BaseUnit: 3      HP: 17      Spells: [] 
+
+Friend Units:
+Id: 149    Cell: (6, 2)        BaseUnit: 7      HP: 20      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 62 started
+REMAINING TURNS TO UPGRADE: 7
+AP: 4
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 125    Cell: (9, 12)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 15)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 159    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 155    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 150    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (9, 16)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 15)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 138    Cell: (9, 17)       BaseUnit: 7      HP: 6      Spells: [] 1st enemy
+Id: 133    Cell: (9, 10)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 121    Cell: (9, 13)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 5)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 156    Cell: (14, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 3)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 8)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 9)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 9)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 152    Cell: (5, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (6, 17)        BaseUnit: 1      HP: 26      Spells: [] 
+Id: 146    Cell: (9, 17)        BaseUnit: 3      HP: 9      Spells: [] 
+
+Friend Units:
+Id: 154    Cell: (5, 2)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 149    Cell: (6, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 63 started
+REMAINING TURNS TO UPGRADE: 6
+AP: 3
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 125    Cell: (9, 11)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 14)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 159    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 155    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 150    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (9, 15)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 14)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 9)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 121    Cell: (9, 14)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 6)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 161    Cell: (16, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 156    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 4)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 9)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 10)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 157    Cell: (5, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 152    Cell: (5, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (7, 17)        BaseUnit: 1      HP: 26      Spells: [] 
+
+Friend Units:
+Id: 154    Cell: (6, 2)        BaseUnit: 3      HP: 15      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 64 started
+REMAINING TURNS TO UPGRADE: 5
+AP: 2
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (9, 10)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 13)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 163    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 159    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 155    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 150    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 143    Cell: (9, 14)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 13)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 8)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 121    Cell: (9, 15)        BaseUnit: 2      HP: 8      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 7)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 161    Cell: (15, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 156    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (10, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 5)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 11)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 11)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 160    Cell: (4, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 157    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (8, 17)        BaseUnit: 1      HP: 26      Spells: [] 
+
+Friend Units:
+Id: 158    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 154    Cell: (7, 2)        BaseUnit: 3      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 65 started
+REMAINING TURNS TO UPGRADE: 4
+AP: 4
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (9, 9)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 12)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 163    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 159    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 155    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (9, 17)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 150    Cell: (10, 17)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 13)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 12)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 7)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 121    Cell: (9, 16)        BaseUnit: 2      HP: 3      Spells: [] 2nd enemy
+Id: 117    Cell: (9, 8)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 165    Cell: (16, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 161    Cell: (14, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 156    Cell: (11, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 3)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 6)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 3)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 11)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 12)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 12)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 160    Cell: (5, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 157    Cell: (7, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (8, 17)        BaseUnit: 1      HP: 18      Spells: [] 
+
+Friend Units:
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 154    Cell: (8, 2)        BaseUnit: 3      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 66 started
+REMAINING TURNS TO UPGRADE: 3
+AP: 6
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 125    Cell: (9, 8)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 11)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 167    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 163    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 159    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 155    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (9, 16)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 150    Cell: (10, 17)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 143    Cell: (9, 12)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 11)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 6)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 117    Cell: (9, 9)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 168    Cell: (16, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (15, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 161    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 156    Cell: (10, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 3)        BaseUnit: 5      HP: 20      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 4)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 7)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 4)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 12)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 13)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 13)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 160    Cell: (6, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 157    Cell: (8, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (8, 17)        BaseUnit: 1      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 162    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 154    Cell: (9, 2)        BaseUnit: 3      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 67 started
+REMAINING TURNS TO UPGRADE: 2
+AP: 2
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 125    Cell: (9, 7)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 10)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 167    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 163    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 159    Cell: (11, 17)       BaseUnit: 2      HP: 15      Spells: [] 1st enemy
+Id: 155    Cell: (9, 17)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 151    Cell: (9, 15)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 11)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 10)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 5)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 117    Cell: (9, 10)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 168    Cell: (15, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 161    Cell: (12, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 156    Cell: (10, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 4)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 5)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 8)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 5)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 13)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 14)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 14)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 164    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 160    Cell: (7, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 157    Cell: (9, 17)        BaseUnit: 3      HP: 17      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (8, 17)        BaseUnit: 1      HP: 2      Spells: [] 
+
+Friend Units:
+Id: 166    Cell: (4, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 154    Cell: (9, 3)        BaseUnit: 3      HP: 7      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 68 started
+REMAINING TURNS TO UPGRADE: 1
+AP: 4
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 125    Cell: (9, 6)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 9)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 167    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 163    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 159    Cell: (11, 17)       BaseUnit: 2      HP: 10      Spells: [] 1st enemy
+Id: 155    Cell: (9, 16)       BaseUnit: 5      HP: 10      Spells: [] 1st enemy
+Id: 151    Cell: (9, 14)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 10)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 9)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 5)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 117    Cell: (9, 11)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 168    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 161    Cell: (11, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 156    Cell: (10, 2)        BaseUnit: 7      HP: 10      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 5)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 6)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 9)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 6)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 14)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 15)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 15)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 164    Cell: (7, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 160    Cell: (8, 17)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 157    Cell: (9, 16)        BaseUnit: 3      HP: 17      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (8, 17)        BaseUnit: 1      HP: 2      Spells: [] 
+
+Friend Units:
+Id: 166    Cell: (5, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 69 started
+REMAINING TURNS TO UPGRADE: 23
+AP: 2
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 125    Cell: (9, 5)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 8)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 172    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 167    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 163    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 151    Cell: (9, 13)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 9)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 8)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 4)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 117    Cell: (9, 11)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 174    Cell: (16, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 168    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 161    Cell: (10, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 6)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 7)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 10)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 7)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 15)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 16)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 15)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 170    Cell: (5, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 164    Cell: (7, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (8, 17)        BaseUnit: 1      HP: 2      Spells: [] 
+
+Friend Units:
+Id: 169    Cell: (5, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 166    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 70 started
+REMAINING TURNS TO UPGRADE: 22
+AP: 4
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 125    Cell: (9, 4)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 7)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 172    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 167    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 163    Cell: (11, 17)       BaseUnit: 2      HP: 15      Spells: [] 1st enemy
+Id: 151    Cell: (9, 12)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 8)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 7)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 133    Cell: (9, 3)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 117    Cell: (9, 12)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 174    Cell: (15, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 168    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 161    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 7)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 8)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 11)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 8)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (9, 16)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (9, 17)        BaseUnit: 5      HP: 20      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 16)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 170    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 164    Cell: (8, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+Id: 147    Cell: (8, 17)        BaseUnit: 1      HP: 2      Spells: [] 
+
+Friend Units:
+Id: 169    Cell: (6, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 71 started
+REMAINING TURNS TO UPGRADE: 21
+AP: 3
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 125    Cell: (9, 3)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 5)       BaseUnit: 2      HP: 1      Spells: [None] 1st enemy
+Id: 172    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 167    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 163    Cell: (10, 17)       BaseUnit: 2      HP: 5      Spells: [] 1st enemy
+Id: 151    Cell: (9, 11)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 6)       BaseUnit: 5      HP: 16      Spells: [None] 1st enemy
+Id: 142    Cell: (9, 5)       BaseUnit: 2      HP: 1      Spells: [None] 1st enemy
+Id: 133    Cell: (9, 2)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 117    Cell: (9, 13)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 177    Cell: (16, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 174    Cell: (14, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 168    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (11, 2)        BaseUnit: 2      HP: 15      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 9)        BaseUnit: 5      HP: 10      Spells: [None] 2nd enemy
+Id: 148    Cell: (9, 10)        BaseUnit: 2      HP: 20      Spells: [None] 2nd enemy
+Id: 144    Cell: (9, 12)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 10)        BaseUnit: 2      HP: 20      Spells: [None] 2nd enemy
+Id: 136    Cell: (9, 17)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 134    Cell: (8, 17)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 16)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 173    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 170    Cell: (7, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 164    Cell: (8, 17)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+
+Friend Units:
+Id: 171    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 169    Cell: (8, 2)        BaseUnit: 5      HP: 20      Spells: [None] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 22      Spells: [None] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [None] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [None] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 72 started
+REMAINING TURNS TO UPGRADE: 20
+AP: 5
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 125    Cell: (9, 2)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 122    Cell: (9, 5)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 179    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 167    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (9, 10)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 4)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 5)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 117    Cell: (9, 13)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 177    Cell: (15, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 174    Cell: (13, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 168    Cell: (10, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (11, 2)        BaseUnit: 2      HP: 10      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 11)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 12)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 13)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 12)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 136    Cell: (8, 17)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 16)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 173    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 170    Cell: (8, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+
+Friend Units:
+Id: 175    Cell: (4, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 171    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 73 started
+REMAINING TURNS TO UPGRADE: 19
+AP: 2
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 122    Cell: (9, 4)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 179    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 167    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (9, 9)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 3)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 4)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 117    Cell: (9, 13)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 181    Cell: (16, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 177    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 174    Cell: (12, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 168    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 165    Cell: (10, 2)        BaseUnit: 2      HP: 5      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 12)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 13)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 14)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 13)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 16)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+
+My Units:
+Id: 176    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 173    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+
+Friend Units:
+Id: 175    Cell: (5, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 171    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 74 started
+REMAINING TURNS TO UPGRADE: 18
+AP: 4
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 122    Cell: (9, 3)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 182    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 179    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 167    Cell: (9, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 151    Cell: (9, 8)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 143    Cell: (9, 2)       BaseUnit: 5      HP: 16      Spells: [] 1st enemy
+Id: 142    Cell: (9, 3)       BaseUnit: 2      HP: 1      Spells: [] 1st enemy
+Id: 181    Cell: (15, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 177    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 174    Cell: (11, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 13)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 14)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 15)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 14)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 131    Cell: (9, 17)        BaseUnit: 7      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 176    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 173    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+
+Friend Units:
+Id: 175    Cell: (6, 2)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 171    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 75 started
+REMAINING TURNS TO UPGRADE: 17
+AP: 3
+HAND: 8 0 4 6 1 
+Enemy Units:
+Id: 182    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 179    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (10, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 167    Cell: (9, 16)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 151    Cell: (9, 7)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 181    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 177    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 174    Cell: (10, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 14)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 15)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 16)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 15)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 180    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 176    Cell: (7, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 173    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+
+Friend Units:
+Id: 178    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 171    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 1 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 76 started
+REMAINING TURNS TO UPGRADE: 16
+AP: 2
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 185    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 182    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 179    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (9, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 151    Cell: (9, 6)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 187    Cell: (16, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 181    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 177    Cell: (11, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 174    Cell: (9, 2)        BaseUnit: 3      HP: 15      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 15)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 16)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (9, 17)        BaseUnit: 3      HP: 20      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 16)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 184    Cell: (4, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 180    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 176    Cell: (7, 17)        BaseUnit: 1      HP: 25      Spells: [] 
+Id: 173    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 152    Cell: (6, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+
+Friend Units:
+Id: 178    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 171    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 77 started
+REMAINING TURNS TO UPGRADE: 15
+AP: 4
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 189    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 182    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 179    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (9, 16)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 151    Cell: (9, 5)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 190    Cell: (16, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 187    Cell: (15, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 181    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 177    Cell: (10, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 174    Cell: (9, 3)        BaseUnit: 3      HP: 5      Spells: [] 2nd enemy
+Id: 153    Cell: (9, 16)        BaseUnit: 5      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 16)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 144    Cell: (8, 17)        BaseUnit: 3      HP: 15      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 16)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 184    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 180    Cell: (7, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 176    Cell: (7, 17)        BaseUnit: 1      HP: 20      Spells: [] 
+Id: 173    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 152    Cell: (7, 17)        BaseUnit: 2      HP: 16      Spells: [] 
+
+Friend Units:
+Id: 183    Cell: (5, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 178    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 171    Cell: (7, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 78 started
+REMAINING TURNS TO UPGRADE: 14
+AP: 6
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 189    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 182    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 179    Cell: (10, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (9, 15)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 190    Cell: (15, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 187    Cell: (14, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 181    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 177    Cell: (9, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 16)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 16)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 184    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 176    Cell: (7, 17)        BaseUnit: 1      HP: 15      Spells: [] 
+Id: 173    Cell: (7, 17)        BaseUnit: 2      HP: 15      Spells: [] 
+
+Friend Units:
+Id: 188    Cell: (4, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 183    Cell: (6, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 178    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 171    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 79 started
+REMAINING TURNS TO UPGRADE: 13
+AP: 3
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 189    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 182    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 179    Cell: (9, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 172    Cell: (9, 14)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 190    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 187    Cell: (13, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 177    Cell: (9, 2)        BaseUnit: 2      HP: 10      Spells: [] 2nd enemy
+Id: 148    Cell: (9, 17)        BaseUnit: 2      HP: 15      Spells: [] 2nd enemy
+Id: 139    Cell: (9, 17)        BaseUnit: 2      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 186    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 184    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 176    Cell: (7, 17)        BaseUnit: 1      HP: 10      Spells: [] 
+Id: 173    Cell: (8, 17)        BaseUnit: 2      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 188    Cell: (5, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 183    Cell: (7, 2)        BaseUnit: 7      HP: 20      Spells: [] 
+Id: 178    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 171    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (8, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 80 started
+REMAINING TURNS TO UPGRADE: 12
+AP: 2
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 194    Cell: (16, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 189    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 182    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 179    Cell: (9, 17)       BaseUnit: 3      HP: 10      Spells: [] 1st enemy
+Id: 172    Cell: (9, 13)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 196    Cell: (16, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 190    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 187    Cell: (12, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+
+My Units:
+Id: 192    Cell: (4, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 186    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 184    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 176    Cell: (7, 17)        BaseUnit: 1      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 191    Cell: (5, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 188    Cell: (6, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 183    Cell: (7, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 178    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 171    Cell: (9, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 14      Spells: [] 
+Id: 162    Cell: (9, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 158    Cell: (9, 2)        BaseUnit: 2      HP: 20      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 81 started
+REMAINING TURNS TO UPGRADE: 11
+AP: 4
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 194    Cell: (15, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 189    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 182    Cell: (9, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 172    Cell: (9, 12)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 198    Cell: (16, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 196    Cell: (15, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 190    Cell: (13, 2)        BaseUnit: 1      HP: 28      Spells: [None] 2nd enemy
+Id: 187    Cell: (11, 2)        BaseUnit: 3      HP: 18      Spells: [None] 2nd enemy
+
+My Units:
+Id: 192    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 186    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 184    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 193    Cell: (4, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (6, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 188    Cell: (7, 2)        BaseUnit: 2      HP: 18      Spells: [None] 
+Id: 183    Cell: (8, 2)        BaseUnit: 7      HP: 8      Spells: [None] 
+Id: 178    Cell: (7, 2)        BaseUnit: 1      HP: 28      Spells: [None] 
+Id: 171    Cell: (9, 3)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 12      Spells: [None] 
+Id: 162    Cell: (9, 3)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 158    Cell: (9, 3)        BaseUnit: 2      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 82 started
+REMAINING TURNS TO UPGRADE: 10
+AP: 6
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 199    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 194    Cell: (14, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 189    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 182    Cell: (9, 17)       BaseUnit: 2      HP: 10      Spells: [] 1st enemy
+Id: 172    Cell: (9, 11)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 198    Cell: (15, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 196    Cell: (14, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 190    Cell: (12, 2)        BaseUnit: 1      HP: 26      Spells: [None] 2nd enemy
+Id: 187    Cell: (10, 2)        BaseUnit: 3      HP: 6      Spells: [None] 2nd enemy
+
+My Units:
+Id: 192    Cell: (6, 17)        BaseUnit: 7      HP: 20      Spells: [] 
+Id: 186    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 184    Cell: (6, 17)        BaseUnit: 1      HP: 25      Spells: [] 
+
+Friend Units:
+Id: 193    Cell: (5, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (7, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 188    Cell: (8, 2)        BaseUnit: 2      HP: 16      Spells: [None] 
+Id: 183    Cell: (9, 2)        BaseUnit: 7      HP: 6      Spells: [None] 
+Id: 178    Cell: (7, 2)        BaseUnit: 1      HP: 26      Spells: [None] 
+Id: 171    Cell: (9, 4)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 10      Spells: [None] 
+Id: 162    Cell: (9, 4)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 158    Cell: (9, 4)        BaseUnit: 2      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 83 started
+REMAINING TURNS TO UPGRADE: 9
+AP: 3
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 199    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 194    Cell: (13, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 189    Cell: (10, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 172    Cell: (9, 10)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 201    Cell: (16, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 198    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 196    Cell: (13, 2)        BaseUnit: 7      HP: 30      Spells: [] 2nd enemy
+Id: 190    Cell: (12, 2)        BaseUnit: 1      HP: 24      Spells: [] 2nd enemy
+
+My Units:
+Id: 195    Cell: (6, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (7, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 186    Cell: (5, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 184    Cell: (6, 17)        BaseUnit: 1      HP: 20      Spells: [] 
+
+Friend Units:
+Id: 193    Cell: (6, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (8, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 188    Cell: (9, 2)        BaseUnit: 2      HP: 9      Spells: [] 
+Id: 183    Cell: (9, 2)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 178    Cell: (7, 2)        BaseUnit: 1      HP: 24      Spells: [] 
+Id: 171    Cell: (9, 5)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 8      Spells: [] 
+Id: 162    Cell: (9, 5)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 158    Cell: (9, 5)        BaseUnit: 2      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 84 started
+REMAINING TURNS TO UPGRADE: 8
+AP: 5
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 203    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 194    Cell: (12, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 189    Cell: (10, 17)       BaseUnit: 1      HP: 25      Spells: [] 1st enemy
+Id: 185    Cell: (9, 16)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 172    Cell: (9, 9)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 201    Cell: (15, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 198    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 196    Cell: (12, 2)        BaseUnit: 7      HP: 20      Spells: [] 2nd enemy
+Id: 190    Cell: (12, 2)        BaseUnit: 1      HP: 19      Spells: [] 2nd enemy
+
+My Units:
+Id: 195    Cell: (7, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (8, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 186    Cell: (6, 17)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 184    Cell: (6, 17)        BaseUnit: 1      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 197    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 193    Cell: (7, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 188    Cell: (9, 2)        BaseUnit: 2      HP: 4      Spells: [] 
+Id: 183    Cell: (9, 3)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 178    Cell: (8, 2)        BaseUnit: 1      HP: 24      Spells: [] 
+Id: 171    Cell: (9, 6)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 8      Spells: [] 
+Id: 162    Cell: (9, 6)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 158    Cell: (9, 6)        BaseUnit: 2      HP: 15      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 85 started
+REMAINING TURNS TO UPGRADE: 7
+AP: 2
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 203    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 194    Cell: (11, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 189    Cell: (10, 17)       BaseUnit: 1      HP: 7      Spells: [] 1st enemy
+Id: 185    Cell: (9, 15)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 172    Cell: (9, 8)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 201    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 198    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 196    Cell: (11, 2)        BaseUnit: 7      HP: 10      Spells: [] 2nd enemy
+Id: 190    Cell: (12, 2)        BaseUnit: 1      HP: 9      Spells: [] 2nd enemy
+
+My Units:
+Id: 200    Cell: (5, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 195    Cell: (8, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (8, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 186    Cell: (6, 17)        BaseUnit: 1      HP: 20      Spells: [] 
+
+Friend Units:
+Id: 197    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 193    Cell: (8, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 3)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 4)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 178    Cell: (8, 2)        BaseUnit: 1      HP: 24      Spells: [] 
+Id: 171    Cell: (9, 7)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 8      Spells: [] 
+Id: 162    Cell: (9, 7)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 158    Cell: (9, 7)        BaseUnit: 2      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 86 started
+REMAINING TURNS TO UPGRADE: 6
+AP: 4
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 205    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 203    Cell: (14, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 194    Cell: (10, 17)       BaseUnit: 3      HP: 25      Spells: [] 1st enemy
+Id: 185    Cell: (9, 14)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 172    Cell: (9, 8)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 206    Cell: (16, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 201    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 198    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 196    Cell: (10, 2)        BaseUnit: 7      HP: 10      Spells: [] 2nd enemy
+
+My Units:
+Id: 200    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 195    Cell: (9, 17)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (8, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 186    Cell: (6, 17)        BaseUnit: 1      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 197    Cell: (8, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 193    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 4)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 5)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 178    Cell: (8, 2)        BaseUnit: 1      HP: 19      Spells: [] 
+Id: 171    Cell: (9, 8)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 8      Spells: [] 
+Id: 162    Cell: (9, 8)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 158    Cell: (9, 8)        BaseUnit: 2      HP: 3      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 87 started
+REMAINING TURNS TO UPGRADE: 5
+AP: 6
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 205    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 203    Cell: (13, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (11, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 194    Cell: (9, 17)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 185    Cell: (9, 13)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 172    Cell: (9, 8)       BaseUnit: 3      HP: 20      Spells: [] 1st enemy
+Id: 206    Cell: (15, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 201    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 198    Cell: (12, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+Id: 196    Cell: (10, 2)        BaseUnit: 7      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 200    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 195    Cell: (9, 16)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (8, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 186    Cell: (6, 17)        BaseUnit: 1      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 202    Cell: (6, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 197    Cell: (8, 2)        BaseUnit: 1      HP: 17      Spells: [] 
+Id: 193    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 5)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 6)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 178    Cell: (8, 2)        BaseUnit: 1      HP: 6      Spells: [] 
+Id: 171    Cell: (9, 9)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 8      Spells: [] 
+Id: 162    Cell: (9, 9)        BaseUnit: 2      HP: 15      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 88 started
+REMAINING TURNS TO UPGRADE: 4
+AP: 2
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 209    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 205    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 203    Cell: (12, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (10, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 185    Cell: (9, 12)       BaseUnit: 5      HP: 10      Spells: [] 1st enemy
+Id: 172    Cell: (9, 8)       BaseUnit: 3      HP: 12      Spells: [] 1st enemy
+Id: 211    Cell: (16, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 206    Cell: (14, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 201    Cell: (12, 2)        BaseUnit: 1      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 204    Cell: (6, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 200    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 195    Cell: (9, 15)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (8, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 207    Cell: (4, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 202    Cell: (7, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 193    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 6)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 6)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 171    Cell: (9, 9)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 8      Spells: [] 
+Id: 162    Cell: (9, 9)        BaseUnit: 2      HP: 3      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 89 started
+REMAINING TURNS TO UPGRADE: 3
+AP: 4
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 209    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 205    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 203    Cell: (11, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 172    Cell: (9, 8)       BaseUnit: 3      HP: 4      Spells: [] 1st enemy
+Id: 212    Cell: (16, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (15, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 206    Cell: (13, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 201    Cell: (11, 2)        BaseUnit: 1      HP: 10      Spells: [] 2nd enemy
+
+My Units:
+Id: 204    Cell: (7, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 200    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 195    Cell: (9, 14)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (9, 17)        BaseUnit: 7      HP: 10      Spells: [] 
+
+Friend Units:
+Id: 207    Cell: (5, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 202    Cell: (8, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 193    Cell: (9, 3)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 7)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 6)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 171    Cell: (9, 9)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 8      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 90 started
+REMAINING TURNS TO UPGRADE: 2
+AP: 2
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 213    Cell: (16, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 205    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 203    Cell: (10, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 211    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 206    Cell: (12, 2)        BaseUnit: 3      HP: 25      Spells: [] 2nd enemy
+Id: 201    Cell: (11, 2)        BaseUnit: 1      HP: 5      Spells: [] 2nd enemy
+
+My Units:
+Id: 210    Cell: (5, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 204    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 200    Cell: (8, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 195    Cell: (9, 13)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 192    Cell: (9, 17)        BaseUnit: 7      HP: 5      Spells: [] 
+
+Friend Units:
+Id: 207    Cell: (6, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 202    Cell: (9, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 193    Cell: (9, 4)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 8)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 6)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 171    Cell: (9, 10)        BaseUnit: 2      HP: 3      Spells: [] 
+Id: 166    Cell: (7, 2)        BaseUnit: 1      HP: 3      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 91 started
+REMAINING TURNS TO UPGRADE: 1
+AP: 4
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 216    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (15, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 205    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 203    Cell: (9, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 212    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 206    Cell: (11, 2)        BaseUnit: 3      HP: 19      Spells: [None] 2nd enemy
+
+My Units:
+Id: 210    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 204    Cell: (9, 17)        BaseUnit: 7      HP: 24      Spells: [None] 
+Id: 200    Cell: (9, 17)        BaseUnit: 7      HP: 24      Spells: [None] 
+Id: 195    Cell: (9, 12)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 208    Cell: (6, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 207    Cell: (7, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 202    Cell: (9, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 193    Cell: (9, 5)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 9)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 7)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 171    Cell: (9, 11)        BaseUnit: 2      HP: 3      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 92 started
+REMAINING TURNS TO UPGRADE: 23
+AP: 6
+HAND: 8 0 4 6 3 
+Enemy Units:
+Id: 216    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (14, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 205    Cell: (10, 17)       BaseUnit: 1      HP: 14      Spells: [] 1st enemy
+Id: 203    Cell: (9, 16)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 199    Cell: (9, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 212    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 206    Cell: (10, 2)        BaseUnit: 3      HP: 9      Spells: [None] 2nd enemy
+
+My Units:
+Id: 210    Cell: (7, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 204    Cell: (9, 17)        BaseUnit: 7      HP: 12      Spells: [None] 
+Id: 200    Cell: (9, 17)        BaseUnit: 7      HP: 7      Spells: [None] 
+Id: 195    Cell: (9, 11)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 215    Cell: (4, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 208    Cell: (7, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 207    Cell: (8, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 202    Cell: (9, 2)        BaseUnit: 7      HP: 20      Spells: [] 
+Id: 193    Cell: (9, 6)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 8)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 171    Cell: (9, 12)        BaseUnit: 2      HP: 3      Spells: [] 
+
+PUT UNIT 3 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 93 started
+REMAINING TURNS TO UPGRADE: 22
+AP: 2
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 219    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 216    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (13, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 203    Cell: (9, 15)       BaseUnit: 7      HP: 20      Spells: [] 1st enemy
+Id: 199    Cell: (9, 17)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 217    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 212    Cell: (12, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 214    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 210    Cell: (8, 17)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 195    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 215    Cell: (5, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 208    Cell: (8, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 207    Cell: (9, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 202    Cell: (9, 2)        BaseUnit: 7      HP: 10      Spells: [] 
+Id: 193    Cell: (9, 7)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 11)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 9)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 171    Cell: (9, 12)        BaseUnit: 2      HP: 3      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 94 started
+REMAINING TURNS TO UPGRADE: 21
+AP: 4
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 222    Cell: (16, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 219    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 216    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (12, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 203    Cell: (9, 14)       BaseUnit: 7      HP: 10      Spells: [] 1st enemy
+Id: 199    Cell: (9, 16)       BaseUnit: 5      HP: 10      Spells: [] 1st enemy
+Id: 221    Cell: (15, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 217    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 212    Cell: (11, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 214    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 210    Cell: (9, 17)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 195    Cell: (9, 9)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 215    Cell: (6, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 208    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 207    Cell: (9, 3)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 193    Cell: (9, 8)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 12)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 10)        BaseUnit: 7      HP: 4      Spells: [] 
+Id: 171    Cell: (9, 12)        BaseUnit: 2      HP: 3      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 95 started
+REMAINING TURNS TO UPGRADE: 20
+AP: 2
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 222    Cell: (15, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 219    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 216    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (11, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 221    Cell: (14, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 217    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 212    Cell: (10, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 220    Cell: (5, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 214    Cell: (5, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 210    Cell: (9, 16)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 195    Cell: (9, 8)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 218    Cell: (6, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 215    Cell: (7, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 208    Cell: (9, 3)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 207    Cell: (9, 4)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 193    Cell: (9, 9)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 13)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 11)        BaseUnit: 7      HP: 4      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 96 started
+REMAINING TURNS TO UPGRADE: 19
+AP: 4
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 226    Cell: (16, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 222    Cell: (14, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 219    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 216    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 223    Cell: (14, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 221    Cell: (13, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 217    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 212    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 220    Cell: (6, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 214    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 210    Cell: (9, 15)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 195    Cell: (9, 7)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 218    Cell: (7, 2)        BaseUnit: 1      HP: 30      Spells: [] 
+Id: 215    Cell: (8, 2)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 208    Cell: (9, 4)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 207    Cell: (9, 5)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 193    Cell: (9, 10)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 14)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 12)        BaseUnit: 7      HP: 4      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 97 started
+REMAINING TURNS TO UPGRADE: 18
+AP: 6
+HAND: 8 0 4 6 7 
+Enemy Units:
+Id: 226    Cell: (15, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 222    Cell: (13, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 219    Cell: (12, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 216    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 223    Cell: (13, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 221    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+Id: 217    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 212    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (12, 2)        BaseUnit: 2      HP: 20      Spells: [] 2nd enemy
+
+My Units:
+Id: 220    Cell: (7, 17)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 214    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 210    Cell: (9, 14)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 195    Cell: (9, 6)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 224    Cell: (5, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 218    Cell: (8, 2)        BaseUnit: 1      HP: 25      Spells: [] 
+Id: 215    Cell: (9, 2)        BaseUnit: 7      HP: 15      Spells: [] 
+Id: 208    Cell: (9, 5)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 207    Cell: (9, 6)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 193    Cell: (9, 11)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 191    Cell: (9, 15)        BaseUnit: 5      HP: 10      Spells: [] 
+Id: 183    Cell: (9, 13)        BaseUnit: 7      HP: 4      Spells: [] 
+
+PUT UNIT 7 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 98 started
+REMAINING TURNS TO UPGRADE: 17
+AP: 3
+HAND: 8 0 4 6 5 
+Enemy Units:
+Id: 229    Cell: (16, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 226    Cell: (14, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 222    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 219    Cell: (11, 17)       BaseUnit: 5      HP: 20      Spells: [] 1st enemy
+Id: 216    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 227    Cell: (14, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 223    Cell: (12, 2)        BaseUnit: 1      HP: 30      Spells: [] 2nd enemy
+Id: 221    Cell: (12, 2)        BaseUnit: 2      HP: 15      Spells: [] 2nd enemy
+Id: 217    Cell: (12, 2)        BaseUnit: 1      HP: 25      Spells: [] 2nd enemy
+Id: 212    Cell: (9, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (12, 2)        BaseUnit: 2      HP: 15      Spells: [] 2nd enemy
+
+My Units:
+Id: 225    Cell: (6, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 220    Cell: (8, 17)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 214    Cell: (7, 17)        BaseUnit: 2      HP: 15      Spells: [] 
+Id: 210    Cell: (9, 13)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 195    Cell: (9, 5)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 224    Cell: (6, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 218    Cell: (8, 2)        BaseUnit: 1      HP: 20      Spells: [] 
+Id: 208    Cell: (9, 6)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 207    Cell: (9, 7)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 193    Cell: (9, 12)        BaseUnit: 5      HP: 30      Spells: [] 
+Id: 183    Cell: (9, 14)        BaseUnit: 7      HP: 4      Spells: [] 
+
+PUT UNIT 5 ON PATH 2
+-------------------------------Turn-----------------------------------
+turn 99 started
+REMAINING TURNS TO UPGRADE: 16
+AP: 2
+HAND: 8 0 4 6 2 
+Enemy Units:
+Id: 229    Cell: (15, 17)       BaseUnit: 7      HP: 30      Spells: [] 1st enemy
+Id: 226    Cell: (13, 17)       BaseUnit: 5      HP: 30      Spells: [] 1st enemy
+Id: 222    Cell: (12, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 219    Cell: (10, 17)       BaseUnit: 5      HP: 10      Spells: [] 1st enemy
+Id: 216    Cell: (11, 17)       BaseUnit: 1      HP: 30      Spells: [] 1st enemy
+Id: 213    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 209    Cell: (10, 17)       BaseUnit: 2      HP: 20      Spells: [] 1st enemy
+Id: 227    Cell: (13, 2)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 223    Cell: (12, 2)        BaseUnit: 1      HP: 25      Spells: [] 2nd enemy
+Id: 221    Cell: (11, 2)        BaseUnit: 2      HP: 10      Spells: [] 2nd enemy
+Id: 217    Cell: (12, 2)        BaseUnit: 1      HP: 20      Spells: [] 2nd enemy
+Id: 212    Cell: (9, 3)        BaseUnit: 5      HP: 30      Spells: [] 2nd enemy
+Id: 211    Cell: (11, 2)        BaseUnit: 2      HP: 10      Spells: [] 2nd enemy
+
+My Units:
+Id: 230    Cell: (4, 17)        BaseUnit: 7      HP: 30      Spells: [] 
+Id: 225    Cell: (7, 17)        BaseUnit: 2      HP: 20      Spells: [] 
+Id: 220    Cell: (9, 17)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 214    Cell: (7, 17)        BaseUnit: 2      HP: 10      Spells: [] 
+Id: 210    Cell: (9, 12)        BaseUnit: 3      HP: 15      Spells: [] 
+Id: 195    Cell: (9, 4)        BaseUnit: 5      HP: 30      Spells: [] 
+
+Friend Units:
+Id: 224    Cell: (7, 2)        BaseUnit: 3      HP: 25      Spells: [] 
+Id: 218    Cell: (8, 2)        BaseUnit: 1      HP: 10      Spells: [] 
+Id: 208    Cell: (9, 7)        BaseUnit: 5      HP: 20      Spells: [] 
+Id: 207    Cell: (9, 8)        BaseUnit: 3      HP: 20      Spells: [] 
+Id: 193    Cell: (9, 13)        BaseUnit: 5      HP: 30      Spells: [] 
+
+PUT UNIT 2 ON PATH 2
