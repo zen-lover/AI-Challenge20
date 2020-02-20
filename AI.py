@@ -198,13 +198,19 @@ class AI:
                 world.upgrade_unit_damage(unit=unit)
 
 
+
+
     # it is called after the game ended and it does not affect the game.
     # using this function you can access the result of the game.
     # scores is a map from int to int which the key is player_id and value is player_score
     def end(self, world, scores):
         print("end started!")
         print("My score:", scores[world.get_me().player_id])
-#        self.f.close()
+
+        self.f.close()
+
+
+
 
 
     def get_max_hp(self ,units):
