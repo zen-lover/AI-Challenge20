@@ -1,5 +1,6 @@
 from enum import Enum
 
+from typing import *
 
 class Map:
     def __init__(self, row_num, col_num, paths, units, kings, cells):
@@ -20,10 +21,10 @@ class Map:
             for cell in row:
                 cell.clear_units()
 
-    def get_path_by_id(self, path_id):
+    def get_path_by_id(self, path_id:int):
         return None if not path_id in self.paths_dict else self.paths_dict[path_id]
 
-    def add_unit_in_cell(self, row, col, unit):
+    def add_unit_in_cell(self, row:int, col:int, unit):
         self.units.append(unit)
         self.cells[row][col].add_unit(unit)
 
@@ -31,7 +32,7 @@ class Map:
 class Player:
     _spells_dict = {}
 
-    def __init__(self, player_id, deck, hand, ap, king, paths_from_player, path_to_friend,
+    def __init__(self, player_id:int, deck, hand, ap:int, king, paths_from_player, path_to_friend,
                  units, cast_area_spell, cast_unit_spell, duplicate_units, hasted_units, played_units,
                  died_units, spells, range_upgraded_unit=None, damage_upgraded_unit=None):
         self.player_id = player_id
@@ -283,7 +284,7 @@ class CastAreaSpell(CastSpell):
                  remaining_turns):
         super().__init__(spell=spell, id=id, caster_id=caster_id,
                          cell=cell, affected_units=affected_units)
-        self.ramaining_turns = remaining_turns
+        self.remaining_turns = remaining_turns
 
 
 class ServerConstants:

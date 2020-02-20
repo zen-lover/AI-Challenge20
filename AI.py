@@ -200,7 +200,7 @@ class AI:
 
             if world.get_range_upgrade_number() > 0:
                 print(f'we have {world.get_range_upgrade_number()} range upgrade')
-                print(world.get_current_turn())
+                print('current turn :', world.get_current_turn())
                 if len(myself.units) > 0:
                     unit = myself.units[0]
                     for last_unit in myself.units:
@@ -209,6 +209,7 @@ class AI:
                     print('range upgrade token')
             if world.get_range_upgrade_number() > 0:
                 print(f'we have {world.get_damage_upgrade_number()} range upgrade')
+                print('current turn :', world.get_current_turn())
                 if len(myself.units) > 0:
                     unit = myself.units[0]
                     for last_unit in myself.units:
