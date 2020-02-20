@@ -136,6 +136,7 @@ class AI:
 
         max_hp = 0
         max_damage = 0
+        max_range = 0
         if self.state == 6:
             for max_hp_unit in world.get_me().hand:
                 if max_hp_unit.max_hp >= max_hp and max_hp_unit.type_id != 4:
@@ -149,6 +150,13 @@ class AI:
                     max_damage = max_damage_unit.base_attack
                     max_damage_unit_select = max_damage_unit
             world.put_unit(base_unit=max_damage_unit_select, path=world.get_me().paths_from_player[0])
+            self.status = 8
+        if self.state == 8:
+            for max_range_unit in world.get_me().hand:
+                if max_range_unit.base_range >= max_range:
+                    max_range = max_range_unit.base_range
+                    max_range_unit_select = max_range_unit
+            world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
             self.status = 6
 
         # print('each turn')
@@ -188,14 +196,28 @@ class AI:
 
 
         # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
+        # if world.get_current_turn() >= 23:
 
-        if world.get_current_turn() >= 23:
-            if len(myself.units) > 0:
-                for last_unit in world.get_me().units:
-                    unit = last_unit
-                world.upgrade_unit_range(unit=unit)
-                print('upgrade token')
-                world.upgrade_unit_damage(unit=unit)
+            if world.get_range_upgrade_number() > 0:
+                print(f'we have {world.get_range_upgrade_number()} range upgrade')
+                print(world.get_current_turn())
+                if len(myself.units) > 0:
+                    unit = myself.units[0]
+                    for last_unit in myself.units:
+                        unit = last_unit
+                    world.upgrade_unit_range(unit=unit)
+                    print('range upgrade token')
+            if world.get_range_upgrade_number() > 0:
+                print(f'we have {world.get_damage_upgrade_number()} range upgrade')
+                if len(myself.units) > 0:
+                    unit = myself.units[0]
+                    for last_unit in myself.units:
+                        unit = last_unit
+                    world.upgrade_unit_range(unit=unit)
+                    print('damage upgrade token')
+
+
+                    world.upgrade_unit_damage(unit=unit)
 
 
 
