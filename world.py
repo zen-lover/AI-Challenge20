@@ -223,6 +223,12 @@ class World:
                 target_cell = Cell(row=unit_msg["targetCell"]["row"], col=unit_msg["targetCell"]["col"])
             else:
                 target_cell = None
+
+            if unit_msg["target"] == -1:
+                target = None
+            else:
+                target = unit_msg["target"]
+
             unit = Unit(unit_id=unit_id, base_unit=base_unit,
                         cell=self._map.get_cell(unit_msg["cell"]["row"], unit_msg["cell"]["col"]),
                         path=self._map.get_path_by_id(unit_msg["pathId"]),
@@ -233,7 +239,7 @@ class World:
                         is_hasted=unit_msg["isHasted"],
                         range=unit_msg["range"],
                         attack=unit_msg["attack"],
-                        target=unit_msg["target"],
+                        target=target,
                         target_cell=target_cell,
                         affected_spells=[self.get_cast_spell_by_id(cast_spell_id) for cast_spell_id in
                                          unit_msg["affectedSpells"]],
@@ -257,11 +263,8 @@ class World:
             else:
                 player.died_units.append(unit)
         for unit in self._map.units:
-            if unit.target == -1 or unit.target_if_king is not None:
-                if unit.target_if_king == -1:
-                    unit.target_if_king = None
-                else:
-                    unit.target = None
+            if unit.target_if_king is not None:
+                unit.target = None
             else:
                 unit.target = self.get_unit_by_id(unit.target)
 
@@ -303,7 +306,6 @@ class World:
         self._handle_turn_units(msg=msg["diedUnits"], is_dead_unit=True)
         self._handle_turn_units(msg["units"])
         self._handle_turn_cast_spells(msg["castSpells"])
-
         self._turn_updates = TurnUpdates(received_spell=msg["receivedSpell"],
                                          friend_received_spell=msg["friendReceivedSpell"],
                                          got_range_upgrade=msg["gotRangeUpgrade"],

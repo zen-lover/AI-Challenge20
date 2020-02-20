@@ -174,6 +174,15 @@ class AI:
 ## berim soraghe in ke spell bendazim :))
 
         received_spell = world.get_received_spell()
+
+        column_of_map = world.get_map().col_num
+        row_of_map = world.get_map().row_num
+
+        for column_index in range(0, column_of_map):
+            for row_index in range(0, row_of_map):
+                print('khorooji tabe')
+                print(world.get_area_spell_targets(row_index, column_index, received_spell))
+
         if received_spell is not None:
             if received_spell.is_area_spell():     # age area bood              :  hame be joz tele
 
@@ -199,27 +208,32 @@ class AI:
         # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
         # if world.get_current_turn() >= 23:
 
-            if world.get_range_upgrade_number() > 0:
-                print(f'we have {world.get_range_upgrade_number()} range upgrade')
-                print('current turn :', world.get_current_turn())
-                if len(myself.units) > 0:
-                    unit = myself.units[0]
-                    for last_unit in myself.units:
-                        unit = last_unit
-                    world.upgrade_unit_range(unit=unit)
-                    print('range upgrade token')
-            if world.get_range_upgrade_number() > 0:
-                print(f'we have {world.get_damage_upgrade_number()} range upgrade')
-                print('current turn :', world.get_current_turn())
-                if len(myself.units) > 0:
-                    unit = myself.units[0]
-                    for last_unit in myself.units:
-                        unit = last_unit
-                    world.upgrade_unit_range(unit=unit)
-                    print('damage upgrade token')
+        # for range upgrade
+        if world.get_range_upgrade_number() > 0:
+            print(f'\nwe have {world.get_range_upgrade_number()} range upgrade')
+            print('current turn :', world.get_current_turn())
+            if len(myself.units) > 0:
+                unit = myself.units[0]
+                for last_unit in myself.units:
+                    unit = last_unit
+                print(f'before upgrade {unit.range}')
+                world.upgrade_unit_range(unit=unit)
+                print(f'after upgrade {unit.range}')
+                print(f'range upgrade token {unit.unit_id}\n')
 
+        # for damage upgrade
+        if world.get_damage_upgrade_number() > 0:
+            print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
+            print('current turn :', world.get_current_turn())
+            if len(myself.units) > 0:
+                unit = myself.units[0]
+                for last_unit in myself.units:
+                    unit = last_unit
+                print(f'before upgrade {unit.attack}')
+                world.upgrade_unit_damage(unit=unit)
+                print(f'after upgrade {unit.attack}')
+                print(f'damage upgrade token {unit.unit_id}\n')
 
-                    world.upgrade_unit_damage(unit=unit)
 
 
 
