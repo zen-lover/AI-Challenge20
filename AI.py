@@ -23,7 +23,8 @@ class AI:
 
         '''sahar log'''
         now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
-        now = 'log\\' + now
+        # now = 'log\\' + now       # sahar to ino bzn va khat paiin o coment kon
+        now = 'log/' + now          # mn o parsa ino mizanim
         now = now + '.txt'
         self.f = open(now, "w+")
       #  f = open(now, "w+")
