@@ -103,31 +103,27 @@ class AI:
 
         f.write('Enemy Units:\n')
         first_enemy_units = world.get_first_enemy().units
-        if(world.get_first_enemy().king.is_alive):
-            first_enemy_units = first_enemy_units[-2::-1]
         for unit in first_enemy_units:
-            f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
         second_enemy_units = world.get_second_enemy().units
-        if(world.get_second_enemy().king.is_alive):
-            second_enemy_units = second_enemy_units[-2::-1]
         for unit in second_enemy_units:
-            f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
         f.write('\n')
 
         f.write('My Units:\n')
         my_units = world.get_me().units
-        if(world.get_me().king.is_alive):
-            my_units = my_units[-2::-1]
         for unit in my_units:
-            f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
         f.write('\n')
 
         f.write('Friend Units:\n')
         friend_units = world.get_friend().units
-        if(world.get_friend().king.is_alive):
-            friend_units = friend_units[-2::-1]
         for unit in friend_units:
-            f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
         f.write('\n')
 
         # enter first hand
