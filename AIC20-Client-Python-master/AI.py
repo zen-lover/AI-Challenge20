@@ -247,64 +247,61 @@ class AI:
                 unit = self.find_max_hp_between_our_unit(my_units)      #max hp ro dar unit mirizim dashte bashim
                 my_paths = myself.paths_from_player                     #hame rah haro mirizim toosh
                 path = my_paths[random.randint(0, len(my_paths) - 1)]# yeki ro random entekhab mikonim
-                print('cell haye path')
-                print(path.cells)
-                print('cell haye upgrade')
-                print(self.unit_that_have_range_upgrade.path.cells)
-                print(self.unit_that_have_damage_upgrade.path.cells)
+                # print('cell haye path')
+                # print(path.cells)
+                # print('cell haye upgrade')
+                # if self.unit_that_have_range_upgrade is not None:
+                #     print(self.unit_that_have_range_upgrade.path.cells)
+                # if self.unit_that_have_damage_upgrade is not None:
+                #     print(self.unit_that_have_damage_upgrade.path.cells)
                 size = len(path.cells)
-                cell = path.cells[int((size + 1) / 2)]    # jolo tarin cell esh ro bedast miarim
+                cell = path.cells[(int((size + 1) / 2))-3]# jolo tarin cell esh ro bedast miarim
+                print('koja befrese')
+                print(cell.row)
+                print(cell.col)
                 self.state_of_tele = 1
 
                 if (self.unit_that_have_range_upgrade  is not  None and self.state_of_tele == 1  ):
-                    print(self.unit_that_have_range_upgrade.unit_id)
+
 
                     if self.unit_that_have_range_upgrade.path.cells.index(self.unit_that_have_range_upgrade.cell)  < path.cells.index(cell):
                         print('varede if e range shod')
-                        print(self.unit_that_have_range_upgrade.path.cells.index(self.unit_that_have_range_upgrade.cell))
+                        print('level of range dar if ')
+                        print(self.unit_that_have_range_upgrade.range_level)
                         print('before')
                         print(self.unit_that_have_range_upgrade.cell.row)
                         print(self.unit_that_have_range_upgrade.cell.col)
+                        print('unit id : ')
+                        print(self.unit_that_have_damage_upgrade.unit_id)
                         world.cast_unit_spell(unit=self.unit_that_have_range_upgrade, path=path, cell=cell, spell=received_spell  )
-                        print('after')
-                        print(self.unit_that_have_range_upgrade.cell.row)
-                        print(self.unit_that_have_range_upgrade.cell.col)
                         self.state_of_tele = 2
 
 
                 if (self.unit_that_have_damage_upgrade is not None  and self.state_of_tele == 1 ):
                     print(self.unit_that_have_damage_upgrade.unit_id)
                     if  self.unit_that_have_damage_upgrade.path.cells.index(self.unit_that_have_damage_upgrade.cell)  < path.cells.index(cell) :
-                        print('varede if e damage shod')
+                        print('varede if e damage shod ')
+                        print('level of damage dar if ')
+                        print(self.unit_that_have_damage_upgrade.damage_level)
                         self.unit_that_have_damage_upgrade.path.cells.index(self.unit_that_have_damage_upgrade.cell)
                         print('before')
                         print(self.unit_that_have_damage_upgrade.cell.row)
                         print(self.unit_that_have_damage_upgrade.cell.col)
+                        print('unit id : ')
+                        print(self.unit_that_have_damage_upgrade.unit_id)
                         world.cast_unit_spell(unit=self.unit_that_have_damage_upgrade, path=path, cell=cell, spell=received_spell)
-                        print('after')
-                        print(self.unit_that_have_damage_upgrade.cell.row)
-                        print(self.unit_that_have_damage_upgrade.cell.col)
                         self.state_of_tele = 2
 
 
                 if (self.state_of_tele == 1) :
+                    print('before')
+                    print(unit.cell.row)
+                    print(unit.cell.col)
                     world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
                     print("hp dadam")
+                    print('unit id : ')
+                    print(unit.unit_id)
                     self.state_of_tele = 2
-
-
-
-
-
-         # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
-
-        # print('\nturn to upgrade')
-        # print(world.get_remaining_turns_to_upgrade())
-
-
-
-
-
 
 
     # it is called after the game ended and it does not affect the game.
