@@ -13,11 +13,13 @@ class AI:
 
     def __init__(self):
 
+        self.all_units_in_game = []
         self.rows = 0
         self.cols = 0
         self.path_for_my_units = None
-
         self.state = 1
+        self.first_unit_added = False
+        self.second_unit_added = False
 
         '''sahar log'''
         now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0, 1000))
@@ -85,8 +87,8 @@ class AI:
         f.write('-------------------------------Turn-----------------------------------\n')
         f.write(f"turn {world.get_current_turn()} started\n")
         print("----------------------------------------------------turn started:", world.get_current_turn())
-        print('turn to upgrade')
-        print(world.get_remaining_turns_to_upgrade())
+        # print('turn to upgrade')
+        # print(world.get_remaining_turns_to_upgrade())
         f.write(f'REMAINING TURNS TO UPGRADE: {world.get_remaining_turns_to_upgrade()}\n')
         f.write(f'AP: {world.get_me().ap}\n')
         f.write(f'HAND: ')
@@ -95,36 +97,7 @@ class AI:
         f.write('\n')
 
         myself = world.get_me()
-
-        enemy_units = world.get_first_enemy().units
-        enemy_units.append(world.get_second_enemy())
-
-        f.write('Enemy Units:\n')
-        first_enemy_units = world.get_first_enemy().units
-        for unit in first_enemy_units:
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
-        second_enemy_units = world.get_second_enemy().units
-        for unit in second_enemy_units:
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
-        f.write('\n')
-
-        f.write('My Units:\n')
-        my_units = world.get_me().units
-        for unit in my_units:
-            self.affected_units_by_this_unit(world,unit)
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
-        f.write('\n')
-
-        f.write('Friend Units:\n')
-        friend_units = world.get_friend().units
-        for unit in friend_units:
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
-        f.write('\n')
-
+        self.log(world)
         self.choose_and_put_unit(world)
         # enter first hand
 
@@ -207,16 +180,10 @@ class AI:
                 cell = path.cells[int((size + 1) / 2)]
                 world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
 
-
-
-         # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
-
-        print('\nturn to upgrade')
-        print(world.get_remaining_turns_to_upgrade())
-
+        # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
-            print(f'\nwe have {world.get_range_upgrade_number()} range upgrade')
+            # print(f'\nwe have {world.get_range_upgrade_number()} range upgrade')
             if len(myself.units) > 0:
                 units_max_range = []
                 for unit_range in myself.units:
@@ -233,7 +200,7 @@ class AI:
 
         # for damage upgrade
         if world.get_damage_upgrade_number() > 0:
-            print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
+            #print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
             if len(myself.units) > 0:
                 units_max_damage = []
                 for unit_damage in myself.units:
@@ -245,9 +212,7 @@ class AI:
                 if unit is not None:
                     world.upgrade_unit_damage(unit_id=unit.unit_id)
                     print(world.upgrade_unit_damage(unit_id=unit.unit_id))
-                    print(f'damage upgrade token {unit.unit_id}\n')
-        for unit in world.get_map().units:
-            self.damages_log.write('unit_id:  '+ str(unit.unit_id)+ '  base_unit:  '+ str(unit.base_unit.type_id)+ '  damage_caused:  ' + str(unit.damage_caused) + '\n')
+                    # print(f'damage upgrade token {unit.unit_id}\n')
 
 
 
@@ -260,13 +225,16 @@ class AI:
         print("My score:", scores[world.get_me().player_id])
         self.f.write(f'MY SCORE: {scores[world.get_me().player_id]}\n')
         self.f.close()
+        for unit in self.all_units_in_game:
+            print(f"jdfhkfjhszkjhfksjhfkjhsd unit id:{unit.unit_id}")
+            self.damages_log.write('unit_id:  '+ str(unit.unit_id)+ '  base_unit:  '+ str(unit.base_unit.type_id)+ '  damage_caused:  ' + str(unit.damage_caused) + '\n')
+
+
+        self.damages_log.close()
         self.data_log.write(f'MY SCORE: {scores[world.get_me().player_id]}\n')
         self.data_log.close()
-        self.damages_log.close()
 
-
-
-     # added function
+    '''------------------------Added Functions-----------------------'''
 
     def get_max_hp(self ,units):
         max_hp = 0
@@ -367,28 +335,37 @@ class AI:
     def choose_and_put_unit(self, world):
         ap = world.get_me().ap
         print('AP: ' + str(ap) + '\n')
-        if(ap >=10):
+        data = self.data_log
+        hand = world.get_me().hand
+        first_random_unit = random.randint(0, 4)
+        second_random_unit = random.randint(0, 4)
+        paths = world.get_me().paths_from_player + world.get_friend().paths_from_player
+        path_num = len(paths)
+        rand_path1 = random.randint(0, path_num - 1)
+        rand_path2 = random.randint(0, path_num - 1)
+
+        if len(world.get_me().units) != 0:
+            print(world.get_me().units)
+            last_unit = world.get_me().units[-1]
+            self.all_units_in_game.append(last_unit)
+            data.write(
+            f'id:  {last_unit.unit_id}  type:  {hand[first_random_unit].type_id}  path:  {paths[rand_path1].id}\n')
+
+        if self.second_unit_added:
+            last_unit = world.get_me().units[-2]
+            self.all_units_in_game.append(last_unit)
+            data.write(
+                f'id:  {last_unit.unit_id}  type:  {hand[second_random_unit].type_id}  path:  {paths[rand_path2].id}\n')
+
+        if(ap == 10):
             print('in if\n')
-            data = self.data_log
-            hand = world.get_me().hand
-            first_random_unit = random.randint(0, 4)
-            second_random_unit = random.randint(0, 4)
-
-            paths = world.get_me().paths_from_player + world.get_friend().paths_from_player
-            path_num = len(paths)
-            rand_path1 = random.randint(0, path_num-1)
-            rand_path2 = random.randint(0, path_num-1)
-
             world.put_unit(hand[first_random_unit].type_id, paths[rand_path1].id)
-            last_unit = world.get_me().units[-1]
-            data.write(f'id:  {last_unit.id}  type:  {hand[first_random_unit].type_id}  path:  {paths[rand_path1].id}\n')
+            self.first_unit_added = True
+            ap = ap - hand[first_random_unit].ap
 
-            world.put_unit(hand[second_random_unit].type_id, paths[rand_path2].id)
-            data.write(f'id:  {last_unit.id}  type:  {hand[second_random_unit].type_id}  path:  {paths[rand_path2].id}\n')
-            # data.write(f'{hand[second_random_unit].type_id}  {paths[rand_path2].id}\n')
-            last_unit = world.get_me().units[-1]
-     #       self.damages.write(f'unit_id: {last_unit.unit_id}  base_unit:  {last_unit.base_unit.type_id}  damage_caused:  {last_unit.damage_caused}\n')
-            self.damages_log.write('unit_id:  '+ str(last_unit.unit_id)+ '  base_unit:  '+ str(last_unit.base_unit.type_id)+ '  damage_caused:  ' + str(last_unit.damage_caused) + '\n')
+            if ap >= hand[second_random_unit].ap:
+                world.put_unit(hand[second_random_unit].type_id, paths[rand_path2].id)
+                self.second_unit_added = True
 
     def affected_units_by_this_unit(self, world, unit):
         target_type = unit.base_unit.target_type
@@ -401,8 +378,8 @@ class AI:
         # if (len(units_in_cell) != 0):
         for soldier in units_in_cell:
             if soldier.player_id == world.get_first_enemy().player_id or soldier.player_id == world.get_second_enemy().player_id:
-                print(f'my unit type is {unit.base_unit.type_id} and target: {unit.base_unit.target_type}')
-                print(f'soldier: {soldier}')
+                # print(f'my unit type is {unit.base_unit.type_id} and target: {unit.base_unit.target_type}')
+                # print(f'soldier: {soldier}')
                 if target_type == UnitTarget.AIR and soldier.base_unit.is_flying:
                     unit.damage_caused = unit.damage_caused + unit.attack
                     # print(f'target type is {target_type} and is flying damage caused: {unit.damage_caused} and attack: {unit.attack}')
@@ -437,3 +414,38 @@ class AI:
             if self.unit_is_in_this_area(world, from_row, to_row, from_col, to_col):
                 units += unit
         return units
+
+    def log(self, world):
+        enemy_units = world.get_first_enemy().units
+        enemy_units.append(world.get_second_enemy())
+        f = self.f
+        f.write('Enemy Units:\n')
+        first_enemy_units = world.get_first_enemy().units
+        for unit in first_enemy_units:
+            if type(unit) == Unit:
+                f.write(
+                    f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
+        second_enemy_units = world.get_second_enemy().units
+        for unit in second_enemy_units:
+            if type(unit) == Unit:
+                f.write(
+                    f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
+        f.write('\n')
+
+        f.write('My Units:\n')
+        my_units = world.get_me().units
+        for unit in my_units:
+            self.affected_units_by_this_unit(world, unit)
+            if type(unit) == Unit:
+                f.write(
+                    f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+        f.write('\n')
+
+        f.write('Friend Units:\n')
+        friend_units = world.get_friend().units
+        for unit in friend_units:
+            if type(unit) == Unit:
+                f.write(
+                    f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+        f.write('\n')
+        '''LOG'''
