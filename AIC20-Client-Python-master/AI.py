@@ -16,7 +16,7 @@ class AI:
         self.cols = 0
         self.path_for_my_units = None
 
-        self.state = 1
+        self.state = 6
 
 
 
@@ -129,30 +129,32 @@ class AI:
         # enter first hand
 
 
-        if  self.state == 1:
-            world.put_unit(base_unit=world._base_units[1], path=world.get_me().paths_from_player[0])
-            print('hero 1')
-            self.state = 2
-        elif self.state == 2:
-            world.put_unit(base_unit=world._base_units[5], path=world.get_me().paths_from_player[0])
-            print('hero 2')
-            self.state = 3
-        elif self.state == 3:
-            world.put_unit(base_unit=world._base_units[0], path=world.get_me().paths_from_player[0])
-            print('hero 3')
-            self.state = 4
-        elif self.state == 4:
-            world.put_unit(base_unit=world._base_units[6], path=world.get_me().paths_from_player[0])
-            print('hero 4')
-            self.state = 5
-        elif self.state == 5:
-            world.put_unit(base_unit=world._base_units[2], path=world.get_me().paths_from_player[0])
-            print('hero 5')
-            self.state = 6
+        # if  self.state == 1:
+        #     world.put_unit(base_unit=world._base_units[1], path=world.get_me().paths_from_player[0])
+        #     print('hero 1')
+        #     self.state = 2
+        # elif self.state == 2:
+        #     world.put_unit(base_unit=world._base_units[5], path=world.get_me().paths_from_player[0])
+        #     print('hero 2')
+        #     self.state = 3
+        # elif self.state == 3:
+        #     world.put_unit(base_unit=world._base_units[0], path=world.get_me().paths_from_player[0])
+        #     print('hero 3')
+        #     self.state = 4
+        # elif self.state == 4:
+        #     world.put_unit(base_unit=world._base_units[6], path=world.get_me().paths_from_player[0])
+        #     print('hero 4')
+        #     self.state = 5
+        # elif self.state == 5:
+        #     world.put_unit(base_unit=world._base_units[2], path=world.get_me().paths_from_player[0])
+        #     print('hero 5')
+        #     self.state = 6
 
         max_hp = 0
         max_damage = 0
         max_range = 0
+
+
         if self.state == 6:
             for max_hp_unit in world.get_me().hand:
                 if max_hp_unit.max_hp >= max_hp and max_hp_unit.type_id != 4:
@@ -160,7 +162,9 @@ class AI:
                     max_hp_unit_select = max_hp_unit
             world.put_unit(base_unit=max_hp_unit_select, path=world.get_me().paths_from_player[0])
             f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-            self.status = 7
+            self.state = 7
+
+
         if self.state == 7:
             for max_damage_unit in world.get_me().hand:
                 if max_damage_unit.base_attack >= max_damage:
@@ -168,8 +172,21 @@ class AI:
                     max_damage_unit_select = max_damage_unit
             world.put_unit(base_unit=max_damage_unit_select, path=world.get_me().paths_from_player[0])
             f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-            self.status = 8
-        if self.state == 8:
+            self.state = 8
+
+        if self.state == 9:
+
+            for max_range_unit in world.get_me().hand:
+                if max_range_unit.base_range >= max_range:
+                    max_range = max_range_unit.base_range
+                    max_range_unit_select = max_range_unit
+            world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            self.status = 9
+                
+                
+        if self.state == 9 :
+
             for max_range_unit in world.get_me().hand:
                 if max_range_unit.base_range >= max_range:
                     max_range = max_range_unit.base_range
