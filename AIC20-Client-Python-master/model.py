@@ -2,74 +2,43 @@ from enum import Enum
 
 from typing import *
 
-
 class Map:
-    row_num: int
-    col_num: int
-    paths: List["Path"]
-    _paths_dict: Dict[int, "Path"]
-    units: List["Unit"]
-    kings: List["King"]
-    cells: List[List["Cell"]]
-
-    def __init__(self, row_num: int, col_num: int, paths: List["Path"],
-                 units: List["Unit"], kings: List["King"], cells: List[List["Cell"]]):
+    def __init__(self, row_num, col_num, paths, units, kings, cells):
         self.row_num = row_num
         self.col_num = col_num
         self.paths = paths
-        self._paths_dict = dict([(path.id, path) for path in paths])
+        self.paths_dict = dict([(path.id, path) for path in paths])
         self.units = units
         self.kings = kings
         self.cells = cells
 
-    def get_cell(self, row: int, col: int) -> "Cell":
+    def get_cell(self, row, col):
         return self.cells[row][col]
 
-    def _clear_units(self) -> None:
+    def clear_units(self):
         self.units.clear()
         for row in self.cells:
             for cell in row:
-                cell._clear_units()
+                cell.clear_units()
 
-    def get_path_by_id(self, path_id: int) -> Optional["Path"]:
-        return None if path_id not in self._paths_dict else self._paths_dict[path_id]
+    def get_path_by_id(self, path_id:int):
+        return None if not path_id in self.paths_dict else self.paths_dict[path_id]
 
-    def _add_unit_in_cell(self, row: int, col: int, unit: "Unit") -> None:
+    def add_unit_in_cell(self, row:int, col:int, unit):
         self.units.append(unit)
-        self.cells[row][col]._add_unit(unit)
+        self.cells[row][col].add_unit(unit)
 
 
 class Player:
-    player_id: int
-    deck: List["BaseUnit"]
-    hand: List["BaseUnit"]
-    ap: int
-    king: "King"
-    paths_from_player: List["Path"]
-    path_to_friend: "Path"
-    units: List["Unit"]
-    cast_area_spell: Optional["CastAreaSpell"]
-    cast_unit_spell: Optional["CastUnitSpell"]
-    duplicate_units: List["Unit"]
-    hasted_units: List["Unit"]
-    played_units: List["Unit"]
-    died_units: List["Unit"]
-    spells: List["Spell"]
-    range_upgraded_unit: Optional["Unit"]
-    damage_upgraded_unit: Optional["Unit"]
+    _spells_dict = {}
 
-    _spells_dict: Dict[int, int] = {}
-
-    def __init__(self, player_id: int, deck: List["BaseUnit"], hand: List["BaseUnit"], ap: int, king: "King",
-                 paths_from_player: List["Path"], path_to_friend: "Path", units: List["Unit"],
-                 cast_area_spell: Optional["CastAreaSpell"], cast_unit_spell: Optional["CastUnitSpell"],
-                 duplicate_units: List["Unit"], hasted_units: List["Unit"], played_units: List["Unit"],
-                 died_units: List["Unit"], spells: List["Spell"], range_upgraded_unit: Optional["Unit"] = None,
-                 damage_upgraded_unit: Optional["Unit"] = None):
+    def __init__(self, player_id:int, deck, hand, ap:int, king, paths_from_player, path_to_friend,
+                 units, cast_area_spell, cast_unit_spell, duplicate_units, hasted_units, played_units,
+                 died_units, spells, range_upgraded_unit=None, damage_upgraded_unit=None):
         self.player_id = player_id
         self.deck = deck
         self.hand = hand
-        self.ap: int = ap
+        self.ap = ap
         self.king = king
         self.paths_from_player = paths_from_player
         self.path_to_friend = path_to_friend
@@ -84,24 +53,24 @@ class Player:
         self.range_upgraded_unit = range_upgraded_unit  # unit that last turn the player upgraded range of it
         self.damage_upgraded_unit = damage_upgraded_unit  # unit that last turn the player upgraded damage of it
 
-    def is_alive(self) -> bool:
+    def is_alive(self):
         return self.king.is_alive
 
-    def get_hp(self) -> int:
+    def get_hp(self):
         return self.king.hp
 
-    def set_spells(self, spells: List["Spell"]) -> None:
+    def set_spells(self, spells):
         self._spells_dict.clear()
         self.spells = spells
         for spell in spells:
             self._spells_dict.update({spell.type_id: self._spells_dict.get(spell.type_id, 0) + 1})
 
-    def get_spell_count(self, spell: "Spell" = None, spell_id: int = None) -> int:
+    def get_spell_count(self, spell=None, spell_id=None):
         if spell is not None:
             spell_id = spell.type_id
         return self._spells_dict.get(spell_id, 0)
 
-    def get_spells(self) -> List["Spell"]:
+    def get_spells(self):
         return self.spells
 
     def __str__(self):
@@ -111,27 +80,9 @@ class Player:
 
 
 class Unit:
-    base_unit: "BaseUnit"
-    cell: "Cell"
-    unit_id: int
-    hp: int
-    path: "Path"
-    target: Optional["Unit"]
-    target_cell: "Cell"
-    target_if_king: Optional["King"]
-    player_id: int
-    damage_level: int
-    range_level: int
-    range: int
-    attack: int
-    is_duplicate: bool
-    is_hasted: bool
-    affected_spells: List["Spell"]
-
-    def __init__(self, base_unit: "BaseUnit", cell: "Cell", unit_id: int, hp: int, path: "Path",
-                 target: Optional["Unit"], target_cell: "Cell", target_if_king: Optional["King"], player_id: int,
-                 damage_level: int, range_level: int, range: int,
-                 attack: int, is_duplicate: bool, is_hasted: bool, affected_spells: List["Spell"]):
+    def __init__(self, base_unit, cell, unit_id, hp, path, target, target_cell,
+                 target_if_king, player_id, damage_level, range_level, range,
+                 attack, is_duplicate, is_hasted, affected_spells):
         self.base_unit = base_unit
         self.cell = cell
         self.unit_id = unit_id
@@ -149,8 +100,6 @@ class Unit:
         self.is_hasted = is_hasted
         self.affected_spells = affected_spells
 
-    def __str__(self):
-        return "<unit : " + self.base_unit.__str__() + ">"
 
 class SpellTarget(Enum):
     SELF = 1
@@ -158,7 +107,7 @@ class SpellTarget(Enum):
     ENEMY = 3
 
     @staticmethod
-    def get_value(string: str):
+    def get_value(string):
         if string == "SELF":
             return SpellTarget.SELF
         if string == "ALLIED":
@@ -175,7 +124,7 @@ class SpellType(Enum):
     HASTE = 4
 
     @staticmethod
-    def get_value(string: str):
+    def get_value(string):
         if string == "HP":
             return SpellType.HP
         if string == "TELE":
@@ -193,7 +142,7 @@ class UnitTarget(Enum):
     BOTH = 3
 
     @staticmethod
-    def get_value(string: str):
+    def get_value(string):
         if string == "GROUND":
             return UnitTarget.GROUND
         if string == "AIR":
@@ -204,17 +153,7 @@ class UnitTarget(Enum):
 
 
 class Spell:
-    type: SpellType
-    type_id: int
-    duration: int
-    priority: int
-    target: SpellTarget
-    range: int
-    power: int
-    is_damaging: bool
-
-    def __init__(self, type: "SpellType", type_id: int, duration: int, priority: int, target: "SpellTarget",
-                 range: int, power: int, is_damaging: bool):
+    def __init__(self, type, type_id, duration, priority, target, range, power, is_damaging):
         self.type = type
         self.type_id = type_id
         self.duration = duration
@@ -224,10 +163,10 @@ class Spell:
         self.power = power
         self.is_damaging = is_damaging
 
-    def is_unit_spell(self) -> bool:
+    def is_unit_spell(self):
         return self.type == SpellType.TELE
 
-    def is_area_spell(self) -> bool:
+    def is_area_spell(self):
         return not self.is_unit_spell()
 
     def __eq__(self, other):
@@ -240,14 +179,10 @@ class Spell:
 
 
 class Cell:
-    row: int
-    col: int
-    units: List["Unit"]
-
-    def __init__(self, row: int = 0, col: int = 0):
+    def __init__(self, row=0, col=0):
         self.row = row
         self.col = col
-        self.units = []
+        self.units = []  # private access
 
     def __eq__(self, other):
         if not isinstance(other, Cell):
@@ -258,18 +193,15 @@ class Cell:
     def __str__(self):
         return "<Cell | ({}, {})>".format(self.row, self.col)
 
-    def _clear_units(self) -> None:
+    def clear_units(self):
         self.units.clear()
 
-    def _add_unit(self, unit: "Unit") -> None:
+    def add_unit(self, unit):
         self.units.append(unit)
 
 
 class Path:
-    id: int
-    cells: List["Cell"]
-
-    def __init__(self, id: int = None, cells: List["Cell"] = None, path: "Path" = None):
+    def __init__(self, id=None, cells=None, path=None):
         if id is not None and cells is not None:
             self.cells = cells
             self.id = id
@@ -288,18 +220,13 @@ class Path:
         return self.id == other.id
 
 
-class BaseUnit:
-    type_id: int
-    max_hp: int
-    base_attack: int
-    base_range: int
-    target_type: UnitTarget
-    is_flying: bool
-    is_multiple: bool
-    ap: int
+class Deck:
+    def __init__(self):
+        self.units = []
 
-    def __init__(self, type_id: int, max_hp: int, base_attack: int, base_range: int, target_type: "UnitTarget",
-                 is_flying: bool, is_multiple: bool, ap: int):
+
+class BaseUnit:
+    def __init__(self, type_id, max_hp, base_attack, base_range, target_type, is_flying, is_multiple, ap):
         self.type_id = type_id
         self.max_hp = max_hp
         self.base_attack = base_attack
@@ -315,17 +242,8 @@ class BaseUnit:
 
 
 class King:
-    center: Cell
-    hp: int
-    attack: int
-    range: int
-    is_alive: bool
-    player_id: int
-    target: Optional[Unit]
-    target_cell: Optional[Cell]
-
-    def __init__(self, center: "Cell", hp: int, attack: int, range: int, is_alive: bool, player_id: int,
-                 target: Optional["Unit"], target_cell: Optional["Cell"]):
+    def __init__(self, center, hp, attack, range, is_alive, player_id,
+                 target, target_cell):
         self.center = center
         self.hp = hp
         self.attack = attack
@@ -344,13 +262,7 @@ class Message:
 
 
 class CastSpell:
-    spell: Spell
-    id: int
-    caster_id: int
-    cell: Cell
-    affected_units: List[Unit]
-
-    def __init__(self, spell: "Spell", id: int, caster_id: int, cell: "Cell", affected_units: List["Unit"]):
+    def __init__(self, spell, id, caster_id, cell, affected_units):
         self.spell = spell
         self.id = id
         self.caster_id = caster_id
@@ -359,11 +271,8 @@ class CastSpell:
 
 
 class CastUnitSpell(CastSpell):
-    unit: Unit
-    path: Path
-
-    def __init__(self, spell: "Spell", id: int, caster_id: int, cell: "Cell", affected_units: List["Unit"],
-                 unit: "Unit", path: "Path"):
+    def __init__(self, spell, id, caster_id, cell, affected_units
+                 , unit, path):
         super().__init__(spell=spell, id=id, caster_id=caster_id,
                          cell=cell, affected_units=affected_units)
         self.unit = unit
@@ -371,10 +280,8 @@ class CastUnitSpell(CastSpell):
 
 
 class CastAreaSpell(CastSpell):
-    remaining_turns: int
-
-    def __init__(self, spell: "Spell", id: int, caster_id: int, cell: "Cell", affected_units: List["Unit"],
-                 remaining_turns: int):
+    def __init__(self, spell, id, caster_id, cell, affected_units,
+                 remaining_turns):
         super().__init__(spell=spell, id=id, caster_id=caster_id,
                          cell=cell, affected_units=affected_units)
         self.remaining_turns = remaining_turns
@@ -403,21 +310,9 @@ class ServerConstants:
 
 
 class GameConstants:
-    max_ap: int
-    max_turns: int
-    turn_timeout: int
-    pick_timeout: int
-    turns_to_upgrade: int
-    turns_to_spell: int
-    damage_upgrade_addition: int
-    range_upgrade_addition: int
-    deck_size: int
-    hand_size: int
-    ap_addition: int
-
-    def __init__(self, max_ap: int, max_turns: int, turn_timeout: int, pick_timeout: int,
-                 turns_to_upgrade: int, turns_to_spell: int, damage_upgrade_addition: int, range_upgrade_addition: int,
-                 deck_size: int, hand_size: int, ap_addition: int):
+    def __init__(self, max_ap, max_turns, turn_timeout, pick_timeout,
+                 turns_to_upgrade, turns_to_spell, damage_upgrade_addition, range_upgrade_addition,
+                 deck_size, hand_size, ap_addition):
         self.max_ap = max_ap
         self.max_turns = max_turns
         self.turn_timeout = turn_timeout

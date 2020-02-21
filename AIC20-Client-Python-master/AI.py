@@ -52,11 +52,10 @@ class AI:
                 self.f.write(f'({cell.row}, {cell.col}), ')
             self.f.write('\n')
         self.f.write('\n')
-        # choosing all flying units
+        # choosing hand
         all_base_units = world.get_all_base_units()
         my_hand = [all_base_units[1], all_base_units[5], all_base_units[0], all_base_units[6], all_base_units[2]]#[base_unit for base_unit in all_base_units if not base_unit.is_flying]
-        # for i in my_deck:
-        #     print(i.type_id)
+
         self.f.write('HAND: ')
         for base_unit in my_hand:
             self.f.write(' ' + str(base_unit.type_id))
@@ -66,9 +65,7 @@ class AI:
         world.choose_hand(base_units = my_hand)
                            # (base_units=my_deck)
 
-        print('After choose hand:')
-        for i in my_hand:
-            print(i.type_id)
+
         # other preprocess
         # khodemun bayad path ro entekhab konim
         if len(world.get_me().paths_from_player) > 1:
@@ -86,9 +83,9 @@ class AI:
         f = self.f
         f.write('-------------------------------Turn-----------------------------------\n')
         f.write(f"turn {world.get_current_turn()} started\n")
-        print("turn started:", world.get_current_turn())
-        print('turn to upgrade')
-        print(world.get_remaining_turns_to_upgrade())
+        # print("turn started:", world.get_current_turn())
+        # print('turn to upgrade')
+        # print(world.get_remaining_turns_to_upgrade())
         f.write(f'REMAINING TURNS TO UPGRADE: {world.get_remaining_turns_to_upgrade()}\n')
         f.write(f'AP: {world.get_me().ap}\n')
         f.write(f'HAND: ')
@@ -126,29 +123,6 @@ class AI:
                 f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
         f.write('\n')
 
-        # enter first hand
-
-
-        # if  self.state == 1:
-        #     world.put_unit(base_unit=world._base_units[1], path=world.get_me().paths_from_player[0])
-        #     print('hero 1')
-        #     self.state = 2
-        # elif self.state == 2:
-        #     world.put_unit(base_unit=world._base_units[5], path=world.get_me().paths_from_player[0])
-        #     print('hero 2')
-        #     self.state = 3
-        # elif self.state == 3:
-        #     world.put_unit(base_unit=world._base_units[0], path=world.get_me().paths_from_player[0])
-        #     print('hero 3')
-        #     self.state = 4
-        # elif self.state == 4:
-        #     world.put_unit(base_unit=world._base_units[6], path=world.get_me().paths_from_player[0])
-        #     print('hero 4')
-        #     self.state = 5
-        # elif self.state == 5:
-        #     world.put_unit(base_unit=world._base_units[2], path=world.get_me().paths_from_player[0])
-        #     print('hero 5')
-        #     self.state = 6
 
         max_hp = 0
         max_damage = 0
@@ -195,9 +169,9 @@ class AI:
             f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.status = 6
 
-        # print('each turn')
-        # print(world._current_turn)
-        # print(world.get_me().ap)
+        print('each turn')
+        print(world._current_turn)
+
         ## berim soraghe in ke spell bendazim :))
 
         received_spell = world.get_received_spell()
@@ -223,20 +197,29 @@ class AI:
 
                 # age tele bood spell :) miad balatarin hp ro jolo tarin halate momken midaze !
             else:
+                print("baghali :D")
                 my_units = myself.units
                 unit = self.find_max_hp_between_our_unit(my_units)
+                print("hp yaroo")
+                print(unit.hp)
+                print("jaii ke hast")
+                print(unit.cell.row)
+                print(unit.cell.col)
                 my_paths = myself.paths_from_player
                 path = my_paths[random.randint(0, len(my_paths) - 1)]
                 size = len(path.cells)
                 cell = path.cells[int((size + 1) / 2)]
+                print("haii ke mifresimesh")
+                print(cell.row)
+                print(cell.col)
                 world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
 
 
 
          # this code tries to upgrade damage of first unit. in case there's no damage token, it tries to upgrade range
 
-        print('\nturn to upgrade')
-        print(world.get_remaining_turns_to_upgrade())
+        # print('\nturn to upgrade')
+        # print(world.get_remaining_turns_to_upgrade())
 
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
@@ -257,7 +240,7 @@ class AI:
 
         # for damage upgrade
         if world.get_damage_upgrade_number() > 0:
-            print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
+            # print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
             if len(myself.units) > 0:
                 units_max_damage = []
                 for unit_damage in myself.units:
@@ -389,6 +372,11 @@ class AI:
         print(best_cell_we_can_choose.row)
         print(best_cell_we_can_choose.col)
         return best_cell_we_can_choose
+
+    def last_unit_enemy (self,units_1,units_2):
+        units = units_1 + units_2
+        return units[-1]
+
 
 
 

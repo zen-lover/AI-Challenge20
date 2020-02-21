@@ -194,14 +194,15 @@ class World:
 
     def _handle_turn_kings(self, msg):
         for king_msg in msg:
-            self.get_player_by_id(king_msg["playerId"]).king.is_alive = king_msg["isAlive"]
-            self.get_player_by_id(king_msg["playerId"]).king.hp = king_msg["hp"]
+            hp = king_msg["hp"] if (king_msg["hp"] > 0 and king_msg["isAlive"]) else -1
+            self.get_player_by_id(king_msg["playerId"]).king.is_alive = True if hp > 0 else False
+            self.get_player_by_id(king_msg["playerId"]).king.hp = hp
             self.get_player_by_id(king_msg["playerId"]).king.target = king_msg["target"] if king_msg[
                                                                                                 "target"] != -1 else None
 
     def _handle_turn_units(self, msg, is_dead_unit=False):
         if not is_dead_unit:
-            self._map._clear_units()
+            self._map.clear_units()
             for player in self._players:
                 player.units.clear()
                 player.played_units.clear()
@@ -213,8 +214,6 @@ class World:
             for player in self._players:
                 player.died_units.clear()
 
-        unit_input_list = []
-
         for unit_msg in msg:
             unit_id = unit_msg["unitId"]
             player = self.get_player_by_id(player_id=unit_msg["playerId"])
@@ -224,7 +223,6 @@ class World:
                 target_cell = Cell(row=unit_msg["targetCell"]["row"], col=unit_msg["targetCell"]["col"])
             else:
                 target_cell = None
-
             unit = Unit(unit_id=unit_id, base_unit=base_unit,
                         cell=self._map.get_cell(unit_msg["cell"]["row"], unit_msg["cell"]["col"]),
                         path=self._map.get_path_by_id(unit_msg["pathId"]),
@@ -235,7 +233,7 @@ class World:
                         is_hasted=unit_msg["isHasted"],
                         range=unit_msg["range"],
                         attack=unit_msg["attack"],
-                        target=None, # will be set later when all units are in set
+                        target=unit_msg["target"],
                         target_cell=target_cell,
                         affected_spells=[self.get_cast_spell_by_id(cast_spell_id) for cast_spell_id in
                                          unit_msg["affectedSpells"]],
@@ -243,14 +241,8 @@ class World:
                             unit_msg["target"]) is None else self.get_player_by_id(unit_msg["target"]).king,
                         player_id=unit_msg["playerId"])
 
-            unit_input_list.append(unit)
-
-            if unit.path is not None and unit.path.cells[0] != self.get_player_by_id(unit.player_id).king.center:
-                unit.path = Path(path=unit.path)
-                unit.path.cells.reverse()
-
             if not is_dead_unit:
-                self._map._add_unit_in_cell(unit.cell.row, unit.cell.col, unit)
+                self._map.add_unit_in_cell(unit.cell.row, unit.cell.col, unit)
                 player.units.append(unit)
                 if unit_msg["wasDamageUpgraded"]:
                     player.damage_upgraded_unit = unit
@@ -264,13 +256,14 @@ class World:
                     player.duplicate_units.append(unit)
             else:
                 player.died_units.append(unit)
-
-        for i in range(len(unit_input_list)):
-            unit = unit_input_list[i]
-            if unit.target_if_king is not None:
-                unit.target = None
+        for unit in self._map.units:
+            if unit.target == -1 or unit.target_if_king is not None:
+                if unit.target_if_king == -1:
+                    unit.target_if_king = None
+                else:
+                    unit.target = None
             else:
-                unit.target = self.get_unit_by_id(msg[i]["target"])
+                unit.target = self.get_unit_by_id(unit.target)
 
     def _handle_turn_cast_spells(self, msg):
         self._cast_spells = []
@@ -310,6 +303,7 @@ class World:
         self._handle_turn_units(msg=msg["diedUnits"], is_dead_unit=True)
         self._handle_turn_units(msg["units"])
         self._handle_turn_cast_spells(msg["castSpells"])
+
         self._turn_updates = TurnUpdates(received_spell=msg["receivedSpell"],
                                          friend_received_spell=msg["friendReceivedSpell"],
                                          got_range_upgrade=msg["gotRangeUpgrade"],
