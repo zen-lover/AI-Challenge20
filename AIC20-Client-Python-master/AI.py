@@ -174,7 +174,7 @@ class AI:
             f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.state = 8
 
-        if self.state == 9:
+        if self.state == 8:
 
             for max_range_unit in world.get_me().hand:
                 if max_range_unit.base_range >= max_range:
