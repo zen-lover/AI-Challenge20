@@ -18,8 +18,8 @@ class AI:
 
         self.state = 6
         self.state_of_tele = 1
-        self.unit_that_have_damage_upgrade = None
-        self.unit_that_have_range_upgrade = None
+        self.unit_that_have_damage_upgrade = 0
+        self.unit_that_have_range_upgrade = 0
 
 
 
@@ -84,6 +84,7 @@ class AI:
 
     # it is called every turn for doing process during the game
     def turn(self, world: World):
+        self.state_of_tele = 1
 
         f = self.f
         f.write('-------------------------------Turn-----------------------------------\n')
@@ -185,35 +186,31 @@ class AI:
             if len(myself.units) > 0:
                 units_max_range = []
                 for unit_range in myself.units:
-                    if unit_range.range == 4:
+                    if unit_range.range >= 4:
                         units_max_range.append(unit_range)
-                # print(units_max_range)
                 unit = self.get_max_hp(units_max_range)
-                unit_that_have_range_upgrade = unit
-                # for upgrade_unit in myself.units:
-                #     unit = upgrade_unit
                 if unit is not None:
                     world.upgrade_unit_range(unit_id=unit.unit_id)
                     self.unit_that_have_range_upgrade = unit
+                    print('range meghdar dehi shod')
+                    print(self.unit_that_have_range_upgrade)
                     print(world.upgrade_unit_range(unit_id=unit.unit_id))
                     print(f'range upgrade token {unit.unit_id}\n')
 
         # for damage upgrade
         if world.get_damage_upgrade_number() > 0:
-            # print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
+            print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
             if len(myself.units) > 0:
                 units_max_damage = []
                 for unit_damage in myself.units:
-                    if unit_damage.range >= 15:
+                    if unit_damage.attack >= 12:
                         units_max_damage.append(unit_damage)
                 unit = self.get_max_hp(units_max_damage)
-                unit_that_have_damage_upgrade = unit
-
-                # for upgrade_unit in myself.units:
-                #     unit = upgrade_unit
                 if unit is not None:
                     world.upgrade_unit_damage(unit_id=unit.unit_id)
                     self.unit_that_have_damage_upgrade = unit
+                    print('damage meghdar dehi shod')
+                    print(self.unit_that_have_damage_upgrade)
                     print(world.upgrade_unit_damage(unit_id=unit.unit_id))
                     print(f'damage upgrade token {unit.unit_id}\n')
 
@@ -244,49 +241,36 @@ class AI:
 
                 # age tele bood spell :) miad balatarin hp ro jolo tarin halate momken midaze !
             else:
-                print("baghali :D")
-                my_units = myself.units
-                unit = self.find_max_hp_between_our_unit(my_units)
-                my_paths = myself.paths_from_player
-                path = my_paths[random.randint(0, len(my_paths) - 1)]
+                print("tele ast ! :D")
+                my_units = myself.units         # hame unit hamoon
+                unit = self.find_max_hp_between_our_unit(my_units)      #max hp ro dar unit mirizim dashte bashim
+                my_paths = myself.paths_from_player                     #hame rah haro mirizim toosh
+                path = my_paths[random.randint(0, len(my_paths) - 1)]   # yeki ro random entekhab mikonim
                 size = len(path.cells)
-                cell = path.cells[int((size + 1) / 2)]
+                cell = path.cells[int((size + 1) / 2)]                  # jolo tarin cell esh ro bedast miarim
+
+                if (self.unit_that_have_range_upgrade != 0 and self.state_of_tele == 1  ):
+
+                    if self.unit_that_have_range_upgrade.path.cells.index(self.unit_that_have_range_upgrade.cell)  < path.cells.index(cell):
+                        print('varede if e range shod')
+                        print(self.unit_that_have_range_upgrade.path.cells.index(self.unit_that_have_range_upgrade.cell))
+                        world.cast_unit_spell(unit=self.unit_that_have_range_upgrade, path=path, cell=cell, spell=received_spell  )
+                        self.state_of_tele = 2
 
 
-                print("baghali oomadddd")
+                if (self.unit_that_have_damage_upgrade != 0  and self.state_of_tele == 1 ):
+                    if  self.unit_that_have_damage_upgrade.path.cells.index(self.unit_that_have_damage_upgrade.cell)  < path.cells.index(cell) :
+                        print('varede if e damage shod')
+                        self.unit_that_have_damage_upgrade.path.cells.index(self.unit_that_have_damage_upgrade.cell)
+                        world.cast_unit_spell(unit=self.unit_that_have_damage_upgrade, path=path, cell=cell, spell=received_spell)
+                        self.state_of_tele = 2
 
 
-                print("jaii ke mifresamesh")
-                print(cell.row)
-                print(cell.col)
-
-                if (self.unit_that_have_range_upgrade != None and self.state_of_tele == 1):
-
-                    world.cast_unit_spell(unit=self.unit_that_have_range_upgrade, path=path, cell=cell, spell=received_spell and self.unit_that_have_range_upgrade.path.index(self.unit_that_have_range_upgrade.cell)  < path.index(cell))
-                    print("range dadam")
-                    print("jaii ka hast")
-                    print(self.unit_that_have_range_upgrade.cell.row)
-                    print(self.unit_that_have_range_upgrade.cell.col)
-                    self.state_of_tele = 2
-
-                elif (self.unit_that_have_damage_upgrade != None  and self.state_of_tele == 1 and self.unit_that_have_damage_upgrade.path.index(self.unit_that_have_damage_upgrade.cell)  < path.index(cell)):
-                    world.cast_unit_spell(unit=self.unit_that_have_damage_upgrade, path=path, cell=cell, spell=received_spell)
-                    print("damage dadam")
-                    print("jaii ka hast")
-                    print(self.unit_that_have_damage_upgrade.cell.row)
-                    print(self.unit_that_have_damage_upgrade.cell.col)
-                    self.state_of_tele = 2
-                elif (self.state_of_tele == 1) :
+                if (self.state_of_tele == 1) :
                     world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
                     print("hp dadam")
-                    print("jaii ka hast")
-                    print(unit.cell.row)
-                    print(unit.cell.col)
                     self.state_of_tele = 2
 
-                print("haii ke mifresimesh")
-                print(cell.row)
-                print(cell.col)
 
 
 
