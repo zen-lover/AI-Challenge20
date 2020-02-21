@@ -17,6 +17,10 @@ class AI:
         self.path_for_my_units = None
 
         self.state = 6
+        self.state_of_tele = 1
+        self.unit_that_have_damage_upgrade = None
+        self.unit_that_have_range_upgrade = None
+
 
 
 
@@ -80,6 +84,7 @@ class AI:
 
     # it is called every turn for doing process during the game
     def turn(self, world: World):
+
         f = self.f
         f.write('-------------------------------Turn-----------------------------------\n')
         f.write(f"turn {world.get_current_turn()} started\n")
@@ -172,6 +177,48 @@ class AI:
         print('each turn')
         print(world._current_turn)
 
+
+
+        # for range upgrade
+        if world.get_range_upgrade_number() > 0:
+            print(f'\nwe have {world.get_range_upgrade_number()} range upgrade')
+            if len(myself.units) > 0:
+                units_max_range = []
+                for unit_range in myself.units:
+                    if unit_range.range == 4:
+                        units_max_range.append(unit_range)
+                # print(units_max_range)
+                unit = self.get_max_hp(units_max_range)
+                unit_that_have_range_upgrade = unit
+                # for upgrade_unit in myself.units:
+                #     unit = upgrade_unit
+                if unit is not None:
+                    world.upgrade_unit_range(unit_id=unit.unit_id)
+                    self.unit_that_have_range_upgrade = unit
+                    print(world.upgrade_unit_range(unit_id=unit.unit_id))
+                    print(f'range upgrade token {unit.unit_id}\n')
+
+        # for damage upgrade
+        if world.get_damage_upgrade_number() > 0:
+            # print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
+            if len(myself.units) > 0:
+                units_max_damage = []
+                for unit_damage in myself.units:
+                    if unit_damage.range >= 15:
+                        units_max_damage.append(unit_damage)
+                unit = self.get_max_hp(units_max_damage)
+                unit_that_have_damage_upgrade = unit
+
+                # for upgrade_unit in myself.units:
+                #     unit = upgrade_unit
+                if unit is not None:
+                    world.upgrade_unit_damage(unit_id=unit.unit_id)
+                    self.unit_that_have_damage_upgrade = unit
+                    print(world.upgrade_unit_damage(unit_id=unit.unit_id))
+                    print(f'damage upgrade token {unit.unit_id}\n')
+
+
+
         ## berim soraghe in ke spell bendazim :))
 
         received_spell = world.get_received_spell()
@@ -200,19 +247,47 @@ class AI:
                 print("baghali :D")
                 my_units = myself.units
                 unit = self.find_max_hp_between_our_unit(my_units)
-                print("hp yaroo")
-                print(unit.hp)
-                print("jaii ke hast")
-                print(unit.cell.row)
-                print(unit.cell.col)
                 my_paths = myself.paths_from_player
                 path = my_paths[random.randint(0, len(my_paths) - 1)]
                 size = len(path.cells)
                 cell = path.cells[int((size + 1) / 2)]
+
+
+                print("baghali oomadddd")
+
+
+                print("jaii ke mifresamesh")
+                print(cell.row)
+                print(cell.col)
+
+                if (self.unit_that_have_range_upgrade != None and self.state_of_tele == 1):
+
+                    world.cast_unit_spell(unit=self.unit_that_have_range_upgrade, path=path, cell=cell, spell=received_spell and self.unit_that_have_range_upgrade.path.index(self.unit_that_have_range_upgrade.cell)  < path.index(cell))
+                    print("range dadam")
+                    print("jaii ka hast")
+                    print(self.unit_that_have_range_upgrade.cell.row)
+                    print(self.unit_that_have_range_upgrade.cell.col)
+                    self.state_of_tele = 2
+
+                elif (self.unit_that_have_damage_upgrade != None  and self.state_of_tele == 1 and self.unit_that_have_damage_upgrade.path.index(self.unit_that_have_damage_upgrade.cell)  < path.index(cell)):
+                    world.cast_unit_spell(unit=self.unit_that_have_damage_upgrade, path=path, cell=cell, spell=received_spell)
+                    print("damage dadam")
+                    print("jaii ka hast")
+                    print(self.unit_that_have_damage_upgrade.cell.row)
+                    print(self.unit_that_have_damage_upgrade.cell.col)
+                    self.state_of_tele = 2
+                elif (self.state_of_tele == 1) :
+                    world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
+                    print("hp dadam")
+                    print("jaii ka hast")
+                    print(unit.cell.row)
+                    print(unit.cell.col)
+                    self.state_of_tele = 2
+
                 print("haii ke mifresimesh")
                 print(cell.row)
                 print(cell.col)
-                world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
+
 
 
 
@@ -221,38 +296,7 @@ class AI:
         # print('\nturn to upgrade')
         # print(world.get_remaining_turns_to_upgrade())
 
-        # for range upgrade
-        if world.get_range_upgrade_number() > 0:
-            print(f'\nwe have {world.get_range_upgrade_number()} range upgrade')
-            if len(myself.units) > 0:
-                units_max_range = []
-                for unit_range in myself.units:
-                    if unit_range.range == 4:
-                        units_max_range.append(unit_range)
-                # print(units_max_range)
-                unit = self.get_max_hp(units_max_range)
-                # for upgrade_unit in myself.units:
-                #     unit = upgrade_unit
-                if unit is not None:
-                    world.upgrade_unit_range(unit_id=unit.unit_id)
-                    print(world.upgrade_unit_range(unit_id=unit.unit_id))
-                    print(f'range upgrade token {unit.unit_id}\n')
 
-        # for damage upgrade
-        if world.get_damage_upgrade_number() > 0:
-            # print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
-            if len(myself.units) > 0:
-                units_max_damage = []
-                for unit_damage in myself.units:
-                    if unit_damage.range >= 15:
-                        units_max_damage.append(unit_damage)
-                unit = self.get_max_hp(units_max_damage)
-                # for upgrade_unit in myself.units:
-                #     unit = upgrade_unit
-                if unit is not None:
-                    world.upgrade_unit_damage(unit_id=unit.unit_id)
-                    print(world.upgrade_unit_damage(unit_id=unit.unit_id))
-                    print(f'damage upgrade token {unit.unit_id}\n')
 
 
 
