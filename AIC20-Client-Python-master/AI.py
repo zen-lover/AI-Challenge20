@@ -181,7 +181,7 @@ class AI:
                     max_range = max_range_unit.base_range
                     max_range_unit_select = max_range_unit
             world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            #f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.status = 9
                 
                 
