@@ -16,7 +16,7 @@ class AI:
         self.cols = 0
         self.path_for_my_units = None
 
-        self.state = 6
+        self.state = 1
         self.state_of_tele = 1
         self.unit_that_have_damage_upgrade = None
         self.unit_that_have_range_upgrade = None
@@ -58,7 +58,7 @@ class AI:
         self.f.write('\n')
         # choosing hand
         all_base_units = world.get_all_base_units()
-        my_hand = [all_base_units[1], all_base_units[5], all_base_units[0], all_base_units[6], all_base_units[2]]#[base_unit for base_unit in all_base_units if not base_unit.is_flying]
+        my_hand = [all_base_units[0], all_base_units[1], all_base_units[6], all_base_units[2], all_base_units[8]]#[base_unit for base_unit in all_base_units if not base_unit.is_flying]
 
         self.f.write('HAND: ')
         for base_unit in my_hand:
@@ -85,6 +85,7 @@ class AI:
     # it is called every turn for doing process during the game
     def turn(self, world: World):
         self.state_of_tele = 1
+        all_base_units = world.get_all_base_units()
 
         f = self.f
         f.write('-------------------------------Turn-----------------------------------\n')
@@ -133,47 +134,73 @@ class AI:
         max_hp = 0
         max_damage = 0
         max_range = 0
+        if world.get_me().ap == 10:
+            if self.state == 1 :
+                world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
+                f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+                self.state =2
+            if self.state == 2:
+                world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
+                f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+                self.state=3
+            if self.state == 2:
+                world.put_unit(base_unit=all_base_units[8], path=world.get_me().paths_from_player[0])
+                f.write(f'PUT UNIT {all_base_units[8].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+                self.state =3
+            if self.state == 3:
+                world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
+                f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+                self.state = 4
+            if self.state == 4:
+                world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
+                f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+                self.state = 5
+            if self.state == 5:
+                world.put_unit(base_unit=all_base_units[6], path=world.get_me().paths_from_player[0])
+                f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+                self.state = 1
 
 
-        if self.state == 6:
-            for max_hp_unit in world.get_me().hand:
-                if max_hp_unit.max_hp >= max_hp and max_hp_unit.type_id != 4:
-                    max_hp = max_hp_unit.max_hp
-                    max_hp_unit_select = max_hp_unit
-            world.put_unit(base_unit=max_hp_unit_select, path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-            self.state = 7
 
-
-        if self.state == 7:
-            for max_damage_unit in world.get_me().hand:
-                if max_damage_unit.base_attack >= max_damage:
-                    max_damage = max_damage_unit.base_attack
-                    max_damage_unit_select = max_damage_unit
-            world.put_unit(base_unit=max_damage_unit_select, path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-            self.state = 8
-
-        if self.state == 8:
-
-            for max_range_unit in world.get_me().hand:
-                if max_range_unit.base_range >= max_range:
-                    max_range = max_range_unit.base_range
-                    max_range_unit_select = max_range_unit
-            world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
-            #f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-            self.status = 9
-                
-                
-        if self.state == 9 :
-
-            for max_range_unit in world.get_me().hand:
-                if max_range_unit.base_range >= max_range:
-                    max_range = max_range_unit.base_range
-                    max_range_unit_select = max_range_unit
-            world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-            self.status = 6
+            # if self.state == 6:
+        #     for max_hp_unit in world.get_me().hand:
+        #         if max_hp_unit.max_hp >= max_hp and max_hp_unit.type_id != 4:
+        #             max_hp = max_hp_unit.max_hp
+        #             max_hp_unit_select = max_hp_unit
+        #     world.put_unit(base_unit=max_hp_unit_select, path=world.get_me().paths_from_player[0])
+        #     f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+        #     self.state = 7
+        #
+        #
+        # if self.state == 7:
+        #     for max_damage_unit in world.get_me().hand:
+        #         if max_damage_unit.base_attack >= max_damage:
+        #             max_damage = max_damage_unit.base_attack
+        #             max_damage_unit_select = max_damage_unit
+        #     world.put_unit(base_unit=max_damage_unit_select, path=world.get_me().paths_from_player[0])
+        #     f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+        #     self.state = 8
+        #
+        # if self.state == 8:
+        #
+        #     for max_range_unit in world.get_me().hand:
+        #         if max_range_unit.base_range >= max_range:
+        #             max_range = max_range_unit.base_range
+        #             max_range_unit_select = max_range_unit
+        #     world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
+        #     #f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+        #     self.status = 9
+        #
+        #
+        # if self.state == 9 :
+        #
+        #     for max_range_unit in world.get_me().hand:
+        #         if max_range_unit.base_range >= max_range:
+        #             max_range = max_range_unit.base_range
+        #             max_range_unit_select = max_range_unit
+        #     world.put_unit(base_unit=max_range_unit_select, path=world.get_me().paths_from_player[0])
+        #     f.write(f'PUT UNIT {max_hp_unit_select.type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+        #     self.status = 6
 
         print('each turn')
         print(world._current_turn)
