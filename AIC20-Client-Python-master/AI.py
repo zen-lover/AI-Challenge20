@@ -20,6 +20,7 @@ class AI:
         self.state_of_tele = 1
         self.unit_that_have_damage_upgrade = None
         self.unit_that_have_range_upgrade = None
+        self.dade = 0
 
 
 
@@ -58,7 +59,9 @@ class AI:
         self.f.write('\n')
         # choosing hand
         all_base_units = world.get_all_base_units()
-        my_hand = [all_base_units[0], all_base_units[1], all_base_units[6], all_base_units[2], all_base_units[8]]#[base_unit for base_unit in all_base_units if not base_unit.is_flying]
+
+        # [base_unit for base_unit in all_base_units if not base_unit.is_flying]
+        my_hand = [all_base_units[1], all_base_units[2], all_base_units[6], all_base_units[5], all_base_units[0]]
 
         self.f.write('HAND: ')
         for base_unit in my_hand:
@@ -84,15 +87,24 @@ class AI:
 
     # it is called every turn for doing process during the game
     def turn(self, world: World):
+        self.dade = 0
         self.state_of_tele = 1
         all_base_units = world.get_all_base_units()
+        print('#####################################')
+        print('turn:')
+        print(world.get_current_turn())
+        print('ap')
+        print(world.get_me().ap)
+        print('hand')
+        for item in world.get_me().hand:
+            print(item.type_id)
+        print('*************************')
+
 
         f = self.f
         f.write('-------------------------------Turn-----------------------------------\n')
         f.write(f"turn {world.get_current_turn()} started\n")
-        # print("turn started:", world.get_current_turn())
-        # print('turn to upgrade')
-        # print(world.get_remaining_turns_to_upgrade())
+
         f.write(f'REMAINING TURNS TO UPGRADE: {world.get_remaining_turns_to_upgrade()}\n')
         f.write(f'AP: {world.get_me().ap}\n')
         f.write(f'HAND: ')
@@ -131,34 +143,49 @@ class AI:
         f.write('\n')
 
 
-        max_hp = 0
-        max_damage = 0
-        max_range = 0
-        if world.get_me().ap == 10:
-            if self.state == 1 :
-                world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
-                f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-                self.state =2
-            if self.state == 2:
-                world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
-                f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-                self.state=3
-            if self.state == 2:
-                world.put_unit(base_unit=all_base_units[8], path=world.get_me().paths_from_player[0])
-                f.write(f'PUT UNIT {all_base_units[8].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-                self.state =3
-            if self.state == 3:
-                world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
-                f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-                self.state = 4
-            if self.state == 4:
-                world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
-                f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-                self.state = 5
-            if self.state == 5:
-                world.put_unit(base_unit=all_base_units[6], path=world.get_me().paths_from_player[0])
-                f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
-                self.state = 1
+
+        if  self.check_unit_in_hand(world.get_me().hand , all_base_units[0]) and self.dade == 0 :
+            print('0dadam')
+            world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            self.dade = 1
+
+
+
+        if self.check_unit_in_hand(world.get_me().hand , all_base_units[1]) and self.dade == 0:
+            print('1dadam')
+            world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            self.dade = 1
+
+
+        if self.check_unit_in_hand(world.get_me().hand , all_base_units[2]) and self.dade == 0:
+            print('2dadam')
+            world.put_unit(base_unit=all_base_units[2], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[2].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            self.dade = 1
+
+
+        if self.check_unit_in_hand(world.get_me().hand , all_base_units[6]) and self.dade == 0:
+            print('6dadam')
+            world.put_unit(base_unit=all_base_units[6], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            self.dade = 1
+
+
+        if self.check_unit_in_hand(world.get_me().hand , all_base_units[5]) and self.dade == 0:
+            print('5dadam')
+            world.put_unit(base_unit=all_base_units[5], path=world.get_me().paths_from_player[0])
+            f.write(
+                f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            self.dade = 1
+
+
+
+
+
+
+
 
 
 
@@ -209,7 +236,7 @@ class AI:
 
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
-            print(f'\nwe have {world.get_range_upgrade_number()} range upgrade')
+
             if len(myself.units) > 0:
                 units_max_range = []
                 for unit_range in myself.units:
@@ -219,14 +246,11 @@ class AI:
                 if unit is not None:
                     world.upgrade_unit_range(unit_id=unit.unit_id)
                     self.unit_that_have_range_upgrade = unit
-                    print('range meghdar dehi shod')
-                    print(self.unit_that_have_range_upgrade)
-                    print(world.upgrade_unit_range(unit_id=unit.unit_id))
-                    print(f'range upgrade token {unit.unit_id}\n')
+
 
         # for damage upgrade
         if world.get_damage_upgrade_number() > 0:
-            print(f'\nwe have {world.get_damage_upgrade_number()} damage upgrade')
+
             if len(myself.units) > 0:
                 units_max_damage = []
                 for unit_damage in myself.units:
@@ -236,10 +260,7 @@ class AI:
                 if unit is not None:
                     world.upgrade_unit_damage(unit_id=unit.unit_id)
                     self.unit_that_have_damage_upgrade = unit
-                    print('damage meghdar dehi shod')
-                    print(self.unit_that_have_damage_upgrade)
-                    print(world.upgrade_unit_damage(unit_id=unit.unit_id))
-                    print(f'damage upgrade token {unit.unit_id}\n')
+
 
 
 
@@ -268,38 +289,22 @@ class AI:
 
                 # age tele bood spell :) miad balatarin hp ro jolo tarin halate momken midaze !
             else:
-                print("tele ast ! :D")
-                print(received_spell.type)
+
                 my_units = myself.units         # hame unit hamoon
                 unit = self.find_max_hp_between_our_unit(my_units)      #max hp ro dar unit mirizim dashte bashim
                 my_paths = myself.paths_from_player                     #hame rah haro mirizim toosh
                 path = my_paths[random.randint(0, len(my_paths) - 1)]# yeki ro random entekhab mikonim
-                # print('cell haye path')
-                # print(path.cells)
-                # print('cell haye upgrade')
-                # if self.unit_that_have_range_upgrade is not None:
-                #     print(self.unit_that_have_range_upgrade.path.cells)
-                # if self.unit_that_have_damage_upgrade is not None:
-                #     print(self.unit_that_have_damage_upgrade.path.cells)
+
                 size = len(path.cells)
                 cell = path.cells[(int((size + 1) / 2))-3]# jolo tarin cell esh ro bedast miarim
-                print('koja befrese')
-                print(cell.row)
-                print(cell.col)
+
                 self.state_of_tele = 1
 
                 if (self.unit_that_have_range_upgrade  is not  None and self.state_of_tele == 1  ):
 
 
                     if self.unit_that_have_range_upgrade.path.cells.index(self.unit_that_have_range_upgrade.cell)  < path.cells.index(cell):
-                        print('varede if e range shod')
-                        print('level of range dar if ')
-                        print(self.unit_that_have_range_upgrade.range_level)
-                        print('before')
-                        print(self.unit_that_have_range_upgrade.cell.row)
-                        print(self.unit_that_have_range_upgrade.cell.col)
-                        print('unit id : ')
-                        print(self.unit_that_have_damage_upgrade.unit_id)
+
                         world.cast_unit_spell(unit=self.unit_that_have_range_upgrade, path=path, cell=cell, spell=received_spell  )
                         self.state_of_tele = 2
 
@@ -307,27 +312,17 @@ class AI:
                 if (self.unit_that_have_damage_upgrade is not None  and self.state_of_tele == 1 ):
                     print(self.unit_that_have_damage_upgrade.unit_id)
                     if  self.unit_that_have_damage_upgrade.path.cells.index(self.unit_that_have_damage_upgrade.cell)  < path.cells.index(cell) :
-                        print('varede if e damage shod ')
-                        print('level of damage dar if ')
-                        print(self.unit_that_have_damage_upgrade.damage_level)
+
                         self.unit_that_have_damage_upgrade.path.cells.index(self.unit_that_have_damage_upgrade.cell)
-                        print('before')
-                        print(self.unit_that_have_damage_upgrade.cell.row)
-                        print(self.unit_that_have_damage_upgrade.cell.col)
-                        print('unit id : ')
-                        print(self.unit_that_have_damage_upgrade.unit_id)
+
                         world.cast_unit_spell(unit=self.unit_that_have_damage_upgrade, path=path, cell=cell, spell=received_spell)
                         self.state_of_tele = 2
 
 
                 if (self.state_of_tele == 1) :
-                    print('before')
-                    print(unit.cell.row)
-                    print(unit.cell.col)
+
                     world.cast_unit_spell(unit=unit, path=path, cell=cell, spell=received_spell)
-                    print("hp dadam")
-                    print('unit id : ')
-                    print(unit.unit_id)
+
                     self.state_of_tele = 2
 
 
@@ -432,23 +427,26 @@ class AI:
                 if number_of_unit_in_best_cell < len(
                         world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
                                                      spell=received_spell)):
-                    print('tedad niroo jaii ke mizanim')
-                    print(len(world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
-                                                           spell=received_spell)))
+
                     number_of_unit_in_best_cell = len(
                         world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
                                                      spell=received_spell))
                     row_of_best_cell = row_index
                     col_of_best_cell = column_index
-                    print('jaii ke mizanim ')
+
                     best_cell_we_can_choose = Cell(row_of_best_cell, col_of_best_cell)
-        print(best_cell_we_can_choose.row)
-        print(best_cell_we_can_choose.col)
         return best_cell_we_can_choose
 
     def last_unit_enemy (self,units_1,units_2):
         units = units_1 + units_2
         return units[-1]
+
+    def check_unit_in_hand(self , hand , unit):
+        for item in hand:
+            if  item.type_id == unit.type_id:
+                return True
+
+        return  False
 
 
 
