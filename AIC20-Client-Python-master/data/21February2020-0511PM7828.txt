@@ -1,0 +1,12 @@
+6  3
+2  2
+5  2
+unit_id:  44  base_unit:  2  damage_caused:  0
+3  3
+unit_id:  44  base_unit:  2  damage_caused:  0
+4  4
+8  3
+unit_id:  54  base_unit:  4  damage_caused:  0
+7  2
+unit_id:  54  base_unit:  4  damage_caused:  0
+MY SCORE: 2

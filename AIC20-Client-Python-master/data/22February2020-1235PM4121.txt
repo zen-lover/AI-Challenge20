@@ -1,0 +1,9 @@
+id:  41  type:  1  path:  4
+id:  41  type:  1  path:  2
+id:  41  type:  2  path:  3
+id:  41  type:  6  path:  3
+id:  41  type:  2  path:  4
+id:  41  type:  5  path:  3
+id:  41  type:  1  path:  4
+id:  41  type:  2  path:  3
+MY SCORE: 2

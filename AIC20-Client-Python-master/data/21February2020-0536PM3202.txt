@@ -1,0 +1,23 @@
+5  4
+6  2
+2  2
+unit_id:  46  base_unit:  6  damage_caused:  5
+8  3
+unit_id:  46  base_unit:  6  damage_caused:  5
+7  3
+unit_id:  48  base_unit:  8  damage_caused:  15
+7  3
+unit_id:  48  base_unit:  8  damage_caused:  15
+3  4
+unit_id:  56  base_unit:  7  damage_caused:  0
+2  3
+unit_id:  56  base_unit:  7  damage_caused:  0
+2  3
+unit_id:  58  base_unit:  2  damage_caused:  0
+4  4
+unit_id:  58  base_unit:  2  damage_caused:  0
+0  3
+unit_id:  58  base_unit:  2  damage_caused:  0
+3  4
+unit_id:  58  base_unit:  2  damage_caused:  0
+MY SCORE: 4

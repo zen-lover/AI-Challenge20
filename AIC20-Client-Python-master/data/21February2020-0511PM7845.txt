@@ -1,0 +1,9 @@
+5  2
+1  2
+5  4
+unit_id:  47  base_unit:  1  damage_caused:  0
+5  3
+unit_id:  47  base_unit:  1  damage_caused:  0
+6  3
+2  2
+MY SCORE: 7

@@ -1,0 +1,60 @@
+1  4
+3  2
+unit_id:  43  base_unit:  1  damage_caused:  0
+4  3
+unit_id:  50  base_unit:  3  damage_caused:  0
+7  4
+unit_id:  54  base_unit:  6  damage_caused:  0
+1  3
+unit_id:  55  base_unit:  7  damage_caused:  0
+0  4
+unit_id:  59  base_unit:  1  damage_caused:  0
+5  3
+unit_id:  62  base_unit:  0  damage_caused:  0
+7  3
+unit_id:  70  base_unit:  5  damage_caused:  0
+0  3
+unit_id:  75  base_unit:  7  damage_caused:  0
+4  2
+unit_id:  79  base_unit:  0  damage_caused:  0
+3  4
+unit_id:  87  base_unit:  6  damage_caused:  0
+6  4
+unit_id:  88  base_unit:  3  damage_caused:  0
+2  3
+unit_id:  94  base_unit:  6  damage_caused:  0
+5  4
+unit_id:  96  base_unit:  2  damage_caused:  0
+5  3
+unit_id:  102  base_unit:  4  damage_caused:  0
+7  2
+unit_id:  108  base_unit:  5  damage_caused:  0
+4  2
+unit_id:  116  base_unit:  3  damage_caused:  0
+7  2
+unit_id:  119  base_unit:  8  damage_caused:  0
+7  4
+unit_id:  125  base_unit:  4  damage_caused:  0
+5  3
+unit_id:  125  base_unit:  4  damage_caused:  0
+0  4
+unit_id:  125  base_unit:  4  damage_caused:  0
+7  3
+unit_id:  125  base_unit:  4  damage_caused:  0
+8  2
+unit_id:  125  base_unit:  4  damage_caused:  0
+3  2
+unit_id:  125  base_unit:  4  damage_caused:  0
+8  4
+unit_id:  116  base_unit:  3  damage_caused:  0
+0  2
+unit_id:  116  base_unit:  3  damage_caused:  0
+0  3
+unit_id:  178  base_unit:  0  damage_caused:  0
+6  2
+unit_id:  185  base_unit:  0  damage_caused:  0
+7  4
+unit_id:  193  base_unit:  6  damage_caused:  0
+1  2
+unit_id:  196  base_unit:  7  damage_caused:  0
+MY SCORE: 5
