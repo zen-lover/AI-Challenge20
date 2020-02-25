@@ -61,7 +61,7 @@ class AI:
         all_base_units = world.get_all_base_units()
 
         # [base_unit for base_unit in all_base_units if not base_unit.is_flying]
-        my_hand = [all_base_units[1], all_base_units[2], all_base_units[6], all_base_units[5], all_base_units[0]]
+        my_hand = [all_base_units[1], all_base_units[2], all_base_units[6], all_base_units[7], all_base_units[0]]
 
         self.f.write('HAND: ')
         for base_unit in my_hand:
@@ -144,6 +144,22 @@ class AI:
 
 
 
+
+        if world.get_current_turn() == 1 :
+            self.dade = 1
+            world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+
+            world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+
+            world.put_unit(base_unit=all_base_units[6], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+
+
+
+
+
         if  self.check_unit_in_hand(world.get_me().hand , all_base_units[0]) and self.dade == 0 :
             print('0dadam')
             world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
@@ -159,17 +175,17 @@ class AI:
             self.dade = 1
 
 
-        if self.check_unit_in_hand(world.get_me().hand , all_base_units[2]) and self.dade == 0:
+        if self.check_unit_in_hand(world.get_me().hand , all_base_units[6]) and self.dade == 0:
             print('2dadam')
-            world.put_unit(base_unit=all_base_units[2], path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {all_base_units[2].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            world.put_unit(base_unit=all_base_units[6], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
 
-        if self.check_unit_in_hand(world.get_me().hand , all_base_units[6]) and self.dade == 0:
+        if self.check_unit_in_hand(world.get_me().hand , all_base_units[2]) and self.dade == 0:
             print('6dadam')
-            world.put_unit(base_unit=all_base_units[6], path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            world.put_unit(base_unit=all_base_units[2], path=world.get_me().paths_from_player[0])
+            f.write(f'PUT UNIT {all_base_units[2].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
 
@@ -177,7 +193,7 @@ class AI:
             print('5dadam')
             world.put_unit(base_unit=all_base_units[5], path=world.get_me().paths_from_player[0])
             f.write(
-                f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+                f'PUT UNIT {all_base_units[5].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
 
