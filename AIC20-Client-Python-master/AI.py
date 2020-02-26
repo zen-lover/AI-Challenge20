@@ -210,37 +210,6 @@ class AI:
                 if unit is not None:
                     world.upgrade_unit_damage(unit_id=unit.unit_id)
                     self.unit_that_have_damage_upgrade = unit
-                    # print(f'damage dadam be {unit.unit_id}')
-
-
-
-
-
-        ## berim soraghe in ke spell bendazim :))
-
-        # for item in myself.spells:
-        #     print(f'received spell {item.type_id}')
-
-        # received_spell = world.get_received_spell()
-        # if received_spell is not None:
-        #     if received_spell.is_area_spell():  # age area bood              :  hame be joz tele
-        #
-        #         # spell enemy               : damage va poison bood         : zarar be doshman
-        #         if received_spell.target == SpellTarget.ENEMY:
-        #             print('oomad')
-        #             world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),
-        #                                   spell=received_spell)
-        #             print('tedad:')
-        #             print( self.return_best_cell_for_spell(world, received_spell))
-        #
-        #
-        #
-        #         elif received_spell.target == SpellTarget.SELF:
-        #             world.cast_area_spell(center=self.return_best_cell_for_spell(world, received_spell),
-        #                                   spell=received_spell)
-
-
-                # age tele bood spell :) miad balatarin hp ro jolo tarin halate momken midaze !
 
 
         if self.check_spell_in_spells(myself.spells, 0):
@@ -359,25 +328,7 @@ class AI:
         else:
             return None
 
-    def return_best_cell_for_spell(self, world, received_spell):
-        map = world.get_map()
-        row_of_map = map.row_num
-        column_of_map = map.col_num
-        number_of_unit_in_best_cell = 0
-        row_of_best_cell = 0
-        col_of_best_cell = 0
-        best_cell_we_can_choose = Cell()
 
-        for column_index in range(0, column_of_map):
-            for row_index in range(0, row_of_map):
-                if number_of_unit_in_best_cell < len(
-                        world.get_area_spell_targets(row_index, column_index, received_spell)):
-                    number_of_unit_in_best_cell = len(
-                        world.get_area_spell_targets(row_index, column_index, received_spell))
-                    row_of_best_cell = row_index
-                    col_of_best_cell = column_index
-                    best_cell_we_can_choose = Cell(row_of_best_cell, col_of_best_cell)
-        return best_cell_we_can_choose
 
     def find_max_hp_between_our_unit(self, my_units):
         max_hp = 0
@@ -399,33 +350,23 @@ class AI:
 
         for column_index in range(0, column_of_map):
             for row_index in range(0, row_of_map):
-                cell_for_our_loop = Cell(row_index, column_index)
+                cell_for_our_loop = Cell(row_index, column_index)       #cell e marboot be in halghe
                 if self.number_of_unit_in_best_cell < len(
                         world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
                                                      spell=received_spell)):
+
                     self.number_of_unit_in_best_cell = len(
                         world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
                                                      spell=received_spell))
 
                     row_of_best_cell = row_index
                     col_of_best_cell = column_index
-                    # print('niroo ha')
-                    # print(world.get_area_spell_targets(row=row_index, col=column_index, center=cell_for_our_loop,
-                    #                                    spell=received_spell))
 
-                    # print('varede if shodam ')
-                    # print('row')
-                    # print(row_of_best_cell)
-                    # print(row_index)
-                    # print('our spell')
-                    # print(received_spell)
 
         self.best_cell_we_can_choose = Cell(row_of_best_cell, col_of_best_cell)
-        # print('mamanmmmm : ')
-        # print(self.best_cell_we_can_choose)
-        # print('tedad')
-        # print(self.number_of_unit_in_best_cell)
+
         return self.best_cell_we_can_choose
+
 
     def last_unit_enemy (self,units_1,units_2):
         units = units_1 + units_2
