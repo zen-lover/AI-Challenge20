@@ -2,7 +2,7 @@
 import random
 
 from model import *
-import datetime
+# import datetime
 from world import World
 
 
@@ -29,47 +29,47 @@ class AI:
 
 
 
-
-        '''sahar log'''
-        now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
-        # now = 'log\\' + now       # sahar to ino bzn va khat paiin o coment kon
-        now = 'log/' + now          # mn o parsa ino mizanim
-        now = now + '.txt'
-        self.f = open(now, "w+")
-    ''' sahar log'''
+        #
+        #     '''sahar log'''
+        #     now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
+        #     # now = 'log\\' + now       # sahar to ino bzn va khat paiin o coment kon
+        #     now = 'log/' + now          # mn o parsa ino mizanim
+        #     now = now + '.txt'
+        #     self.f = open(now, "w+")
+        # ''' sahar log'''
 
 
 
 
     # this function is called in the beginning for deck picking and pre process
     def pick(self, world: World):
-        self.f.write('----------------------------Pick-------------------------------\n')
+        #self.f.write('----------------------------Pick-------------------------------\n')
         map = world.get_map()
         self.rows = map.row_num
         self.cols = map.col_num
-        self.f.write('Player id: ' + str(world.get_me().player_id) + '\n')
-        self.f.write(f'MAP SIZE:{self.rows}*{self.cols}\n')
+        #self.f.write('Player id: ' + str(world.get_me().player_id) + '\n')
+        #self.f.write(f'MAP SIZE:{self.rows}*{self.cols}\n')
         print("pick started!")
         world.get_cast_spell_by_id(id = 1.1)
 
         # pre process
-        self.f.write("ALL PATHS:\n")
-        for path in  map.paths:
-            self.f.write(f'PATH ID: {path.id}\n     PATH CELLS: ')
-            for cell in path.cells:
-                self.f.write(f'({cell.row}, {cell.col}), ')
-            self.f.write('\n')
-        self.f.write('\n')
+        # #self.f.write("ALL PATHS:\n")
+        # for path in  map.paths:
+        #     #self.f.write(f'PATH ID: {path.id}\n     PATH CELLS: ')
+        #     for cell in path.cells:
+        #         self.f.write(f'({cell.row}, {cell.col}), ')
+        #     self.f.write('\n')
+        # self.f.write('\n')
         # choosing hand
         all_base_units = world.get_all_base_units()
 
         # [base_unit for base_unit in all_base_units if not base_unit.is_flying]
         my_hand = [all_base_units[1], all_base_units[2], all_base_units[6], all_base_units[5], all_base_units[0]]
 
-        self.f.write('HAND: ')
-        for base_unit in my_hand:
-            self.f.write(' ' + str(base_unit.type_id))
-        self.f.write('\n')
+        # self.f.write('HAND: ')
+        # for base_unit in my_hand:
+        #     self.f.write(' ' + str(base_unit.type_id))
+        # self.f.write('\n')
 
         # picking the chosen deck - rest of the deck will automatically be filled with random base_units
         world.choose_hand(base_units = my_hand)
@@ -82,11 +82,11 @@ class AI:
             self.path_for_my_units = world.get_friend().paths_from_player[0]
         else:
             self.path_for_my_units = world.get_friend().paths_from_player[0]
-        self.f.write("Paths from my palyer: ")
+        #self.f.write("Paths from my palyer: ")
 
-        for i in world.get_friend().paths_from_player:
-            self.f.write(str(i.id))
-        self.f.write('\n')
+        # for i in world.get_friend().paths_from_player:
+        #     self.f.write(str(i.id))
+        # self.f.write('\n')
 
     # it is called every turn for doing process during the game
     def turn(self, world: World):
@@ -98,86 +98,86 @@ class AI:
         print(world.get_current_turn())
 
 
-        f = self.f
-        f.write('-------------------------------Turn-----------------------------------\n')
-        f.write(f"turn {world.get_current_turn()} started\n")
-
-        f.write(f'REMAINING TURNS TO UPGRADE: {world.get_remaining_turns_to_upgrade()}\n')
-        f.write(f'AP: {world.get_me().ap}\n')
-        f.write(f'HAND: ')
-        for base_unit in world.get_me().hand:
-            f.write(f'{base_unit.type_id} ')
-        f.write('\n')
+        # f = self.f
+        # f.write('-------------------------------Turn-----------------------------------\n')
+        # f.write(f"turn {world.get_current_turn()} started\n")
+        #
+        # f.write(f'REMAINING TURNS TO UPGRADE: {world.get_remaining_turns_to_upgrade()}\n')
+        # f.write(f'AP: {world.get_me().ap}\n')
+        # f.write(f'HAND: ')
+        # for base_unit in world.get_me().hand:
+        #     f.write(f'{base_unit.type_id} ')
+        # f.write('\n')
 
         myself = world.get_me()
 
         enemy_units = world.get_first_enemy().units
         enemy_units.append(world.get_second_enemy())
 
-        f.write('Enemy Units:\n')
-        first_enemy_units = world.get_first_enemy().units
-        for unit in first_enemy_units:
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
-        second_enemy_units = world.get_second_enemy().units
-        for unit in second_enemy_units:
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
-        f.write('\n')
-
-        f.write('My Units:\n')
+        # f.write('Enemy Units:\n')
+        # first_enemy_units = world.get_first_enemy().units
+        # for unit in first_enemy_units:
+        #     if type(unit) == Unit:
+        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
+        # second_enemy_units = world.get_second_enemy().units
+        # for unit in second_enemy_units:
+        #     if type(unit) == Unit:
+        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
+        # f.write('\n')
+        #
+        # f.write('My Units:\n')
         my_units = world.get_me().units
-        for unit in my_units:
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
-        f.write('\n')
-
-        f.write('Friend Units:\n')
-        friend_units = world.get_friend().units
-        for unit in friend_units:
-            if type(unit) == Unit:
-                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
-        f.write('\n')
-
-
-
-
-
+        # for unit in my_units:
+        #     if type(unit) == Unit:
+        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+        # f.write('\n')
+        #
+        # f.write('Friend Units:\n')
+        # friend_units = world.get_friend().units
+        # for unit in friend_units:
+        #     if type(unit) == Unit:
+        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+        # f.write('\n')
+        #
+        #
+        #
+        #
+        #
 
         if world.get_current_turn() == 1:
             self.dade = 1
             world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+           # f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
 
         if  self.check_unit_in_hand(world.get_me().hand , all_base_units[0]) and self.dade == 0 :
             # print('0dadam')
             world.put_unit(base_unit=all_base_units[0], path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            #f.write(f'PUT UNIT {all_base_units[0].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
         if self.check_unit_in_hand(world.get_me().hand , all_base_units[1]) and self.dade == 0:
             # print('1dadam')
             world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            #f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
         if self.check_unit_in_hand(world.get_me().hand , all_base_units[6]) and self.dade == 0:
             # print('2dadam')
             world.put_unit(base_unit=all_base_units[6], path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            #f.write(f'PUT UNIT {all_base_units[6].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
         if self.check_unit_in_hand(world.get_me().hand , all_base_units[2]) and self.dade == 0:
             # print('6dadam')
             world.put_unit(base_unit=all_base_units[2], path=world.get_me().paths_from_player[0])
-            f.write(f'PUT UNIT {all_base_units[2].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            #f.write(f'PUT UNIT {all_base_units[2].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
         if self.check_unit_in_hand(world.get_me().hand , all_base_units[5]) and self.dade == 0:
             # print('5dadam')
             world.put_unit(base_unit=all_base_units[5], path=world.get_me().paths_from_player[0])
-            f.write(
-                f'PUT UNIT {all_base_units[5].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
+            #f.write(
+                #f'PUT UNIT {all_base_units[5].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
             self.dade = 1
 
 
@@ -283,7 +283,7 @@ class AI:
         print("end started!")
         print("My score:", scores[world.get_me().player_id])
 
-        self.f.close()
+        # self.f.close()
 
 
 
