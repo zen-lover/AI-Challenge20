@@ -26,7 +26,8 @@ class AI:
         self.best_cell_we_can_choose = Cell()
 
 
-
+        self.number_of_turns_after_friends_death = 0
+        self.number_of_turns_after_last_put_to_friend = 0
 
 
         #
@@ -118,6 +119,7 @@ class AI:
 
         my_units = world.get_me().units
 
+        self.check_friends_king(world)
 
         if world.get_current_turn() == 1:
             self.dade = 1
@@ -400,3 +402,41 @@ class AI:
             if type(unit) == Unit:
                 f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
         f.write('\n')
+
+    def check_friends_king(self,world):
+        self.number_of_turns_after_last_put_to_friend += 1
+        if not world.get_friend().king.is_alive:
+            self.number_of_turns_after_friends_death += 1
+
+        print(f"{self.number_of_turns_after_friends_death} turns from friend's death")
+
+        if self.number_of_turns_after_friends_death <= 3 and self.number_of_turns_after_friends_death > 0:
+            if not self.put_the_most_damage_on_friend_path(world):
+                self.put_the_cheapest_on_friend_path(world)
+        elif self.number_of_turns_after_friends_death > 4:
+            print(f'{self.number_of_turns_after_last_put_to_friend} turns after friends last put')
+            if self.number_of_turns_after_last_put_to_friend >= 4:
+                if not self.put_the_most_damage_on_friend_path(world):
+                    self.put_the_cheapest_on_friend_path(world)
+
+    def put_the_cheapest_on_friend_path(self,world):
+        cheapest_base_unit = world.get_me().hand[0]
+        for base_unit in world.get_me().hand:
+            if base_unit.ap < cheapest_base_unit.ap:
+                cheapest_base_unit = base_unit
+        if world.get_me().ap >= cheapest_base_unit.ap:
+            world.put_unit(base_unit=cheapest_base_unit, path=world.get_friend().paths_from_player[0])
+            self.number_of_turns_after_last_put_to_friend = 0
+            return True
+        return False
+
+    def put_the_most_damage_on_friend_path(self,world):
+        hand =  world.get_me().hand
+        sorted_hand = sorted(hand, key=lambda x: x.base_attack, reverse=True)
+        my_ap = world.get_me().ap
+        for base_unit in sorted_hand:
+            if base_unit.ap <= my_ap:
+                world.put_unit(base_unit=base_unit, path=world.get_friend().paths_from_player[0])
+                self.number_of_turns_after_last_put_to_friend = 0
+                return True
+        return False
