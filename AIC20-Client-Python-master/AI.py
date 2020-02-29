@@ -124,6 +124,7 @@ class AI:
         if world.get_current_turn() == 1:
             self.dade = 1
             world.put_unit(base_unit=all_base_units[1], path=world.get_me().paths_from_player[0])
+            world.put_unit(base_unit=all_base_units[5], path=world.get_me().paths_from_player[0])
            # f.write(f'PUT UNIT {all_base_units[1].type_id} ON PATH {world.get_me().paths_from_player[0].id}\n')
 
         if  self.check_unit_in_hand(world.get_me().hand , all_base_units[0]) and self.dade == 0 and world.get_me().ap >= 4 :
@@ -164,29 +165,40 @@ class AI:
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
 
-            if len(myself.units) > 0:
+            if len(myself.units) > 0 and world.get_current_turn() > 70:
                 units_max_range = []
                 for unit_range in myself.units:
                     if unit_range.base_unit.type_id == 0:
                         units_max_range.append(unit_range)
                 unit = self.get_max_hp(units_max_range)
+                for unit_range in myself.units:
+                    if unit_range.base_unit.type_id == 6:
+                        units_max_range.append(unit_range)
+                unit = self.get_max_hp(units_max_range)
                 if unit is not None:
-                    world.upgrade_unit_range(unit_id=unit.unit_id)
-                    self.unit_that_have_range_upgrade = unit
-                    # print(f'range dadam be {unit.unit_id}')
+                    for i in range(0, world.get_range_upgrade_number()):
+                        world.upgrade_unit_range(unit_id=unit.unit_id)
+                    # self.unit_that_have_range_upgrade = unit
+                    #     print(f'range dadam be {unit.unit_id}')
 
         # for damage upgrade
         if world.get_damage_upgrade_number() > 0:
 
-            if len(myself.units) > 0:
+            if len(myself.units) > 0 and world.get_current_turn() > 70:
                 units_max_damage = []
                 for unit_damage in myself.units:
                     if unit_damage.base_unit.type_id == 0:
                         units_max_damage.append(unit_damage)
                 unit = self.get_max_hp(units_max_damage)
+                for unit_damage in myself.units:
+                    if unit_damage.base_unit.type_id == 6:
+                        units_max_damage.append(unit_damage)
+                unit = self.get_max_hp(units_max_damage)
                 if unit is not None:
-                    world.upgrade_unit_damage(unit_id=unit.unit_id)
-                    self.unit_that_have_damage_upgrade = unit
+                    for i in range(0, world.get_damage_upgrade_number()):
+                        world.upgrade_unit_damage(unit_id=unit.unit_id)
+                    # self.unit_that_have_damage_upgrade = unit
+                    #     print(f'damage dadam be {unit.unit_id}')
 
 
         if self.check_spell_in_spells(myself.spells, 0):

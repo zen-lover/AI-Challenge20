@@ -1,0 +1,1454 @@
+{
+    "end": [
+        {
+            "playerId": 0,
+            "score": 3}
+        {
+            "playerId": 1,
+            "score": 7}
+        {
+            "playerId": 2,
+            "score": 3}
+        {
+            "playerId": 3,
+            "score": 7
+        }
+    ],
+    "init": {
+        "baseUnits": [
+            {
+                "ap": 4,
+                "maxHP": 15,
+                Type Id: 0}
+            {
+                "ap": 3,
+                "maxHP": 30,
+                Type Id: 1}
+            {
+                "ap": 4,
+                "maxHP": 20,
+                Type Id: 2}
+            {
+                "ap": 6,
+                "maxHP": 25,
+                Type Id: 3}
+            {
+                "ap": 10,
+                "maxHP": 50,
+                Type Id: 4}
+            {
+                "ap": 3,
+                "maxHP": 30,
+                Type Id: 5}
+            {
+                "ap": 2,
+                "maxHP": 15,
+                Type Id: 6}
+            {
+                "ap": 5,
+                "maxHP": 30,
+                Type Id: 7}
+            {
+                "ap": 6,
+                "maxHP": 20,
+                Type Id: 8
+            }
+        ],
+        "graphicMap": {
+            COL: 10,
+            "kings": [
+                {
+                    COL: 2,
+                    AP:  90,
+                    Team Name: "Team0",
+                    Player Id: 0,
+                    ROW:  2},
+                {
+                    COL: 7,
+                    AP:  90,
+                    Team Name: "Team1",
+                    Player Id: 1,
+                    ROW:  17},
+                {
+                    COL: 7,
+                    AP:  90,
+                    Team Name: "Team2",
+                    Player Id: 2,
+                    ROW:  2},
+                {
+                    COL: 2,
+                    AP:  90,
+                    Team Name: "Team3",
+                    Player Id: 3,
+                    ROW:  17}
+            ],
+            "paths": [
+                {
+                    "cells": [ {COL: 7,ROW:  2}, {COL: 7,ROW:  3}, {COL: 7,ROW:  4}, {COL: 7,ROW:  5}, {COL: 7,ROW:  6}, {COL: 7,ROW:  7}, {COL: 7,ROW:  8}, {COL: 7,ROW:  9}, {COL: 7,ROW:  10}, {COL: 7,ROW:  11}, {COL: 7,ROW:  12}, {COL: 7,ROW:  13}, {COL: 7,ROW:  14}, {COL: 7,ROW:  15}, {COL: 7,ROW:  16}, {COL: 7,ROW:  17}
+                    ],
+                    "pathId": 0},
+                {
+                    "cells": [ {COL: 2,ROW:  2}, {COL: 2,ROW:  3}, {COL: 2,ROW:  4}, {COL: 2,ROW:  5}, {COL: 2,ROW:  6}, {COL: 2,ROW:  7}, {COL: 2,ROW:  8}, {COL: 2,ROW:  9}, {COL: 2,ROW:  10}, {COL: 2,ROW:  11}, {COL: 2,ROW:  12}, {COL: 2,ROW:  13}, {COL: 2,ROW:  14}, {COL: 2,ROW:  15}, {COL: 2,ROW:  16}, {COL: 2,ROW:  17}
+                    ],
+                    "pathId": 1},
+                {
+                    "cells": [ {COL: 2,ROW:  2}, {COL: 2,ROW:  3}, {COL: 2,ROW:  4}, {COL: 2,ROW:  5}, {COL: 2,ROW:  6}, {COL: 3,ROW:  6}, {COL: 4,ROW:  6}, {COL: 5,ROW:  6}, {COL: 6,ROW:  6}, {COL: 7,ROW:  6}, {COL: 7,ROW:  5}, {COL: 7,ROW:  4}, {COL: 7,ROW:  3}, {COL: 7,ROW:  2}
+                    ],
+                    "pathId": 2},
+                {
+                    "cells": [ {COL: 7,ROW:  17}, {COL: 7,ROW:  16}, {COL: 7,ROW:  15}, {COL: 7,ROW:  14}, {COL: 7,ROW:  13}, {COL: 6,ROW:  13}, {COL: 5,ROW:  13}, {COL: 4,ROW:  13}, {COL: 3,ROW:  13}, {COL: 2,ROW:  13}, {COL: 2,ROW:  14}, {COL: 2,ROW:  15}, {COL: 2,ROW:  16}, {COL: 2,ROW:  17}
+                    ],
+                    "pathId": 4}
+            ],
+            ROW:  20}
+        "maxAP": 10
+    },
+    "turns": [
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 9,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 37,    Range Level: 0,    ROW:  3,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 9,
+                        Hand:  [2,6,5,0,3],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 38,    Range Level: 0,    ROW:  16,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 9,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 39,    Range Level: 0,    ROW:  3,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 9,
+                        Hand:  [2,6,5,0,1],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 40,    Range Level: 0,    ROW:  16,    Type Id: 1
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 2}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 37,    Range Level: 0,    ROW:  4,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 7,
+                        Hand:  [2,6,5,3,4],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 38,    Range Level: 0,    ROW:  15,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  16,    Type Id: 0
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 39,    Range Level: 0,    ROW:  4,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 7,
+                        Hand:  [2,6,5,1,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 40,    Range Level: 0,    ROW:  15,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  16,    Type Id: 0
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 3}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 37,    Range Level: 0,    ROW:  5,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 7,
+                        Hand:  [2,5,3,4,0],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 38,    Range Level: 0,    ROW:  14,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  15,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  16,    Type Id: 6
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 39,    Range Level: 0,    ROW:  5,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 6,
+                        Hand:  [2,6,5,7,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 40,    Range Level: 0,    ROW:  14,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  15,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  16,    Type Id: 1
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 4}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 37,    Range Level: 0,    ROW:  6,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 5,
+                        Hand:  [2,5,3,4,6],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 38,    Range Level: 0,    ROW:  13,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  14,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  15,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  16,    Type Id: 0
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 39,    Range Level: 0,    ROW:  6,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 6,
+                        Hand:  [2,5,7,8,3],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 40,    Range Level: 0,    ROW:  13,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  14,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  15,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  16,    Type Id: 6
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 5}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 37,    Range Level: 0,    ROW:  7,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 5,
+                        Hand:  [2,5,3,4,1],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 38,    Range Level: 0,    ROW:  12,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  13,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  14,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  15,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  16,    Type Id: 6
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 39,    Range Level: 0,    ROW:  7,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 4,
+                        Hand:  [5,7,8,3,0],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 40,    Range Level: 0,    ROW:  12,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  13,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  14,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  15,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  16,    Type Id: 2
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 6}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 37,    Range Level: 0,    ROW:  8,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 4,
+                        Hand:  [2,5,3,4,0],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 38,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  13,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  14,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  15,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  16,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 39,    Range Level: 0,    ROW:  8,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 2,
+                        Hand:  [5,7,8,3,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 40,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  13,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  14,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  15,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  16,    Type Id: 0
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 7}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  10,    Unit Id: 37,    Range Level: 0,    ROW:  8,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 2,
+                        Hand:  [2,5,3,4,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  25,    Unit Id: 38,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  12,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  13,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  14,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  15,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  16,    Type Id: 0
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  10,    Unit Id: 39,    Range Level: 0,    ROW:  8,    Type Id: 1
+                            }]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 4,
+                        Hand:  [5,7,8,3,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  25,    Unit Id: 40,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  12,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  13,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  14,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  15,    Type Id: 0
+                            }]}}
+            ],
+            "turnAttacks": [
+                {
+                    "attackerId": 37,
+                    "defenderId": 40},
+                {
+                    "attackerId": 38,
+                    "defenderId": 39},
+                {
+                    "attackerId": 39,
+                    "defenderId": 38},
+                {
+                    "attackerId": 40,
+                    "defenderId": 37},
+                {
+                    "attackerId": 41,
+                    "defenderId": 39},
+                {
+                    "attackerId": 42,
+                    "defenderId": 37}
+            ],
+            
+
+
+------------------------------------------TURN: 8}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 4,
+                        Hand:  [2,5,3,4,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 38,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  12,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  13,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  14,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  15,    Type Id: 0
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 2,
+                        Hand:  [5,7,8,3,1],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 40,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  12,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  12,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  13,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  14,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  16,    Type Id: 2
+                            }]}}
+            ],
+            "turnAttacks": [
+                {
+                    "attackerId": 37,
+                    "defenderId": 40},
+                {
+                    "attackerId": 38,
+                    "defenderId": 39},
+                {
+                    "attackerId": 39,
+                    "defenderId": 38},
+                {
+                    "attackerId": 40,
+                    "defenderId": 37},
+                {
+                    "attackerId": 41,
+                    "defenderId": 39},
+                {
+                    "attackerId": 42,
+                    "defenderId": 37},
+                {
+                    "attackerId": 43,
+                    "defenderId": 39},
+                {
+                    "attackerId": 44,
+                    "defenderId": 37}
+            ],
+            
+
+
+------------------------------------------TURN: 9}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 2,
+                        Hand:  [5,3,4,7,6],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 38,    Range Level: 0,    ROW:  10,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  11,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  11,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  11,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  12,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  13,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  14,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  16,    Type Id: 2
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 4,
+                        Hand:  [5,7,8,3,1],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 40,    Range Level: 0,    ROW:  10,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  11,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  11,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  12,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  13,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  15,    Type Id: 2
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 10}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 2,
+                        Hand:  [5,3,4,7,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 38,    Range Level: 0,    ROW:  9,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  10,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  10,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  10,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  11,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  12,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  13,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  15,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 54,    Range Level: 0,    ROW:  16,    Type Id: 6
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 3,
+                        Hand:  [5,7,8,3,1],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [{ "spellId": 1,    Type Id: 4,    "unitIds": [        56,        57,        58
+                                ]
+                            }],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 40,    Range Level: 0,    ROW:  9,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  10,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  10,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  10,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  11,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  14,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 55,    Range Level: 0,    ROW:  16,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  7,    Unit Id: 56,    Range Level: 0,    ROW:  10,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 57,    Range Level: 0,    ROW:  10,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  7,    Unit Id: 58,    Range Level: 0,    ROW:  10,    Type Id: 6
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 11}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 4,
+                        Hand:  [5,3,4,7,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 38,    Range Level: 0,    ROW:  8,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  9,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  9,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  9,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  10,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  12,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  14,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 54,    Range Level: 0,    ROW:  15,    Type Id: 6
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 2,
+                        Hand:  [5,7,8,3,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [{ "spellId": 1,    Type Id: 4,    "unitIds": [        56,        57,        58
+                                ]
+                            }],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 40,    Range Level: 0,    ROW:  8,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  9,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  9,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  9,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  10,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  11,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  13,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 55,    Range Level: 0,    ROW:  15,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  7,    Unit Id: 56,    Range Level: 0,    ROW:  9,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 57,    Range Level: 0,    ROW:  9,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  7,    Unit Id: 58,    Range Level: 0,    ROW:  9,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 59,    Range Level: 0,    ROW:  16,    Type Id: 1
+                            }]}}
+            ],
+            "turnAttacks": [],
+            
+
+
+------------------------------------------TURN: 12}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 3,
+                        Hand:  [3,4,7,8,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  10,    Unit Id: 38,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  8,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  8,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  8,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  9,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  10,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  11,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  13,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 54,    Range Level: 0,    ROW:  14,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 60,    Range Level: 0,    ROW:  16,    Type Id: 5
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 4,
+                        Hand:  [5,7,8,3,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [{ "spellId": 1,    Type Id: 4,    "unitIds": [        56,        57,        58
+                                ]
+                            }],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  10,    Unit Id: 40,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  8,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  8,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  8,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  9,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  10,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  12,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 55,    Range Level: 0,    ROW:  14,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 59,    Range Level: 0,    ROW:  15,    Type Id: 1
+                            }]}}
+            ],
+            "turnAttacks": [
+                {
+                    "attackerId": 0,
+                    "defenderId": 40},
+                {
+                    "attackerId": 2,
+                    "defenderId": 38}
+            ],
+            
+
+
+------------------------------------------TURN: 13}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  85,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 5,
+                        Hand:  [3,4,7,8,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 41,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  8,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  9,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  10,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  12,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 54,    Range Level: 0,    ROW:  13,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 60,    Range Level: 0,    ROW:  15,    Type Id: 5
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  85,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 2,
+                        Hand:  [5,7,8,3,4],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 42,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  8,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  9,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  11,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 55,    Range Level: 0,    ROW:  13,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 59,    Range Level: 0,    ROW:  14,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 61,    Range Level: 0,    ROW:  16,    Type Id: 2
+                            }]}}
+            ],
+            "turnAttacks": [
+                {
+                    "attackerId": 0,
+                    "defenderId": 40},
+                {
+                    "attackerId": 2,
+                    "defenderId": 38},
+                {
+                    "attackerId": 38,
+                    "defenderId": 2},
+                {
+                    "attackerId": 40,
+                    "defenderId": 0}
+            ],
+            
+
+
+------------------------------------------TURN: 14}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  60,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 3,
+                        Hand:  [3,4,7,8,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  5,    Unit Id: 41,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  8,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  9,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  11,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 54,    Range Level: 0,    ROW:  12,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 60,    Range Level: 0,    ROW:  14,    Type Id: 5}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 62,    Range Level: 0,    ROW:  16,    Type Id: 2
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  50,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 4,
+                        Hand:  [5,7,8,3,4],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  5,    Unit Id: 42,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  7,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  8,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  10,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 55,    Range Level: 0,    ROW:  12,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 59,    Range Level: 0,    ROW:  13,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 61,    Range Level: 0,    ROW:  15,    Type Id: 2
+                            }]}}
+            ],
+            "turnAttacks": [
+                {
+                    "attackerId": 0,
+                    "defenderId": 42},
+                {
+                    "attackerId": 2,
+                    "defenderId": 41},
+                {
+                    "attackerId": 41,
+                    "defenderId": 2},
+                {
+                    "attackerId": 42,
+                    "defenderId": 0},
+                {
+                    "attackerId": 43,
+                    "defenderId": 2},
+                {
+                    "attackerId": 44,
+                    "defenderId": 0},
+                {
+                    "attackerId": 45,
+                    "defenderId": 2},
+                {
+                    "attackerId": 46,
+                    "defenderId": 0}
+            ],
+            
+
+
+------------------------------------------TURN: 15}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  25,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 5,
+                        Hand:  [3,4,7,8,2],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 45,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  8,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  10,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 54,    Range Level: 0,    ROW:  11,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 60,    Range Level: 0,    ROW:  13,    Type Id: 5}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 62,    Range Level: 0,    ROW:  15,    Type Id: 2
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  10,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 3,
+                        Hand:  [7,8,3,4,6],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  7,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 50,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  9,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 55,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 59,    Range Level: 0,    ROW:  12,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 61,    Range Level: 0,    ROW:  14,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 63,    Range Level: 0,    ROW:  16,    Type Id: 5
+                            }]}}
+            ],
+            "turnAttacks": [
+                {
+                    "attackerId": 0,
+                    "defenderId": 42},
+                {
+                    "attackerId": 2,
+                    "defenderId": 41},
+                {
+                    "attackerId": 41,
+                    "defenderId": 2},
+                {
+                    "attackerId": 42,
+                    "defenderId": 0},
+                {
+                    "attackerId": 43,
+                    "defenderId": 2},
+                {
+                    "attackerId": 44,
+                    "defenderId": 0},
+                {
+                    "attackerId": 45,
+                    "defenderId": 2},
+                {
+                    "attackerId": 46,
+                    "defenderId": 0},
+                {
+                    "attackerId": 47,
+                    "defenderId": 2},
+                {
+                    "attackerId": 48,
+                    "defenderId": 0}
+            ],
+            
+
+
+------------------------------------------TURN: 16}
+        {
+            "playerTurnEvents": [
+                {
+                    Player Id: 0,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,8],
+                        AP:  -10,
+                        Is the Player alive?  false,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 1,
+                     {
+                        "ap": 3,
+                        Hand:  [3,4,7,8,1],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 43,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  5,    Unit Id: 45,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 47,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 49,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 51,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 53,    Range Level: 0,    ROW:  9,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  15,    Unit Id: 54,    Range Level: 0,    ROW:  10,    Type Id: 6}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  30,    Unit Id: 60,    Range Level: 0,    ROW:  12,    Type Id: 5}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 62,    Range Level: 0,    ROW:  14,    Type Id: 2}
+
+                            { COL: 7,    Damage Level: : 0,    AP:  20,    Unit Id: 64,    Range Level: 0,    ROW:  16,    Type Id: 2
+                            }]}},
+                {
+                    Player Id: 2,
+                     {
+                        "ap": 10,
+                        Hand:  [2,6,5,0,7],
+                        AP:  -20,
+                        Is the Player alive?  false,
+                        Map Spells: [],
+                        Units of this player: [
+                            ]}},
+                {
+                    Player Id: 3,
+                     {
+                        "ap": 3,
+                        Hand:  [7,8,3,4,1],
+                        AP:  90,
+                        Is the Player alive?  true,
+                        Map Spells: [],
+                        Units of this player: [
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 44,    Range Level: 0,    ROW:  7,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 46,    Range Level: 0,    ROW:  7,    Type Id: 6}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 48,    Range Level: 0,    ROW:  7,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  5,    Unit Id: 50,    Range Level: 0,    ROW:  7,    Type Id: 0}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 52,    Range Level: 0,    ROW:  8,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 55,    Range Level: 0,    ROW:  10,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 59,    Range Level: 0,    ROW:  11,    Type Id: 1}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  20,    Unit Id: 61,    Range Level: 0,    ROW:  13,    Type Id: 2}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  30,    Unit Id: 63,    Range Level: 0,    ROW:  15,    Type Id: 5}
+
+                            { COL: 2,    Damage Level: : 0,    AP:  15,    Unit Id: 65,    Range Level: 0,    ROW:  16,    Type Id: 6
+                            }]}}
+            ],
+            "turnAttacks": [
+                {
+                    "attackerId": 0,
+                    "defenderId": 50},
+                {
+                    "attackerId": 2,
+                    "defenderId": 45},
+                {
+                    "attackerId": 43,
+                    "defenderId": 2},
+                {
+                    "attackerId": 44,
+                    "defenderId": 0},
+                {
+                    "attackerId": 45,
+                    "defenderId": 2},
+                {
+                    "attackerId": 46,
+                    "defenderId": 0},
+                {
+                    "attackerId": 47,
+                    "defenderId": 2},
+                {
+                    "attackerId": 48,
+                    "defenderId": 0},
+                {
+                    "attackerId": 49,
+                    "defenderId": 2},
+                {
+                    "attackerId": 50,
+                    "defenderId": 0}
+            ],
+            
+
+
+------------------------------------------TURN: 17
+        }
+    ]
+}
