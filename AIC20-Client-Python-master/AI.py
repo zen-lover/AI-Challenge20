@@ -9,7 +9,6 @@ from world import World
 class AI:
 
 
-
     def __init__(self):
 
         self.rows = 0
@@ -25,11 +24,11 @@ class AI:
         self.number_of_unit_in_best_cell = 0
         self.best_cell_we_can_choose = Cell()
 
-
+        self.could_put_unit_on_friends_path = 1
         self.number_of_turns_after_friends_death = 0
         self.number_of_turns_after_last_put_to_friend = 0
-
-
+        self.last_friend_unit_on_my_way = None
+        self.turn_of_last_friend_unit_on_my_way = -1
         #
         #     '''sahar log'''
         #     now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
@@ -119,13 +118,9 @@ class AI:
 
         my_units = world.get_me().units
 
+        self.should_put_unit_on_friends_path(world)
         self.check_friends_king(world)
-
-
-
         self.choose_and_put_unit(world,all_base_units)
-
-
 
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
@@ -390,8 +385,6 @@ class AI:
         if not world.get_friend().king.is_alive:
             self.number_of_turns_after_friends_death += 1
 
-        print(f"{self.number_of_turns_after_friends_death} turns from friend's death")
-
         if self.number_of_turns_after_friends_death <= 3 and self.number_of_turns_after_friends_death > 0:
             if not self.put_the_most_damage_on_friend_path(world):
                 self.put_the_cheapest_on_friend_path(world)
@@ -448,3 +441,39 @@ class AI:
         if self.check_unit_in_hand(world.get_me().hand , all_base_units[5]) and self.dade == 0 and world.get_me().ap >= 3:
             world.put_unit(base_unit=all_base_units[5], path=world.get_me().paths_from_player[0])
             self.dade = 1
+
+    '''agar yaremun roo masire ma chizi gozasht, ma ham roo masiresh yeki bezarim'''
+    def should_put_unit_on_friends_path(self, world):
+        if not self.could_put_unit_on_friends_path:
+            '''agar as serie ghabl uniti moonde ke nazashti, bezar'''
+            if self.put_the_most_damage_on_friend_path(world):
+                '''agar tunest bezare'''
+                self.could_put_unit_on_friends_path = 1
+
+        if len(world.get_friend().units) > 0:
+            friends_last_unit = world.get_friend().units[-1]
+            my_paths = world.get_me().paths_from_player
+            if self.last_friend_unit_on_my_way != None:
+                '''Agar ta be hal roo masire man unit gozashte bud'''
+                if self.last_friend_unit_on_my_way.unit_id != friends_last_unit.unit_id:
+                    '''agar id e un ghablie ba id e akharin uniti ke tu bazi gozashte yeki nabud'''
+                    '''(yani unit jadid gozashte bud)'''
+                    if friends_last_unit.path == world.get_friend().path_to_friend or friends_last_unit.path in my_paths:
+                        '''agar in jadide roo masire man bud'''
+                        self.last_friend_unit_on_my_way = friends_last_unit #update kon uno
+                        if self.put_the_most_damage_on_friend_path(world):
+                            '''agar poolet resid o gozashti'''
+                            self.could_put_unit_on_friends_path = 1
+                        else:
+                            '''agar poolet naresid o nazashti'''
+                            self.could_put_unit_on_friends_path = 0
+
+            elif self.last_friend_unit_on_my_way == None:
+                if friends_last_unit.path == world.get_friend().path_to_friend or friends_last_unit.path in my_paths:
+                    self.last_friend_unit_on_my_way = friends_last_unit
+                    if self.put_the_most_damage_on_friend_path(world):
+                        '''agar poolet resid o gozashti'''
+                        self.could_put_unit_on_friends_path = 1
+                    else:
+                        '''agar poolet naresid o nazashti'''
+                        self.could_put_unit_on_friends_path = 0
