@@ -36,7 +36,7 @@ class AI:
         #     now = 'log/' + now          # mn o parsa ino mizanim
         #     now = now + '.txt'
         #     self.f = open(now, "w+")
-        # ''' sahar log'''
+        #     ''' sahar log'''
 
 
 
@@ -114,35 +114,10 @@ class AI:
         enemy_units = world.get_first_enemy().units
         enemy_units.append(world.get_second_enemy())
 
-        # f.write('Enemy Units:\n')
-        # first_enemy_units = world.get_first_enemy().units
-        # for unit in first_enemy_units:
-        #     if type(unit) == Unit:
-        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
-        # second_enemy_units = world.get_second_enemy().units
-        # for unit in second_enemy_units:
-        #     if type(unit) == Unit:
-        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
-        # f.write('\n')
-        #
-        # f.write('My Units:\n')
+        # self.logger(world)
+
         my_units = world.get_me().units
-        # for unit in my_units:
-        #     if type(unit) == Unit:
-        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
-        # f.write('\n')
-        #
-        # f.write('Friend Units:\n')
-        # friend_units = world.get_friend().units
-        # for unit in friend_units:
-        #     if type(unit) == Unit:
-        #         f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
-        # f.write('\n')
-        #
-        #
-        #
-        #
-        #
+
 
         if world.get_current_turn() == 1:
             self.dade = 1
@@ -399,13 +374,29 @@ class AI:
         return abs(cell.col - world.get_me().king.center.col) + abs(cell.row - world.get_me().king.center.row)
 
 
+    def logger(self,world):
+        f = self.f
+        f.write('Enemy Units:\n')
+        first_enemy_units = world.get_first_enemy().units
+        for unit in first_enemy_units:
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})       BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 1st enemy\n')
+        second_enemy_units = world.get_second_enemy().units
+        for unit in second_enemy_units:
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} 2nd enemy\n')
+        f.write('\n')
 
+        f.write('My Units:\n')
+        my_units = world.get_me().units
+        for unit in my_units:
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+        f.write('\n')
 
-
-
-
-
-
-
-
-
+        f.write('Friend Units:\n')
+        friend_units = world.get_friend().units
+        for unit in friend_units:
+            if type(unit) == Unit:
+                f.write(f'Id: {unit.unit_id}    Cell: ({unit.cell.row}, {unit.cell.col})        BaseUnit: {unit.base_unit.type_id}      HP: {unit.hp}      Spells: {unit.affected_spells} \n')
+        f.write('\n')
