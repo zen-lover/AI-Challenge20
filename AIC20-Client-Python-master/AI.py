@@ -117,7 +117,8 @@ class AI:
         # self.logger(world)
 
         my_units = world.get_me().units
-
+        if self.friend_is_empty(world):
+            self.help_friend(world)
         self.should_put_unit_on_friends_path(world)
         self.check_friends_king(world)
         self.choose_and_put_unit(world,all_base_units)
@@ -470,6 +471,7 @@ class AI:
 
             elif self.last_friend_unit_on_my_way == None:
                 if friends_last_unit.path == world.get_friend().path_to_friend or friends_last_unit.path in my_paths:
+                    '''agar ru masire man gozashte bud doostam'''
                     self.last_friend_unit_on_my_way = friends_last_unit
                     if self.put_the_most_damage_on_friend_path(world):
                         '''agar poolet resid o gozashti'''
@@ -477,3 +479,12 @@ class AI:
                     else:
                         '''agar poolet naresid o nazashti'''
                         self.could_put_unit_on_friends_path = 0
+
+    def friend_is_empty(self,world):
+        if len(world.get_friend().units) == 0:
+            return True
+        return False
+
+    def help_friend(self,world):
+        if self.number_of_turns_after_last_put_to_friend >= 4:
+            self.put_the_most_damage_on_friend_path(world)
