@@ -570,7 +570,7 @@ class AI:
         return False
 
     def myfunction(self,world):
-        '''agar ye doshmani 7 ta ya kamtar fasele dasht, 3 ta befrest'''
+        '''agar ye doshmani 8 ta ya kamtar fasele dasht, 3 ta befrest'''
         '''bayadbfrstm mige ke bayad ruye masire doshman befresti'''
         ''' '''
         if self.bayadbfrstm == True:
@@ -585,7 +585,7 @@ class AI:
         elif self.bayadbfrstm == False:
             '''hala bayad masir entekhab koni'''
             t = self.get_closest_enemy_path_and_dist(world, world.get_me())
-            if t[1] <= 7:
+            if t[1] <= 8:
                 print(f'ye masire jadid baraye doshman peyda kardam: {t[0].id}')
                 '''in yani bayad beshe masire jadidet'''
                 self.masir = t[0]
