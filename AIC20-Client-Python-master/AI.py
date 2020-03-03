@@ -7,8 +7,7 @@ from world import World
 
 
 class AI:
-
-
+    closest_enemy_path : Path
     def __init__(self):
 
         self.rows = 0
@@ -29,6 +28,15 @@ class AI:
         self.number_of_turns_after_last_put_to_friend = 0
         self.last_friend_unit_on_my_way = None
         self.turn_of_last_friend_unit_on_my_way = -1
+        self.number_of_units_put_yet = 0
+        self.closest_enemy_path = Path(-1,None,  None)
+
+        self.bayadbfrstm = False
+        self.masir = Path(-1,None,None)
+        self.baredoshman = 0
+        self.barekhali = 0
+        self.rukhalibfrstm = False
+        self.masirekhali = Path(-1,None,None)
         #
         #     '''sahar log'''
         #     now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
@@ -37,10 +45,6 @@ class AI:
         #     now = now + '.txt'
         #     self.f = open(now, "w+")
         #     ''' sahar log'''
-
-
-
-
     # this function is called in the beginning for deck picking and pre process
     def pick(self, world: World):
         #self.f.write('----------------------------Pick-------------------------------\n')
@@ -51,15 +55,10 @@ class AI:
         #self.f.write(f'MAP SIZE:{self.rows}*{self.cols}\n')
         # print("pick started!")
         world.get_cast_spell_by_id(id = 1.1)
+        self.closest_enemy_path = world.get_me().paths_from_player[0]
+        self.masir = world.get_me().paths_from_player[0]
+        self.masirekhali = world.get_me().paths_from_player[0]
 
-        # pre process
-        # #self.f.write("ALL PATHS:\n")
-        # for path in  map.paths:
-        #     #self.f.write(f'PATH ID: {path.id}\n     PATH CELLS: ')
-        #     for cell in path.cells:
-        #         self.f.write(f'({cell.row}, {cell.col}), ')
-        #     self.f.write('\n')
-        # self.f.write('\n')
         # choosing hand
         all_base_units = world.get_all_base_units()
 
@@ -87,16 +86,14 @@ class AI:
         # for i in world.get_friend().paths_from_player:
         #     self.f.write(str(i.id))
         # self.f.write('\n')
-
     # it is called every turn for doing process during the game
     def turn(self, world: World):
         self.dade = 0
         self.state_of_tele = 1
         all_base_units = world.get_all_base_units()
-        # print('#####################################')
-        # print('turn:')
-        # print(world.get_current_turn())
-
+        print('#####################################')
+        print('turn:')
+        print(world.get_current_turn())
 
         # f = self.f
         # f.write('-------------------------------Turn-----------------------------------\n')
@@ -117,16 +114,20 @@ class AI:
         # self.logger(world)
 
         my_units = world.get_me().units
-        if self.could_help_friend_while_hp_is_low == 0:
-            if self.put_the_most_damage_on_friend_path(world):
-                # print('could put the previous one')
-                self.could_help_friend_while_hp_is_low = 1
-        if self.friend_is_empty(world) or world.get_friend().king.hp < 80:
-            # print(f'friends hp: {world.get_friend().king.hp}')
-            self.help_friend(world) #agar unit nadasht ya hp sh kam shod
-        self.should_put_unit_on_friends_path(world) #agar ru masire ma gozasht
-        self.check_friends_king(world) #agar shahesh morde bud
-        self.choose_and_put_unit(world,all_base_units)
+        self.myfunction(world)
+        # self.put_x_units_on_closest(world, 5)
+        # if self.could_help_friend_while_hp_is_low == 0:
+        #     if self.put_the_most_damage_on_friend_path(world):
+        #         # print('could put the previous one')
+        #         self.could_help_friend_while_hp_is_low = 1
+        # if self.friend_is_empty(world) or world.get_friend().king.hp < 80:
+        #     # print(f'friends hp: {world.get_friend().king.hp}')
+        #     self.help_friend(world) #agar unit nadasht ya hp sh kam shod
+        # self.should_put_unit_on_friends_path(world) #agar ru masire ma gozasht
+        # self.check_friends_king(world) #agar shahesh morde bud
+        # # self.choose_and_put_unit(world,all_base_units)
+
+
 
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
@@ -237,18 +238,12 @@ class AI:
                     world.cast_area_spell(center=last_unit.cell, spell=received_spell)
                     # print(f'{last_unit.unit_id} poison khord')
 
-
-
     def end(self, world: World, scores):
         print("end started!")
         print("My score:", scores[world.get_me().player_id])
 
         # self.f.close()
-
-
-
      # added function
-
     def get_max_hp(self ,units):
         max_hp = 0
         if len(units) > 0:
@@ -288,8 +283,6 @@ class AI:
         else:
             return None
 
-
-
     def find_max_hp_between_our_unit(self, my_units):
         max_hp = 0
         unit_of_max_hp = my_units[0]
@@ -327,7 +320,6 @@ class AI:
 
         return self.best_cell_we_can_choose
 
-
     def last_unit_enemy (self,units_1,units_2):
         units = units_1 + units_2
         return units[-1]
@@ -357,7 +349,6 @@ class AI:
 
     def distance_from_my_king(self, cell, world):
         return abs(cell.col - world.get_me().king.center.col) + abs(cell.row - world.get_me().king.center.row)
-
 
     def logger(self,world):
         f = self.f
@@ -499,3 +490,151 @@ class AI:
             else:
                 # print("couldn't help")
                 self.could_help_friend_while_hp_is_low = 0
+
+    def get_closest_enemy_path_and_dist(self,world, player):
+        paths = player.paths_from_player
+        nearest_cell = paths[0].cells[-1]
+        nearest_path = paths[0]
+        index = 1000
+        for path in paths:
+            cells = path.cells
+            flag = 0
+            i = 0
+            for cell in cells:
+                # print(f'in cell ({cell.row} , {cell.col})')
+                for unit in cell.units:
+                    # print(f'on unit {unit.unit_id}')
+                    if (unit.player_id != player.player_id) and (unit.player_id != world.get_friend().player_id):
+                        print('the unit is an enemy')
+                        if i < index:
+                            print(f'index({index}) bigger than i({i})')
+                            '''havaset bashe i < index ro didi faghat <= ro nazadi'''
+                            index = i
+                            nearest_cell = cell
+                            nearest_path = path
+                            flag = 1
+                            print(f'nearest enemy of path {path.id} is on cell ({cell.row} , {cell.col})')
+                            break
+                i += 1 #be ezaye har 1 celli ke mire samte doshman tu masir, yeki be in ezafe mishe
+                if flag == 1:
+                    break
+        t = (nearest_path, index)
+        print(t)
+
+        return t
+
+    def get_friend(self, world, player):
+        if player.player_id == 0:
+            return world.get_player_by_id(2)
+        elif player.player_id == 1:
+            return world.get_player_by_id(3)
+        elif player.player_id == 2:
+            return world.get_player_by_id(0)
+        elif player.player_id == 3:
+            return world.get_player_by_id(1)
+
+    def put_x_units_on_closest(self, world, x):
+        if self.number_of_units_put_yet == x:
+            self.closest_enemy_path = self.get_closest_enemy_path(world, world.get_me())
+            self.number_of_units_put_yet = 0
+        if self.number_of_units_put_yet < x:
+            if self.put_unit_on_path(world, self.closest_enemy_path):
+                print(f'put on path {self.closest_enemy_path.id}')
+                self.number_of_units_put_yet += 1
+
+    def put_unit_on_path(self, world, path):
+        #1,0,5,2,6
+        all_base_units = world.get_all_base_units()
+
+        if self.check_unit_in_hand(world.get_me().hand , all_base_units[1]) and world.get_me().ap >=3:
+            world.put_unit(base_unit=all_base_units[1], path=path)
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand , all_base_units[0]) and world.get_me().ap >=4:
+            world.put_unit(base_unit=all_base_units[0], path=path)
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand , all_base_units[5]) and world.get_me().ap >= 3:
+            world.put_unit(base_unit=all_base_units[5], path=path)
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand , all_base_units[2]) and world.get_me().ap >= 4:
+            world.put_unit(base_unit=all_base_units[2], path=path)
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand , all_base_units[6]) and world.get_me().ap >= 2:
+            world.put_unit(base_unit=all_base_units[6], path=path)
+            return True
+
+        return False
+
+    def myfunction(self,world):
+        '''agar ye doshmani 7 ta ya kamtar fasele dasht, 3 ta befrest'''
+        '''bayadbfrstm mige ke bayad ruye masire doshman befresti'''
+        ''' '''
+        if self.bayadbfrstm == True:
+            if self.put_unit_on_path(world, self.masir):
+                self.baredoshman += 1
+                print(f'be samte doshman ferestadam bare {self.baredoshman}om')
+                if self.baredoshman == 3:
+                    print('3 bar tamum shod')
+                    self.bayadbfrstm = False
+                    self.baredoshman = 0
+                return
+        elif self.bayadbfrstm == False:
+            '''hala bayad masir entekhab koni'''
+            t = self.get_closest_enemy_path_and_dist(world, world.get_me())
+            if t[1] <= 7:
+                print(f'ye masire jadid baraye doshman peyda kardam: {t[0].id}')
+                '''in yani bayad beshe masire jadidet'''
+                self.masir = t[0]
+                self.bayadbfrstm = True
+                '''hala ru masire jadid shoroo kon be gozashtan'''
+                if self.put_unit_on_path(world, self.masir):
+                    self.baredoshman += 1
+                    print(f'be samte doshman ferestadam bare {self.baredoshman} om')
+                return
+
+            '''hala farz kon nabayad befreste o bazam true nashode bayadbfrstm'''
+            if self.rukhalibfrstm == True:
+                print('''bayad alan ru masire khale unit befrestim''')
+                if self.put_unit_on_path(world, self.masirekhali):
+                    self.barekhali += 1
+                    print(f'ru masire khali ({self.masirekhali.id}) ferestadam bare {self.barekhali} om')
+                    if self.barekhali == 3:
+                        print('3 bare khali tamum shod')
+                        self.rukhalibfrstm = False
+                        self.barekhali = 0
+                        return
+            elif self.rukhalibfrstm == False:
+                '''hala bayad masir entekhab koni'''
+                print('vase khali hala mikham masir entekhab konam')
+                masir = self.get_masirekhali(world)
+                if masir.id != -1:
+                    print(f'masire jadid vase khali entekhab kardam: {masir.id}')
+                    '''masire jadid dari'''
+                    self.masirekhali = masir
+                    self.rukhalibfrstm = True
+                    if self.put_unit_on_path(world, self.masirekhali):
+                        self.barekhali += 1
+                        print(f'ru masire khali gozashtam bare {self.barekhali} om')
+                    return
+                print('masiri khali nabud')
+
+                '''hala farzkon khali ham nabud'''
+
+                if self.put_unit_on_path(world, world.get_friend().paths_from_player[0]):
+                    print('roo masire doostam gozashtam')
+
+    def get_masirekhali(self, world):
+        cut = 0
+        for path in (world.get_me().paths_from_player + world.get_friend().paths_from_player):
+            for cell in path.cells:
+                for unit in cell.units:
+                    '''agar khasti begi kolan khali baseh, in sharto avaz kon'''
+                    if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id:
+                        '''yani ye doshman hast inja'''
+                        cut = 1
+                        break
+                if cut == 1:
+                    break
+            if cut == 0:
+                return path
+
+        return Path(-1,[])
