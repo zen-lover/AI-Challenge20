@@ -111,6 +111,7 @@ class AI:
         enemy_units = world.get_first_enemy().units
         enemy_units.append(world.get_second_enemy())
 
+        self.get_masireaslieyar(world)
         # self.logger(world)
 
         my_units = world.get_me().units
@@ -624,7 +625,7 @@ class AI:
 
                 '''hala farzkon khali ham nabud'''
 
-                if self.put_unit_on_path(world, world.get_friend().paths_from_player[0]):
+                if self.put_unit_on_path(world, self.get_masireaslieyar(world)):
                     print('roo masire doostam gozashtam')
 
     def get_masirekhali(self, world):
@@ -632,7 +633,7 @@ class AI:
         for path in (world.get_me().paths_from_player + world.get_friend().paths_from_player):
             for cell in path.cells:
                 for unit in cell.units:
-                    '''agar khasti begi kolan khali baseh, in sharto avaz kon'''
+                    '''agar khasti begi kolan khali bashe, in sharto avaz kon'''
                     if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id:
                         '''yani ye doshman hast inja'''
                         cut = 1
@@ -643,3 +644,22 @@ class AI:
                 return path
 
         return Path(-1,[])
+
+    def get_masireaslieyar(self, world):
+        units = world.get_friend().units
+        paths = []
+        for path in world.get_map().paths:
+            paths.append([path.id,0])
+        for unit in units:
+            for item in paths:
+                if item[0] == unit.path.id:
+                    item[1] += 1
+        max = 0
+        index = 0
+        for item in paths:
+            if item[1] > max:
+                max = item[1]
+                index = item[0]
+
+        print(f'masire aslie yar: {index}')
+        return world.get_map().paths[index]
