@@ -553,17 +553,15 @@ class AI:
 
         if self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
             world.put_unit(base_unit=all_base_units[1], path=path)
-            if world.get_current_turn() == 2:
-                world.put_unit(base_unit=all_base_units[5], path=path)
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[0], path=path)
             return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
-            world.put_unit(base_unit=all_base_units[5], path=path)
-            return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[2], path=path)
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
+            world.put_unit(base_unit=all_base_units[5], path=path)
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
             world.put_unit(base_unit=all_base_units[6], path=path)
@@ -592,8 +590,8 @@ class AI:
                 print('''in yani bayad beshe masire jadidet''')
                 self.masir = t[0]
                 self.bayadbfrstm = True
-                self.barekhali = 0
-                self.rukhalibfrstm = False
+                # self.barekhali = 0
+                # self.rukhalibfrstm = False
                 '''hala ru masire jadid shoroo kon be gozashtan'''
                 if self.put_unit_on_path(world, self.masir):
                     self.baredoshman += 1
@@ -615,6 +613,7 @@ class AI:
                 '''hala bayad masir entekhab koni'''
                 print('vase khali hala mikham masir entekhab konam')
                 masir = self.get_masirekhali(world)
+                print(f'id e masire khali: {masir}')
                 if masir.id != -1:
                     print(f'masire jadid vase khali entekhab kardam: {masir.id}')
                     '''masire jadid dari'''
@@ -633,39 +632,46 @@ class AI:
 
     def get_masirekhali(self, world):
         cut = 0
-        for path in (world.get_me().paths_from_player + world.get_friend().paths_from_player):
+        myteampath = world.get_me().paths_from_player
+        myteampath += world.get_friend().paths_from_player
+        for path in myteampath:
+            cut = 0
+            print(f'masire {path.id}')
             for cell in path.cells:
                 for unit in cell.units:
+                    print(f'ruye unit e {unit.unit_id}')
                     '''agar khasti begi kolan khali bashe, in sharto avaz kon'''
                     if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id:
-                        '''yani ye doshman hast inja'''
-                        cut = 1
-                        break
+                        print('''yani ye doshman hast inja''')
+                        if cell != world.get_first_enemy().king.center and cell != world.get_second_enemy().king.center:
+                            cut = 1
+                            print('shah ham nabud. cut 1 shod baghie unitaye cell ro dg lazem nist begardi')
+                            break
                 if cut == 1:
+                    print('baghie cell haye path ro lazem nist begardi')
                     break
             if cut == 0:
                 return path
-
         return Path(-1, [])
 
     def get_masireaslieyar(self, world):
         units = world.get_friend().units
         paths = []
         for path in world.get_map().paths:
-            paths.append([path.id, 0])
+            paths.append([path, 0])
         for unit in units:
             for item in paths:
-                if item[0] == unit.path.id:
+                if item[0].id == unit.path.id:
                     item[1] += 1
         max = 0
-        index = 0
+        path = None
         for item in paths:
             if item[1] > max:
                 max = item[1]
-                index = item[0]
+                path = item[0]
 
-        print(f'masire aslie yar: {index}')
-        return world.get_map().paths[index]
+        print(f'masire aslie yar: {path.id}')
+        return path
 
     def fasele2tacell(self, avali, dovomi):
         return abs(avali.row - dovomi.row) + abs(avali.col - dovomi.col)
