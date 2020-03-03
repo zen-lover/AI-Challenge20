@@ -552,23 +552,27 @@ class AI:
                 self.number_of_units_put_yet += 1
 
     def put_unit_on_path(self, world, path):
-        # 1,0,5,2,6
+        # 0>1>2>6>5
         all_base_units = world.get_all_base_units()
-
-        if self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
-            world.put_unit(base_unit=all_base_units[1], path=path)
-            return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
+        if self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[0], path=path)
+            print(f"put {0}")
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
+            world.put_unit(base_unit=all_base_units[1], path=path)
+            print(f"put {1}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[2], path=path)
-            return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
-            world.put_unit(base_unit=all_base_units[5], path=path)
+            print(f"put {2}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
             world.put_unit(base_unit=all_base_units[6], path=path)
+            print(f"put {6}")
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
+            world.put_unit(base_unit=all_base_units[5], path=path)
+            print(f"put {5}")
             return True
 
         return False
@@ -594,8 +598,8 @@ class AI:
                 print('''in yani bayad beshe masire jadidet''')
                 self.masir = t[0]
                 self.bayadbfrstm = True
-                # self.barekhali = 0
-                # self.rukhalibfrstm = False
+                self.barekhali = 0
+                self.rukhalibfrstm = False
                 '''hala ru masire jadid shoroo kon be gozashtan'''
                 if self.put_unit_on_path(world, self.masir):
                     self.baredoshman += 1
@@ -624,7 +628,7 @@ class AI:
                     self.masirekhali = masir
                     self.rukhalibfrstm = True
                     if self.put_unit_on_path(world, self.masirekhali):
-                        self.barekhali += 1
+                        self.barekhali = 1
                         print(f'ru masire khali gozashtam bare {self.barekhali} om')
                     return
                 print('masiri khali nabud')
@@ -656,6 +660,8 @@ class AI:
                     print('baghie cell haye path ro lazem nist begardi')
                     break
             if cut == 0:
+                if path == world.get_me().path_to_friend:
+                    path = world.get_friend().paths_from_player[0]
                 return path
         return Path(-1, [])
 
