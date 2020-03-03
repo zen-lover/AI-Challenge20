@@ -138,10 +138,11 @@ class AI:
                     if unit_range.base_unit.type_id == 0:
                         units_max_range.append(unit_range)
                 unit = self.get_max_hp(units_max_range)
-                for unit_range in myself.units:
-                    if unit_range.base_unit.type_id == 6:
-                        units_max_range.append(unit_range)
-                unit = self.get_max_hp(units_max_range)
+                if unit is not None and world.get_current_turn() > 75:
+                    for unit_range in myself.units:
+                        if unit_range.base_unit.type_id == 6:
+                            units_max_range.append(unit_range)
+                    unit = self.get_max_hp(units_max_range)
                 if unit is not None:
                     for i in range(0, world.get_range_upgrade_number()):
                         world.upgrade_unit_range(unit_id=unit.unit_id)
@@ -157,10 +158,11 @@ class AI:
                     if unit_damage.base_unit.type_id == 0:
                         units_max_damage.append(unit_damage)
                 unit = self.get_max_hp(units_max_damage)
-                for unit_damage in myself.units:
-                    if unit_damage.base_unit.type_id == 6:
-                        units_max_damage.append(unit_damage)
-                unit = self.get_max_hp(units_max_damage)
+                if unit is not None and world.get_current_turn() > 75:
+                    for unit_damage in myself.units:
+                        if unit_damage.base_unit.type_id == 6:
+                            units_max_damage.append(unit_damage)
+                    unit = self.get_max_hp(units_max_damage)
                 if unit is not None:
                     for i in range(0, world.get_damage_upgrade_number()):
                         world.upgrade_unit_damage(unit_id=unit.unit_id)
