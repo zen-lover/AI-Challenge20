@@ -114,7 +114,8 @@ class AI:
         # self.logger(world)
 
         my_units = world.get_me().units
-        self.myfunction(world)
+        if world.get_current_turn() != 1:
+            self.myfunction(world)
         # self.put_x_units_on_closest(world, 5)
         # if self.could_help_friend_while_hp_is_low == 0:
         #     if self.put_the_most_damage_on_friend_path(world):
@@ -550,6 +551,8 @@ class AI:
 
         if self.check_unit_in_hand(world.get_me().hand , all_base_units[1]) and world.get_me().ap >=3:
             world.put_unit(base_unit=all_base_units[1], path=path)
+            if world.get_current_turn() == 2:
+                world.put_unit(base_unit=all_base_units[5], path=path)
             return True
         elif self.check_unit_in_hand(world.get_me().hand , all_base_units[0]) and world.get_me().ap >=4:
             world.put_unit(base_unit=all_base_units[0], path=path)
