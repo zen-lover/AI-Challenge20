@@ -170,7 +170,7 @@ class AI:
                     #     print(f'damage dadam be {unit.unit_id}')
 
         if self.check_spell_in_spells(myself.spells, 0):
-            print('haste darimaaaaaaaaa---------------------------------------------------------------')
+            # print('haste darimaaaaaaaaa---------------------------------------------------------------')
             if self.check_unit_in_units(world.get_me().units, all_base_units[0]):
                 haste_units = my_units + world.get_friend().units
                 if len(haste_units) > 2:
@@ -181,7 +181,7 @@ class AI:
                             received_spell = self.spell_in_spells(myself.spells, 0)
                             if last_unit.base_unit.type_id != 5:
                                 world.cast_area_spell(center=last_unit.cell, spell=received_spell)
-                                print(f'{last_unit.unit_id} haste khord')
+                                # print(f'{last_unit.unit_id} haste khord')
 
         if self.check_spell_in_spells(myself.spells, 1):
             # print('damage darimaaaaaaaaa---------------------------------------------------------------')
