@@ -111,7 +111,6 @@ class AI:
         enemy_units = world.get_first_enemy().units
         enemy_units.append(world.get_second_enemy())
 
-        self.get_masireaslieyar(world)
         # self.logger(world)
 
         my_units = world.get_me().units
@@ -578,26 +577,28 @@ class AI:
             if self.put_unit_on_path(world, self.masir):
                 self.baredoshman += 1
                 print(f'be samte doshman ferestadam bare {self.baredoshman}om')
-                if self.baredoshman == 3:
-                    print('3 bar tamum shod')
+                if self.baredoshman == 5:
+                    print('5 bar tamum shod')
                     self.bayadbfrstm = False
                     self.baredoshman = 0
                 return
         elif self.bayadbfrstm == False:
-            '''hala bayad masir entekhab koni'''
+            print('''hala bayad masir entekhab koni''')
             t = self.get_closest_enemy_path_and_dist(world, world.get_me())
-            if t[1] <= 6:
+            if t[1] <= 7:
                 print(f'ye masire jadid baraye doshman peyda kardam: {t[0].id}')
-                '''in yani bayad beshe masire jadidet'''
+                print('''in yani bayad beshe masire jadidet''')
                 self.masir = t[0]
                 self.bayadbfrstm = True
+                self.barekhali = 0
+                self.rukhalibfrstm = False
                 '''hala ru masire jadid shoroo kon be gozashtan'''
                 if self.put_unit_on_path(world, self.masir):
                     self.baredoshman += 1
                     print(f'be samte doshman ferestadam bare {self.baredoshman} om')
                 return
 
-            '''hala farz kon nabayad befreste o bazam true nashode bayadbfrstm'''
+            print('''hala farz kon nabayad befreste ru doshman o bazam true nashode bayadbfrstm''')
             if self.rukhalibfrstm == True:
                 print('''bayad alan ru masire khale unit befrestim''')
                 if self.put_unit_on_path(world, self.masirekhali):
