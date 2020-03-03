@@ -577,8 +577,8 @@ class AI:
             if self.put_unit_on_path(world, self.masir):
                 self.baredoshman += 1
                 print(f'be samte doshman ferestadam bare {self.baredoshman}om')
-                if self.baredoshman == 5:
-                    print('5 bar tamum shod')
+                if self.baredoshman == 3:
+                    print('3 bar tamum shod')
                     self.bayadbfrstm = False
                     self.baredoshman = 0
                 return
