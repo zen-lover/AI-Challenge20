@@ -1,0 +1,1828 @@
+Info (PARAM): Deploy=false
+Info (PARAM): Map=/Users/mohammadmahdi/Desktop/aiaiaiai/ai-challenge/AIC20-Game-master/maps/3_v1.1.2.map
+Info (PARAM): TeamName0=Team0
+Info (PARAM): TeamName1=Team1
+Info (PARAM): TeamName2=Team2
+Info (PARAM): TeamName3=Team3
+Info (PARAM): UIToken=00000000000000000000000000000000
+Info (PARAM): OCSendToUI=false
+Info (PARAM): OCSendToFile=false
+Info (PARAM): Client0Token=00000000000000000000000000000000
+Info (PARAM): Client1Token=00000000000000000000000000000000
+Info (PARAM): Client2Token=00000000000000000000000000000000
+Info (PARAM): Client3Token=00000000000000000000000000000000
+Info (PARAM): UIEnable=false
+Info (PARAM): ClientsPort=7099
+Info (ClientNetwork): Listening on port 7099.
+Info (PARAM): ClientsConnectionTimeout=2147483647
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [1, 2, 6, 5, 0]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [1, 2, 6, 5, 0]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [1, 2, 6, 5, 0]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [1, 2, 6, 5, 0]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (GameServer): Simulation timeout passed by spending 57 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (GameServer): Simulation timeout passed by spending 78 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (game_put_unit): Player : 0 Put Unit 37 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 38 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 39 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 40 In Path 1
+Info (GameServer): Simulation timeout passed by spending 40 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (game_put_unit): Player : 0 Put Unit 41 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 42 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 43 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 44 In Path 1
+Info (GameServer): Simulation timeout passed by spending 39 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (game_put_unit): Player : 0 Put Unit 45 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 46 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 47 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 48 In Path 1
+Info (GameServer): Simulation timeout passed by spending 39 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 42 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 38 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 36 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 42 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 31 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 31 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (game_put_unit): Player : 0 Put Unit 49 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 50 In Path 1
+Info (game_put_unit): Player : 2 Put Unit 51 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 52 In Path 1
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (game_put_unit): Player : 0 Put Unit 53 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 54 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 55 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 56 In Path 1
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (game_put_unit): Player : 0 Put Unit 57 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 58 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 59 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 60 In Path 1
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 61 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 62 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 63 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 64 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 65 In Path 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 66 In Path 1
+Info (GameServer): Simulation timeout passed by spending 36 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 67 In Path 1
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (game_put_unit): Player : 0 Put Unit 68 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 69 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 70 In Path 1
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 8, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 13, "col": 2}, "unitId": 70, "pathId": 4}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (game_put_unit): Player : 0 Put Unit 71 In Path 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (Logic error:): Cannot cast more than one spell in a turn. Player id: 3
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 0 With Center : (8,2)
+Info (GameServer): Simulation timeout passed by spending 49 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 13, "col": 2}, "unitId": 70, "pathId": 4}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 6, "col": 2}, "unitId": 71, "pathId": 2}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (game_put_unit): Player : 0 Put Unit 72 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 73 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 74 In Path 1
+Info (game_put_unit): Player : 3 Put Unit 75 In Path 0
+Info (Logic error:): null
+Info (Logic error:): null
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 0 With Center : (8,2)
+Info (GameServer): Simulation timeout passed by spending 36 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 8, "col": 2}, "unitId": 75, "pathId": 0}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (game_put_unit): Player : 0 Put Unit 76 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 77 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 78 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 79 In Path 0
+Info (Logic error:): Cell is not in the path.
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 7, "col": 2}, "unitId": 76, "pathId": 0}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (game_put_unit): Player : 2 Put Unit 80 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 81 In Path 0
+Info (Logic error:): Cell is not in the path.
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 6, "col": 2}, "unitId": 76, "pathId": 2}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (game_put_unit): Player : 0 Put Unit 82 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 83 In Path 1
+Info (game_put_unit): Player : 2 Put Unit 84 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (Logic error:): null
+Info (GameServer): Simulation timeout passed by spending 41 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 5, "cell": {"row": 11, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 8, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 5, "cell": {"row": 7, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (game_put_unit): Player : 0 Put Unit 85 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 86 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 5 With Center : (11,2)
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 5 With Center : (7,2)
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 0 With Center : (8,7)
+Info (GameServer): Simulation timeout passed by spending 39 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 6, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 6, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 87 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (Logic error:): Cannot cast more than one spell in a turn. Player id: 1
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 5 With Center : (11,2)
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 5 With Center : (7,2)
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 0 With Center : (8,7)
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 0 With Center : (6,7)
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 88 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 5 With Center : (11,2)
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 5 With Center : (7,2)
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 0 With Center : (6,7)
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 89 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 36 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 5, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 2 With Center : (5,7)
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 90 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 38 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 9, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 2 With Center : (9,7)
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 91 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 92 In Path 1
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 13, "col": 2}, "unitId": 92, "pathId": 4}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 11, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 11, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 93 In Path 1
+Info (Logic error:): null
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 0 With Center : (11,2)
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (11,2)
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 11, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 39}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 94 In Path 1
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 0 With Center : (11,2)
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (11,2)
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (11,2)
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 12, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 40}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 95 In Path 1
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (11,2)
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (12,2)
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 41}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 96 In Path 1
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (12,2)
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 42}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 97 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 98 In Path 1
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 43}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 99 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 44}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 100 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 45}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 101 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 46}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 102 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 2}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 47}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 103 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 104 In Path 1
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 48}
+Info (game_put_unit): Player : 0 Put Unit 105 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 106 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 107 In Path 1
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 49}
+Info (game_put_unit): Player : 0 Put Unit 108 In Path 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 109 In Path 1
+Info (GameServer): Simulation timeout passed by spending 36 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 4, "cell": {"row": 14, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 50}
+Info (game_put_unit): Player : 0 Put Unit 110 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 111 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 4 With Center : (14,7)
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 8, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 1, "cell": {"row": 5, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 51}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 51}
+Info (game_put_unit): Player : 0 Put Unit 115 In Path 1
+Info (game_put_unit): Player : 2 Put Unit 116 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (Logic error:): Cannot cast more than one spell in a turn. Player id: 3
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 0 With Center : (8,2)
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 4 With Center : (14,7)
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 1, "cell": {"row": 5, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 5, "col": 2}, "unitId": 115, "pathId": 0}, "turn": 52}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 52}
+Info (game_put_unit): Player : 0 Put Unit 117 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 118 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 119 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 1 With Center : (5,2)
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 3 With Center : (5,2)
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 0 With Center : (8,2)
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 4 With Center : (14,7)
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 4, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 53}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 53}
+Info (game_put_unit): Player : 0 Put Unit 120 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 121 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 2 With Center : (4,2)
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 4, "cell": {"row": 5, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 54}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 54}
+Info (game_put_unit): Player : 0 Put Unit 122 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 123 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (5,2)
+Info (GameServer): Simulation timeout passed by spending 36 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 1, "cell": {"row": 7, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 7, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 55}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 55}
+Info (game_put_unit): Player : 0 Put Unit 127 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 128 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 1 With Center : (7,7)
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 2 With Center : (7,7)
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (5,2)
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 56}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 56}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 56}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 56}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 56}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 56}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 56}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 56}
+Info (game_put_unit): Player : 0 Put Unit 129 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 130 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (5,2)
+Info (GameServer): Simulation timeout passed by spending 36 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 57}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 57}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 57}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 57}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 57}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 57}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 57}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 57}
+Info (game_put_unit): Player : 0 Put Unit 131 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 132 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 58}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 58}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 58}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 58}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 58}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 58}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 58}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 58}
+Info (game_put_unit): Player : 0 Put Unit 133 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 134 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 59}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 59}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 59}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 59}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 59}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 59}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 5, "cell": {"row": 5, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 60}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 60}
+Info (game_put_unit): Player : 0 Put Unit 135 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 136 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 137 In Path 1
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 5 With Center : (5,7)
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 61}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 61}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 61}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 61}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 61}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 61}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 61}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 138 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 139 In Path 1
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 5 With Center : (5,7)
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 62}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 62}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 62}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 2}, "turn": 62}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 62}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 62}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 62}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 3 Put Unit 140 In Path 1
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 5 With Center : (5,7)
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 15, "col": 2}, "unitId": 140, "pathId": 0}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 63}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 63}
+Info (game_put_unit): Player : 0 Put Unit 141 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 142 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 143 In Path 1
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 3 With Center : (15,2)
+Info (GameServer): Simulation timeout passed by spending 34 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 64}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 64}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 64}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 64}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 64}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 64}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 64}
+Info (game_put_unit): Player : 0 Put Unit 144 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 3 Put Unit 145 In Path 1
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 14, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 65}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 65}
+Info (game_put_unit): Player : 0 Put Unit 146 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 147 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 148 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 149 In Path 1
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 2 With Center : (14,2)
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 66}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 66}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 66}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 66}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 66}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 66}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 66}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 66}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 150 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 151 In Path 1
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 67}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 67}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 67}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 67}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 67}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 67}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 5, "cell": {"row": 16, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 67}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 67}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 152 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 5 With Center : (16,7)
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 68}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 68}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 68}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 68}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 68}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 68}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 68}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 68}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 153 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 154 In Path 1
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 5 With Center : (16,7)
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 69}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 69}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 69}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 69}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 69}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 69}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 69}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 155 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 5 With Center : (16,7)
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 14, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 4, "cell": {"row": 10, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 70}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 70}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 156 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 157 In Path 1
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 2 With Center : (14,7)
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (10,2)
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 142}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 142}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 142}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 11, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 151}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 151}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 151}, "turn": 71}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 71}
+Info (game_upgrade_unit): Player 2 damageUpgrade 142
+Info (game_upgrade_unit): Player 3 damageUpgrade 151
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 3
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 2
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 2
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 3
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 161 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 162 In Path 1
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 2 With Center : (11,7)
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (10,2)
+Info (GameServer): Simulation timeout passed by spending 31 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 151}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 151}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 142}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 142}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 72}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 72}
+Info (game_upgrade_unit): Player 3 damageUpgrade 151
+Info (game_upgrade_unit): Player 2 rangeUpgrade 142
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 2
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 3
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 163 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (10,2)
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 73}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 73}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 142}, "turn": 73}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 73}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 73}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 73}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 73}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 73}
+Info (game_upgrade_unit): Player 2 rangeUpgrade 142
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 164 In Path 1
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 74}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 74}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 74}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 74}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 164}, "turn": 74}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 74}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 74}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 74}
+Info (game_upgrade_unit): Player 3 rangeUpgrade 164
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 165 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (GameServer): Simulation timeout passed by spending 29 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 75}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 75}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 75}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 75}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 75}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 75}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 75}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 75}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 166 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 167 In Path 1
+Info (GameServer): Simulation timeout passed by spending 31 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 76}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 76}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 76}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 76}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 76}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 76}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 4, "cell": {"row": 15, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 76}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 76}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 4 With Center : (15,7)
+Info (GameServer): Simulation timeout passed by spending 25 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 77}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 77}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 77}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 77}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 77}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 77}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 77}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 77}
+Info (Logic error:): Put unit is not valid path 2 Player id: 0
+Info (game_put_unit): Player : 1 Put Unit 171 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 4 With Center : (15,7)
+Info (GameServer): Simulation timeout passed by spending 25 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 171}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 171}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 171}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 78}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 78}
+Info (game_upgrade_unit): Player 1 damageUpgrade 171
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 1
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 1
+Info (game_put_unit): Player : 0 Put Unit 172 In Path 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 173 In Path 1
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 4 With Center : (15,7)
+Info (GameServer): Simulation timeout passed by spending 27 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 171}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 171}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 79}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 79}
+Info (game_upgrade_unit): Player 1 rangeUpgrade 171
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 1
+Info (game_put_unit): Player : 0 Put Unit 174 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 175 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 176 In Path 1
+Info (GameServer): Simulation timeout passed by spending 25 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 80}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 80}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 171}, "turn": 80}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 80}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 80}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 80}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 80}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 80}
+Info (game_upgrade_unit): Player 1 rangeUpgrade 171
+Info (game_put_unit): Player : 0 Put Unit 177 In Path 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 178 In Path 1
+Info (GameServer): Simulation timeout passed by spending 24 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 81}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 81}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 81}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 81}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 81}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 81}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 81}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 81}
+Info (game_put_unit): Player : 0 Put Unit 179 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 28 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 144}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 144}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 144}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 82}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 82}
+Info (game_upgrade_unit): Player 0 damageUpgrade 144
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 0
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 0
+Info (game_put_unit): Player : 0 Put Unit 180 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 27 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 144}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 144}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 83}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 83}
+Info (game_upgrade_unit): Player 0 damageUpgrade 144
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 0
+Info (game_put_unit): Player : 0 Put Unit 181 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 25 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 144}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 7, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 84}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 84}
+Info (game_upgrade_unit): Player 0 rangeUpgrade 144
+Info (game_put_unit): Player : 0 Put Unit 182 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 2 With Center : (7,7)
+Info (GameServer): Simulation timeout passed by spending 25 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 7, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 7, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 85}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 85}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 2 With Center : (7,2)
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 2 With Center : (7,2)
+Info (GameServer): Simulation timeout passed by spending 26 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 86}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 86}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 86}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 86}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 86}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 86}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 86}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 86}
+Info (game_put_unit): Player : 0 Put Unit 183 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 26 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 87}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 87}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 87}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 2}, "turn": 87}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 87}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 87}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 87}
+Info (game_put_unit): Player : 1 Put Unit 184 In Path 0
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (game_put_unit): Player : 3 Put Unit 185 In Path 0
+Info (GameServer): Simulation timeout passed by spending 24 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 9, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 88}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 88}
+Info (game_put_unit): Player : 0 Put Unit 186 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 187 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 188 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 189 In Path 0
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 2 With Center : (9,7)
+Info (GameServer): Simulation timeout passed by spending 24 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 89}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 89}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 89}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 89}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 89}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 89}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 89}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 89}
+Info (game_put_unit): Player : 0 Put Unit 190 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 191 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 192 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 193 In Path 0
+Info (GameServer): Simulation timeout passed by spending 26 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 90}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 90}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 90}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 90}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 90}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 90}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 90}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 194 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 26 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 4, "cell": {"row": 5, "col": 2}, "unitId": -1, "pathId": -1}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 91}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 91}
+Info (game_put_unit): Player : 0 Put Unit 195 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 196 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (5,2)
+Info (GameServer): Simulation timeout passed by spending 27 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 182}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 196}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 4, "col": 7}, "unitId": 196, "pathId": 2}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 187}, "turn": 92}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 92}
+Info (game_upgrade_unit): Player 0 damageUpgrade 182
+Info (game_upgrade_unit): Player 1 rangeUpgrade 187
+Info (game_upgrade_unit): Player 2 rangeUpgrade 196
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 200 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (Logic error:): null
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (5,2)
+Info (GameServer): Simulation timeout passed by spending 28 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 5, "col": 7}, "unitId": 200, "pathId": 2}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 93}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 93}
+Info (game_put_unit): Player : 0 Put Unit 201 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 202 In Path 0
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (Logic error:): null
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 4 With Center : (5,2)
+Info (GameServer): Simulation timeout passed by spending 25 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 2}, "turn": 94}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 94}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 94}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 94}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 94}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 94}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 94}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (Logic error:): Put unit is not valid path 2 Player id: 2
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 29 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 95}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 95}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 95}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 95}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 95}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 95}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 95}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 95}
+Info (game_put_unit): Player : 0 Put Unit 203 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 204 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 27 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 96}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 96}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 96}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 96}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 96}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 96}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 96}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 205 In Path 1
+Info (game_put_unit): Player : 3 Put Unit 206 In Path 1
+Info (GameServer): Simulation timeout passed by spending 25 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 97}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 97}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 97}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 97}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 97}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 97}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 97}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 97}
+Info (game_put_unit): Player : 0 Put Unit 207 In Path 1
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 208 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 209 In Path 1
+Info (GameServer): Simulation timeout passed by spending 24 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 98}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 98}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 6, "col": 7}, "unitId": -1, "pathId": -1}, "turn": 98}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 98}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 98}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 98}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 98}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 98}
+Info (Logic error:): Put unit is not valid path 4 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 210 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 211 In Path 1
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 2 With Center : (6,7)
+Info (GameServer): Simulation timeout passed by spending 24 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 6, "col": 7}, "unitId": 210, "pathId": 2}, "turn": 99}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 99}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 99}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 99}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 99}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 99}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 99}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 99}
+Info (game_put_unit): Player : 0 Put Unit 212 In Path 1
+Info (game_put_unit): Player : 1 Put Unit 213 In Path 1
+Info (game_put_unit): Player : 3 Put Unit 214 In Path 1
+Info (Logic error:): null
+Info (ClientHandler2): Client Terminated at turn: 100
+Info (ClientHandler3): Client Terminated at turn: 100
+Info (JsonSocket): Message sent.
+Info (ClientHandler0): Client Terminated at turn: 100
+Info (ClientHandler1): Client Terminated at turn: 100
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.

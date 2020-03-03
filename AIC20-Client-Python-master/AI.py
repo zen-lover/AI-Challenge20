@@ -170,14 +170,18 @@ class AI:
                     #     print(f'damage dadam be {unit.unit_id}')
 
         if self.check_spell_in_spells(myself.spells, 0):
-            # print('haste darimaaaaaaaaa---------------------------------------------------------------')
+            print('haste darimaaaaaaaaa---------------------------------------------------------------')
             if self.check_unit_in_units(world.get_me().units, all_base_units[0]):
-                if len(my_units) > 2:
-                    last_unit = my_units[-2]
-                    received_spell = self.spell_in_spells(myself.spells, 0)
-                    if last_unit.base_unit.type_id == 0:
-                        world.cast_area_spell(center=last_unit.cell, spell=received_spell)
-                        # print(f'{last_unit.unit_id} haste khord')
+                haste_units = my_units + world.get_friend().units
+                if len(haste_units) > 2:
+                    for unit in haste_units:
+                        if self.distance_from_king(unit.cell, world.get_first_enemy().king.center) < 7 or\
+                                self.distance_from_king(unit.cell, world.get_second_enemy().king.center) < 7:
+                            last_unit = unit
+                            received_spell = self.spell_in_spells(myself.spells, 0)
+                            if last_unit.base_unit.type_id != 5:
+                                world.cast_area_spell(center=last_unit.cell, spell=received_spell)
+                                print(f'{last_unit.unit_id} haste khord')
 
         if self.check_spell_in_spells(myself.spells, 1):
             # print('damage darimaaaaaaaaa---------------------------------------------------------------')
@@ -634,6 +638,7 @@ class AI:
         cut = 0
         myteampath = world.get_me().paths_from_player
         myteampath += world.get_friend().paths_from_player
+        myteampath.append(world.get_me().path_to_friend)
         for path in myteampath:
             cut = 0
             print(f'masire {path.id}')
@@ -666,7 +671,7 @@ class AI:
         max = 0
         path = None
         for item in paths:
-            if item[1] > max:
+            if item[1] >= max:
                 max = item[1]
                 path = item[0]
 
@@ -686,3 +691,7 @@ class AI:
             if fasele < min:
                 min = fasele
         return min
+
+    def distance_from_king(self,cell, king_cell):
+        return abs(cell.col - king_cell.col) + abs(cell.row - king_cell.row)
+
