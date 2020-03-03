@@ -355,7 +355,7 @@ class AI:
             if item.type_id == spell_type_id:
                 return item
 
-    def distance_from_my_king(self,cell,world):
+    def distance_from_my_king(self, cell, world):
         return abs(cell.col - world.get_me().king.center.col) + abs(cell.row - world.get_me().king.center.row)
 
 
@@ -411,7 +411,7 @@ class AI:
             return True
         return False
 
-    def put_the_most_damage_on_friend_path(self,world):
+    def put_the_most_damage_on_friend_path(self, world):
         hand =  world.get_me().hand
         sorted_hand = sorted(hand, key=lambda x: x.base_attack, reverse=True)
         my_ap = world.get_me().ap
