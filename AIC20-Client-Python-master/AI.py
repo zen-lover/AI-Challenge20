@@ -587,7 +587,7 @@ class AI:
         elif self.bayadbfrstm == False:
             print('''hala bayad masir entekhab koni''')
             t = self.get_closest_enemy_path_and_dist(world, world.get_me())
-            if t[1] <= 7:
+            if t[1] <= 6:
                 print(f'ye masire jadid baraye doshman peyda kardam: {t[0].id}')
                 print('''in yani bayad beshe masire jadidet''')
                 self.masir = t[0]
