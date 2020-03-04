@@ -598,8 +598,8 @@ class AI:
                 print('''in yani bayad beshe masire jadidet''')
                 self.masir = t[0]
                 self.bayadbfrstm = True
-                self.barekhali = 0
-                self.rukhalibfrstm = False
+                # self.barekhali = 0
+                # self.rukhalibfrstm = False
                 '''hala ru masire jadid shoroo kon be gozashtan'''
                 if self.put_unit_on_path(world, self.masir):
                     self.baredoshman += 1
@@ -659,10 +659,10 @@ class AI:
                 if cut == 1:
                     print('baghie cell haye path ro lazem nist begardi')
                     break
-            if cut == 0:
-                if path == world.get_me().path_to_friend:
-                    path = world.get_friend().paths_from_player[0]
-                return path
+            # if cut == 0:
+            #     if path == world.get_me().path_to_friend:
+            #         path = world.get_friend().paths_from_player[0]
+            #     return path
         return Path(-1, [])
 
     def get_masireaslieyar(self, world):
@@ -681,6 +681,9 @@ class AI:
                 max = item[1]
                 path = item[0]
         print(f'masire aslie yar: {path.id}')
+        if max == 0:
+            print("yar masire asli nadasht. be masire 0sh ferestadim")
+            path = world.get_friend().paths_from_player[0]
         return path
 
     def fasele2tacell(self, avali, dovomi):
