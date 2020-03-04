@@ -600,7 +600,7 @@ class AI:
                 self.masir = minealan[0]
                 self.bayadbfrstm = True #ghaedatan true e vali mahze ehtiat True kardamesh
                 self.baredoshman = 0
-            if self.put_unit_on_path(world, self.masir):
+            if self.put_defa(world, self.masir):
                 self.baredoshman += 1
                 print(f'be samte doshman ferestadam bare {self.baredoshman}om')
                 if self.baredoshman == 3:
@@ -620,7 +620,7 @@ class AI:
                 # self.barekhali = 0
                 # self.rukhalibfrstm = False
                 '''hala ru masire jadid shoroo kon be gozashtan'''
-                if self.put_unit_on_path(world, self.masir):
+                if self.put_defa(world, self.masir):
                     self.baredoshman += 1
                     print(f'be samte doshman ferestadam bare {self.baredoshman} om')
                 return
@@ -740,3 +740,26 @@ class AI:
                 shortest = path
         print(f'shorteste king {shortest.id} ba toole {length}')
         return shortest
+
+    def put_defa(self, world, path):
+        all_base_units = world.get_all_base_units()
+        if self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
+            world.put_unit(base_unit=all_base_units[0], path=path)
+            # print(f"put {0}")
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
+            world.put_unit(base_unit=all_base_units[6], path=path)
+            # print(f"put {6}")
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
+            world.put_unit(base_unit=all_base_units[1], path=path)
+            # print(f"put {1}")
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[7]) and world.get_me().ap >= 5:
+            world.put_unit(base_unit=all_base_units[7], path=path)
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
+            world.put_unit(base_unit=all_base_units[2], path=path)
+            # print(f"put {2}")
+            return True
+        return False
