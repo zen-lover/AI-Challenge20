@@ -593,7 +593,7 @@ class AI:
         elif self.bayadbfrstm == False:
             print('''hala bayad masir entekhab koni''')
             t = self.get_closest_enemy_path_and_dist(world, world.get_me())
-            if t[1] <= 6:
+            if t[1] <= 8:
                 print(f'ye masire jadid baraye doshman peyda kardam: {t[0].id}')
                 print('''in yani bayad beshe masire jadidet''')
                 self.masir = t[0]
@@ -680,7 +680,6 @@ class AI:
             if item[1] >= max:
                 max = item[1]
                 path = item[0]
-
         print(f'masire aslie yar: {path.id}')
         return path
 
@@ -700,4 +699,3 @@ class AI:
 
     def distance_from_king(self,cell, king_cell):
         return abs(cell.col - king_cell.col) + abs(cell.row - king_cell.row)
-
