@@ -37,6 +37,7 @@ class AI:
         self.barekhali = 0
         self.rukhalibfrstm = False
         self.masirekhali = Path(-1, None, None)
+        self.faselealanedoshman =1000
         #
         #     '''sahar log'''
         #     now = datetime.datetime.now().strftime("%d%B%Y-%I%M%p") + str(random.randint(0,10000))
@@ -117,6 +118,12 @@ class AI:
         my_units = world.get_me().units
         if world.get_current_turn() != 1:
             self.myfunction(world)
+        elif world.get_current_turn() == 1:
+            shortesttaking = self.minemasirbeshah(world)
+            world.put_unit(base_unit=all_base_units[0], path=shortesttaking)
+            world.put_unit(base_unit=all_base_units[1], path=shortesttaking)
+            world.put_unit(base_unit=all_base_units[6], path=shortesttaking)
+
         # self.put_x_units_on_closest(world, 5)
         # if self.could_help_friend_while_hp_is_low == 0:
         #     if self.put_the_most_damage_on_friend_path(world):
@@ -556,23 +563,23 @@ class AI:
         all_base_units = world.get_all_base_units()
         if self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[0], path=path)
-            print(f"put {0}")
+            # print(f"put {0}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
             world.put_unit(base_unit=all_base_units[1], path=path)
-            print(f"put {1}")
+            # print(f"put {1}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[2], path=path)
-            print(f"put {2}")
+            # print(f"put {2}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
             world.put_unit(base_unit=all_base_units[6], path=path)
-            print(f"put {6}")
+            # print(f"put {6}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
             world.put_unit(base_unit=all_base_units[5], path=path)
-            print(f"put {5}")
+            # print(f"put {5}")
             return True
 
         return False
@@ -582,6 +589,14 @@ class AI:
         '''bayadbfrstm mige ke bayad ruye masire doshman befresti'''
         ''' '''
         if self.bayadbfrstm == True:
+            """alan umade inja ke bfreste baraye defa"""
+            """mikhaym ye bar dg nazdik tarin doshman ro peyda konim. shayad umade bashe tu ye masire dg nazdik tar"""
+            minealan = self.get_closest_enemy_path_and_dist(world, world.get_me())
+            if minealan[1] <= self.faselealanedoshman and minealan[0] != self.masir: #havasamam hast ke hamin masir ro dar nazar nagire
+                self.faselealanedoshman = minealan[1]
+                self.masir = minealan[0]
+                self.bayadbfrstm = True #ghaedatan true e vali mahze ehtiat True kardamesh
+                self.baredoshman = 0
             if self.put_unit_on_path(world, self.masir):
                 self.baredoshman += 1
                 print(f'be samte doshman ferestadam bare {self.baredoshman}om')
@@ -595,7 +610,8 @@ class AI:
             t = self.get_closest_enemy_path_and_dist(world, world.get_me())
             if t[1] <= 8:
                 print(f'ye masire jadid baraye doshman peyda kardam: {t[0].id}')
-                print('''in yani bayad beshe masire jadidet''')
+                # print('''in yani bayad beshe masire jadidet''')
+                self.faselealanedoshman = t[1]
                 self.masir = t[0]
                 self.bayadbfrstm = True
                 # self.barekhali = 0
@@ -648,7 +664,7 @@ class AI:
             print(f'masire {path.id}')
             for cell in path.cells:
                 for unit in cell.units:
-                    print(f'ruye unit e {unit.unit_id}')
+                    # print(f'ruye unit e {unit.unit_id}')
                     '''agar khasti begi kolan khali bashe, in sharto avaz kon'''
                     if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id:
                         print('''yani ye doshman hast inja''')
@@ -657,7 +673,7 @@ class AI:
                             print('shah ham nabud. cut 1 shod baghie unitaye cell ro dg lazem nist begardi')
                             break
                 if cut == 1:
-                    print('baghie cell haye path ro lazem nist begardi')
+                    # print('baghie cell haye path ro lazem nist begardi')
                     break
             # if cut == 0:
             #     if path == world.get_me().path_to_friend:
@@ -702,3 +718,22 @@ class AI:
 
     def distance_from_king(self,cell, king_cell):
         return abs(cell.col - king_cell.col) + abs(cell.row - king_cell.row)
+
+    def minemasirbeshah(self,world):
+        shortest = world.get_me().paths_from_player[0]
+        length = len(world.get_me().paths_from_player[0].cells)
+        for path in world.get_me().paths_from_player:
+            pathlen = len(path.cells)
+            if pathlen < length:
+                '''ina dar soorati javab mide ke ma har masiri ke darim, tahesh doshman bashe'''
+                '''agar tahe har masiri doshman nabud, bayad hamin kar ro beyne un masirayimun koni k tahesh doshmane'''
+                length = pathlen
+                shortest = path
+        lenemasirbedoost = len(world.get_me().path_to_friend.cells)
+        for path in world.get_friend().paths_from_player:
+            pathlen = len(path.cells)
+            if pathlen+lenemasirbedoost < length:
+                length = pathlen+lenemasirbedoost
+                shortest = path
+        print(f'shorteste king {shortest.id} ba toole {length}')
+        return shortest
