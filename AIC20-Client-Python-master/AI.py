@@ -603,7 +603,7 @@ class AI:
             if self.put_defa(world, self.masir):
                 self.baredoshman += 1
                 print(f'be samte doshman ferestadam bare {self.baredoshman}om')
-                if self.baredoshman == 3:
+                if self.baredoshman == 1:
                     print('3 bar tamum shod')
                     self.bayadbfrstm = False
                     self.baredoshman = 0
