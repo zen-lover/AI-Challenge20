@@ -562,22 +562,22 @@ class AI:
                 self.number_of_units_put_yet += 1
 
     def put_unit_on_path(self, world, path):
-        # 0>1>2>6>5
+        # 6>1>0>2>5
         all_base_units = world.get_all_base_units()
-        if self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
-            world.put_unit(base_unit=all_base_units[0], path=path)
+        if self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
+            world.put_unit(base_unit=all_base_units[6], path=path)
             # print(f"put {0}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
             world.put_unit(base_unit=all_base_units[1], path=path)
             # print(f"put {1}")
             return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
-            world.put_unit(base_unit=all_base_units[2], path=path)
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
+            world.put_unit(base_unit=all_base_units[0], path=path)
             # print(f"put {2}")
             return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
-            world.put_unit(base_unit=all_base_units[6], path=path)
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
+            world.put_unit(base_unit=all_base_units[2], path=path)
             # print(f"put {6}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
@@ -743,23 +743,23 @@ class AI:
 
     def put_defa(self, world, path):
         all_base_units = world.get_all_base_units()
-        if self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
-            world.put_unit(base_unit=all_base_units[0], path=path)
-            # print(f"put {0}")
-            return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
+        if self.check_unit_in_hand(world.get_me().hand, all_base_units[6]) and world.get_me().ap >= 2:
             world.put_unit(base_unit=all_base_units[6], path=path)
-            # print(f"put {6}")
+            # print(f"put {0}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
             world.put_unit(base_unit=all_base_units[1], path=path)
-            # print(f"put {1}")
+            # print(f"put {6}")
             return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[7]) and world.get_me().ap >= 5:
-            world.put_unit(base_unit=all_base_units[7], path=path)
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
+            world.put_unit(base_unit=all_base_units[0], path=path)
+            # print(f"put {1}")
             return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[2], path=path)
+            return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
+            world.put_unit(base_unit=all_base_units[5], path=path)
             # print(f"put {2}")
             return True
         return False
