@@ -1,0 +1,1129 @@
+Info (PARAM): Deploy=false
+Info (PARAM): Map=C:\Users\pars\Downloads\AI Challenge\Git Lab Code\ai-challenge\AIC20-Game-master\maps\map4.map
+Info (PARAM): TeamName0=Team0
+Info (PARAM): TeamName1=Team1
+Info (PARAM): TeamName2=Team2
+Info (PARAM): TeamName3=Team3
+Info (PARAM): UIToken=00000000000000000000000000000000
+Info (PARAM): OCSendToUI=false
+Info (PARAM): OCSendToFile=false
+Info (PARAM): Client0Token=00000000000000000000000000000000
+Info (PARAM): Client1Token=00000000000000000000000000000000
+Info (PARAM): Client2Token=00000000000000000000000000000000
+Info (PARAM): Client3Token=00000000000000000000000000000000
+Info (PARAM): UIEnable=false
+Info (PARAM): ClientsPort=7099
+Info (ClientNetwork): Listening on port 7099.
+Info (PARAM): ClientsConnectionTimeout=2147483647
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message received: {"type": "token", "info": {"token": "00000000000000000000000000000000"}, "turn": 0}
+Info (ClientNetwork): Client accepted.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [5, 6, 7, 8]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [5, 6, 7, 8]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [1, 2, 6, 5, 0]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "pick", "info": {"units": [1, 2, 6, 5, 0]}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 0}
+Info (GameServer): Simulation timeout passed by spending 201 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 5}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 5}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 7, "pathId": 5}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 7, "pathId": 0}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 5}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 0}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 5}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 1}
+Info (game_put_unit): Player : 0 Put Unit 37 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 38 In Path 5
+Info (game_put_unit): Player : 1 Put Unit 39 In Path 5
+Info (game_put_unit): Player : 1 Put Unit 40 In Path 5
+Info (game_put_unit): Player : 1 Put Unit 41 In Path 5
+Info (Logic error:): AP is not enough. Needed: 4, Current: 0 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 42 In Path 1
+Info (game_put_unit): Player : 3 Put Unit 43 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 44 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 45 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 46 In Path 0
+Info (Logic error:): AP is not enough. Needed: 4, Current: 0 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 131 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 2}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 47 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 48 In Path 1
+Info (GameServer): Simulation timeout passed by spending 81 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 3}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 49 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 50 In Path 1
+Info (GameServer): Simulation timeout passed by spending 83 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 4}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 51 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 52 In Path 1
+Info (GameServer): Simulation timeout passed by spending 169 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 5}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 53 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 54 In Path 1
+Info (GameServer): Simulation timeout passed by spending 84 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 6}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 55 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 56 In Path 1
+Info (GameServer): Simulation timeout passed by spending 107 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 7}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 57 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 58 In Path 1
+Info (GameServer): Simulation timeout passed by spending 85 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 8}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 59 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 60 In Path 1
+Info (GameServer): Simulation timeout passed by spending 38 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 4}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 3, "pathId": 0}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 4}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 4}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 3, "pathId": 4}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 0}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 9}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 9}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 61 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 62 In Path 4
+Info (game_put_unit): Player : 1 Put Unit 63 In Path 4
+Info (Logic error:): AP is not enough. Needed: 8, Current: 6 Player id: 1
+Info (game_put_unit): Player : 1 Put Unit 64 In Path 4
+Info (Logic error:): AP is not enough. Needed: 3, Current: 0 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 65 In Path 1
+Info (game_put_unit): Player : 3 Put Unit 66 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 67 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 68 In Path 0
+Info (Logic error:): AP is not enough. Needed: 3, Current: 2 Player id: 3
+Info (Logic error:): AP is not enough. Needed: 8, Current: 2 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 82 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 5, "cell": {"row": 7, "col": 15}, "unitId": -1, "pathId": -1}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 15, "col": 12}, "unitId": -1, "pathId": -1}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 10}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 69 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 70 In Path 1
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 5 With Center : (7,15)
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 0 With Center : (15,12)
+Info (GameServer): Simulation timeout passed by spending 84 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 11}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 71 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 72 In Path 1
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 5 With Center : (7,15)
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 0 With Center : (15,12)
+Info (GameServer): Simulation timeout passed by spending 62 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 12}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 73 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 74 In Path 1
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 5 With Center : (7,15)
+Info (GameServer): Simulation timeout passed by spending 53 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 43}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 43}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 13}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (GameServer): Simulation timeout passed by spending 62 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 45}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 45}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 14}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 75 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 76 In Path 1
+Info (GameServer): Simulation timeout passed by spending 47 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 45}, "turn": 15}
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 45}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 5, "cell": {"row": 15, "col": 15}, "unitId": -1, "pathId": -1}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 15}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 2 Put Unit 77 In Path 1
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 5 With Center : (15,15)
+Info (GameServer): Simulation timeout passed by spending 79 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 7, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 66}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 66}, "turn": 16}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 16}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 78 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 79 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 80 In Path 0
+Info (Logic error:): AP is not enough. Needed: 6, Current: 5 Player id: 3
+Info (game_put_unit): Player : 3 Put Unit 81 In Path 0
+Info (Logic error:): AP is not enough. Needed: 3, Current: 0 Player id: 3
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 5 With Center : (15,15)
+Info (GameServer): Simulation timeout passed by spending 53 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 0}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 66}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 66}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 0}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 3, "pathId": 0}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 7, "pathId": 1}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 17}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 17}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 82 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 83 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 84 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 85 In Path 0
+Info (Logic error:): AP is not enough. Needed: 6, Current: 1 Player id: 1
+Info (Logic error:): AP is not enough. Needed: 6, Current: 1 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 86 In Path 1
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 5 With Center : (15,15)
+Info (GameServer): Simulation timeout passed by spending 117 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 66}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 66}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 18}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (GameServer): Simulation timeout passed by spending 55 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 67}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 67}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 19}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 19}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 87 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 88 In Path 1
+Info (GameServer): Simulation timeout passed by spending 38 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 14, "col": 4}, "unitId": -1, "pathId": -1}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 8, "col": 7}, "unitId": 68, "pathId": 4}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 68}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 68}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 20}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (Logic error:): You can only teleport to the first half of the path. Target: (8, 7) Player id: 3
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 2 With Center : (14,4)
+Info (GameServer): Simulation timeout passed by spending 43 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 68}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 68}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 21}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 89 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 90 In Path 1
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 68}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 38}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 68}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 38}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 12, "col": 4}, "unitId": -1, "pathId": -1}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 22}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 91 In Path 4
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 2 With Center : (12,4)
+Info (GameServer): Simulation timeout passed by spending 41 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 83}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 79}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 83}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 79}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 23}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (game_upgrade_unit): Player 3 damageUpgrade 79
+Info (game_upgrade_unit): Player 1 rangeUpgrade 83
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 3
+Info (game_put_unit): Player : 2 Put Unit 92 In Path 1
+Info (GameServer): Simulation timeout passed by spending 82 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 83}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 0}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 5}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 83}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 3, "pathId": 0}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 79}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 79}, "turn": 24}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 24}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 93 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 94 In Path 5
+Info (game_put_unit): Player : 3 Put Unit 95 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 96 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 97 In Path 0
+Info (Logic error:): AP is not enough. Needed: 4, Current: 1 Player id: 3
+Info (Logic error:): AP is not enough. Needed: 2, Current: 1 Player id: 3
+Info (GameServer): Simulation timeout passed by spending 150 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 0}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 3, "pathId": 0}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 0}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 79}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 5}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 79}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 7, "pathId": 0}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 83}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 83}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 25}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 1 Put Unit 98 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 99 In Path 0
+Info (Logic error:): AP is not enough. Needed: 8, Current: 4 Player id: 1
+Info (game_put_unit): Player : 1 Put Unit 100 In Path 0
+Info (Logic error:): AP is not enough. Needed: 5, Current: 0 Player id: 1
+Info (game_put_unit): Player : 2 Put Unit 101 In Path 5
+Info (GameServer): Simulation timeout passed by spending 100 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 83}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 79}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 83}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 79}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 26}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 102 In Path 4
+Info (GameServer): Simulation timeout passed by spending 45 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 98}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 79}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 98}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 79}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 5}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 4}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 27}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 103 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 104 In Path 5
+Info (GameServer): Simulation timeout passed by spending 48 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 98}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 95}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 98}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 95}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 28}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 105 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 106 In Path 1
+Info (GameServer): Simulation timeout passed by spending 69 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 98}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 95}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 95}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 98}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 29}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (GameServer): Simulation timeout passed by spending 77 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 15, "col": 4}, "unitId": -1, "pathId": -1}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 8, "col": 7}, "unitId": 95, "pathId": 4}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 99}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 95}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 99}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 95}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 1}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 30}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 107 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 108 In Path 1
+Info (Logic error:): You can only teleport to the first half of the path. Target: (8, 7) Player id: 3
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 0 With Center : (15,4)
+Info (GameServer): Simulation timeout passed by spending 52 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 100}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 95}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 100}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 95}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 31}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_cast_spell): Caster : 1 Casted Spell With Type : 0 With Center : (15,4)
+Info (GameServer): Simulation timeout passed by spending 48 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 5}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 15, "col": 15}, "unitId": -1, "pathId": -1}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 5}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 5}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 5}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 5}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 96}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 96}, "turn": 32}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 32}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 109 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 110 In Path 1
+Info (game_put_unit): Player : 3 Put Unit 111 In Path 5
+Info (game_put_unit): Player : 3 Put Unit 112 In Path 5
+Info (game_put_unit): Player : 3 Put Unit 113 In Path 5
+Info (game_put_unit): Player : 3 Put Unit 114 In Path 5
+Info (game_put_unit): Player : 3 Put Unit 115 In Path 5
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (15,15)
+Info (GameServer): Simulation timeout passed by spending 77 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 5}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 96}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 7, "pathId": 5}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 96}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 15, "col": 15}, "unitId": -1, "pathId": -1}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 5}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 5}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 5}, "turn": 33}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 33}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 116 In Path 0
+Info (game_put_unit): Player : 1 Put Unit 117 In Path 5
+Info (game_put_unit): Player : 1 Put Unit 118 In Path 5
+Info (game_put_unit): Player : 1 Put Unit 119 In Path 5
+Info (Logic error:): AP is not enough. Needed: 4, Current: 1 Player id: 1
+Info (Logic error:): AP is not enough. Needed: 6, Current: 1 Player id: 1
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (15,15)
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (15,15)
+Info (GameServer): Simulation timeout passed by spending 80 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 117}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 111}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 117}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 111}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 5}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 34}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 2 Put Unit 120 In Path 5
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (15,15)
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 111}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 117}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 117}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 111}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 35}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 121 In Path 0
+Info (GameServer): Simulation timeout passed by spending 35 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 111}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 117}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 117}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 111}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 5}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 7, "col": 7}, "unitId": 121, "pathId": 4}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 36}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 1
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 1
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 2 Put Unit 122 In Path 5
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 3 With Center : (7,7)
+Info (GameServer): Simulation timeout passed by spending 31 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 117}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 111}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 117}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 111}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 3, "cell": {"row": 7, "col": 7}, "unitId": 121, "pathId": 4}, "turn": 37}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 37}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 123 In Path 0
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 3 With Center : (7,7)
+Info (GameServer): Simulation timeout passed by spending 50 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 111}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 117}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 111}, "turn": 38}
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 5}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 0}, "turn": 38}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 124 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 125 In Path 5
+Info (GameServer): Simulation timeout passed by spending 37 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 111}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 111}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 1}, "turn": 39}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 39}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 2 Put Unit 126 In Path 1
+Info (GameServer): Simulation timeout passed by spending 31 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 0}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 1, "pathId": 4}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 7, "pathId": 0}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 0}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 15, "col": 15}, "unitId": -1, "pathId": -1}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 111}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 111}, "turn": 40}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 40}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 127 In Path 4
+Info (game_put_unit): Player : 3 Put Unit 128 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 129 In Path 0
+Info (Logic error:): AP is not enough. Needed: 4, Current: 3 Player id: 3
+Info (game_put_unit): Player : 3 Put Unit 130 In Path 0
+Info (Logic error:): AP is not enough. Needed: 6, Current: 1 Player id: 3
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 2 With Center : (15,15)
+Info (GameServer): Simulation timeout passed by spending 52 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 128}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 128}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 4}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 41}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 41}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 131 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 132 In Path 1
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 128}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 128}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 2, "cell": {"row": 15, "col": 6}, "unitId": -1, "pathId": -1}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 42}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 42}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 2 Put Unit 133 In Path 1
+Info (game_cast_spell): Caster : 0 Casted Spell With Type : 2 With Center : (15,6)
+Info (GameServer): Simulation timeout passed by spending 33 time!
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 117}, "turn": 38}
+Info (ClientHandler1): Message received late.
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 128}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 128}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 4}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 0, "cell": {"row": 15, "col": 4}, "unitId": -1, "pathId": -1}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 43}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 43}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 134 In Path 4
+Info (game_put_unit): Player : 2 Put Unit 135 In Path 1
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (15,4)
+Info (GameServer): Simulation timeout passed by spending 29 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 128}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 128}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 44}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 44}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 136 In Path 0
+Info (game_cast_spell): Caster : 2 Casted Spell With Type : 0 With Center : (15,4)
+Info (GameServer): Simulation timeout passed by spending 29 time!
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 38}
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (ClientHandler1): Message received late.
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 128}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 128}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 1}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 45}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 45}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 137 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 138 In Path 1
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 117}, "turn": 39}
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 128}, "turn": 46}
+Info (ClientHandler1): Message received late.
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 128}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 46}
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 46}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 46}
+Info (game_upgrade_unit): Player 3 damageUpgrade 128
+Info (Logic error:): Cannot upgrade more than one time in a turn. Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 139 In Path 0
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 47}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 47}
+Info (game_put_unit): Player : 2 Put Unit 140 In Path 1
+Info (GameServer): Simulation timeout passed by spending 30 time!
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 117}, "turn": 39}
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (ClientHandler1): Message received late.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 48}
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 8, "pathId": 0}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 0}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 4, "pathId": 0}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 0}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 5, "pathId": 0}, "turn": 48}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 48}
+Info (game_put_unit): Player : 0 Put Unit 141 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 142 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 143 In Path 0
+Info (Logic error:): AP is not enough. Needed: 8, Current: 6 Player id: 3
+Info (game_put_unit): Player : 3 Put Unit 144 In Path 0
+Info (game_put_unit): Player : 3 Put Unit 145 In Path 0
+Info (GameServer): Simulation timeout passed by spending 32 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 142}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 142}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 0, "pathId": 1}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 49}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 49}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 2 Put Unit 146 In Path 1
+Info (GameServer): Simulation timeout passed by spending 28 time!
+Info (ClientHandler1): Not waiting for messages because player is not active.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message received: {"type": "castSpell", "info": {"typeId": 5, "cell": {"row": 4, "col": 12}, "unitId": -1, "pathId": -1}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 2, "pathId": 0}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "putUnit", "info": {"typeId": 6, "pathId": 1}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "damageUpgrade", "info": {"unitId": 142}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "rangeUpgrade", "info": {"unitId": 142}, "turn": 50}
+Info (JsonSocket): Message received: {"type": "endTurn", "info": {}, "turn": 50}
+Info (Logic error:): No upgrade card available for type: Damage Player id: 3
+Info (Logic error:): No upgrade card available for type: Range Player id: 3
+Info (game_put_unit): Player : 0 Put Unit 147 In Path 0
+Info (game_put_unit): Player : 2 Put Unit 148 In Path 1
+Info (game_cast_spell): Caster : 3 Casted Spell With Type : 5 With Center : (4,12)
+Info (ClientHandler0): Client Terminated at turn: 51
+Info (ClientHandler1): Client Terminated at turn: 51
+Info (ClientHandler3): Client Terminated at turn: 51
+Info (JsonSocket): Message sent.
+Info (ClientHandler2): Client Terminated at turn: 51
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
+Info (JsonSocket): Message sent.
