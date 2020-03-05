@@ -116,16 +116,17 @@ class AI:
         # self.logger(world)
 
         my_units = world.get_me().units
-        # if world.get_current_turn() > 2:
-        self.myfunction(world)
-        # elif world.get_current_turn() == 1:
-        #     shortesttaking = self.minemasirbeshah(world)
-        #     world.put_unit(base_unit=all_base_units[5], path=shortesttaking)
-        #     world.put_unit(base_unit=all_base_units[1], path=shortesttaking)
-        # elif world.get_current_turn() == 2:
-        #     shortesttaking = self.minemasirbeshah(world)
-        #     world.put_unit(base_unit=all_base_units[6], path=shortesttaking)
-        #     world.put_unit(base_unit=all_base_units[0], path=shortesttaking)
+        if world.get_current_turn() > 2:
+            self.myfunction(world)
+        elif world.get_current_turn() == 1:
+            shortesttaking = self.minemasirbeshah(world)
+            world.put_unit(base_unit=all_base_units[6], path=shortesttaking)
+            world.put_unit(base_unit=all_base_units[1], path=shortesttaking)
+            world.put_unit(base_unit=all_base_units[5], path=shortesttaking)
+        elif world.get_current_turn() == 2:
+            shortesttaking = self.minemasirbeshah(world)
+            world.put_unit(base_unit=all_base_units[2], path=shortesttaking)
+            world.put_unit(base_unit=all_base_units[0], path=shortesttaking)
 
         # self.put_x_units_on_closest(world, 5)
         # if self.could_help_friend_while_hp_is_low == 0:
