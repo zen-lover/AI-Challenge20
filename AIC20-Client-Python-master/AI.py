@@ -595,7 +595,7 @@ class AI:
         '''------------------------------------------------------------------------------------------------------ '''
         '''PARSA VA MEHDI SHOMA AGAR KHASTID CHIZIO AVAZ KONID, FAGHAT BE INA DAST BEZANID'''
         FASELE_DEFA = 9
-        TEDADE_SARBAZE_DEFA = 3
+        TEDADE_SARBAZE_DEFA = 1
         '''------------------------------------------------------------------------------------------------------ '''
 
 
