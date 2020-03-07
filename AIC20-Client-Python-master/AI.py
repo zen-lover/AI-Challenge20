@@ -778,14 +778,15 @@ class AI:
             world.put_unit(base_unit=all_base_units[1], path=path)
             # print(f"put {1}")
             return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
-            world.put_unit(base_unit=all_base_units[5], path=path)
-            # print(f"put {5}")
-            return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
             world.put_unit(base_unit=all_base_units[2], path=path)
             # print(f"put {2}")
             return True
+        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[5]) and world.get_me().ap >= 3:
+            world.put_unit(base_unit=all_base_units[5], path=path)
+            # print(f"put {5}")
+            return True
+
 
         return False
 
