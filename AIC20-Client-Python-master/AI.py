@@ -188,22 +188,24 @@ class AI:
                     for unit in haste_units:
                         if self.distance_from_king(unit.cell, world.get_first_enemy().king.center) < 7 or\
                                 self.distance_from_king(unit.cell, world.get_second_enemy().king.center) < 7:
-                            last_unit = unit
-                            received_spell = self.spell_in_spells(myself.spells, 0)
-                            if last_unit.base_unit.type_id != 5:
-                                world.cast_area_spell(center=last_unit.cell, spell=received_spell)
-                                # print(f'{last_unit.unit_id} haste khord')
+                            if unit.target is None:
+                                last_unit = unit
+                                received_spell = self.spell_in_spells(myself.spells, 0)
+                                if last_unit.base_unit.type_id != 5:
+                                    world.cast_area_spell(center=last_unit.cell, spell=received_spell)
+                                    # print(f'{last_unit.unit_id} haste khord')
 
         if self.check_spell_in_spells(myself.spells, 1):
             # print('damage darimaaaaaaaaa---------------------------------------------------------------')
-            if len(my_units) > 1:
-                last_unit = my_units[0].target
-                if last_unit is not None:
-                    print(last_unit.unit_id)
-                received_spell = self.spell_in_spells(myself.spells, 1)
-                if last_unit is not None:
-                    world.cast_area_spell(center=last_unit.cell, spell=received_spell)
-                    # print(f'{last_unit.unit_id} damage khord')
+            # if len(my_units) > 1:
+            #     last_unit = my_units[0].target
+            #     if last_unit is not None:
+            #         print(last_unit.unit_id)
+            received_spell = self.spell_in_spells(myself.spells, 1)
+            cell = self.return_best_cell_for_spell(world, received_spell)
+            if self.number_of_unit_in_best_cell >= 5:
+                world.cast_area_spell(center=cell, spell=received_spell)
+                # print(f'{last_unit.unit_id} damage khord')
 
         if self.check_spell_in_spells(myself.spells, 2):
             # print('heal darimaaaaaaaaa---------------------------------------------------------------')
@@ -240,20 +242,23 @@ class AI:
             cell = self.return_best_cell_for_spell(world, received_spell)
             # print(f'number duplicate {self.number_of_unit_in_best_cell}')
             if self.number_of_unit_in_best_cell >= 3:
-                received_spell = self.spell_in_spells(myself.spells, 4)
-                world.cast_area_spell(center=cell, spell=received_spell)
-            # print(f'{last_unit.unit_id} duplicate khord')
+                for unit in cell.units:
+                    if unit.target is not None:
+                        received_spell = self.spell_in_spells(myself.spells, 4)
+                        world.cast_area_spell(center=cell, spell=received_spell)
+                        # print(f'{last_unit.unit_id} duplicate khord')
 
         if self.check_spell_in_spells(myself.spells, 5):
             # print('poison darimaaaaaaaaa---------------------------------------------------------------')
-            if len(my_units) > 0:
-                last_unit = my_units[0].target
-                if last_unit is not None:
-                    print(last_unit.unit_id)
-                received_spell = self.spell_in_spells(myself.spells, 5)
-                if last_unit is not None:
-                    world.cast_area_spell(center=last_unit.cell, spell=received_spell)
-                    # print(f'{last_unit.unit_id} poison khord')
+            # if len(my_units) > 0:
+            #     last_unit = my_units[0].target
+            #     if last_unit is not None:
+            #         print(last_unit.unit_id)
+            received_spell = self.spell_in_spells(myself.spells, 5)
+            cell = self.return_best_cell_for_spell(world, received_spell)
+            if self.number_of_unit_in_best_cell >= 5:
+                world.cast_area_spell(center=cell, spell=received_spell)
+                # print(f'{last_unit.unit_id} poison khord')
 
     def end(self, world: World, scores):
         print("end started!")
