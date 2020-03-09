@@ -560,12 +560,11 @@ class AI:
     def myfunction(self, world):
         '''agar ye doshmani 8 ta ya kamtar fasele dasht, 3 ta befrest'''
         '''bayadbfrstm mige ke bayad ruye masire doshman befresti'''
-        shortesteking = self.minemasirbeshah(world)
         minealan = self.get_closest_enemy_path_and_dist(world, world.get_me())
 
         '''------------------------------------------------------------------------------------------------------ '''
         '''PARSA VA MEHDI SHOMA AGAR KHASTID CHIZIO AVAZ KONID, FAGHAT BE INA DAST BEZANID'''
-        FASELE_DEFA = len(shortesteking.cells) - 3
+        FASELE_DEFA = 12
         TEDADE_SARBAZE_DEFA = 1
         '''------------------------------------------------------------------------------------------------------ '''
 
@@ -590,69 +589,6 @@ class AI:
                 print(f'defa kardam roo masire {minealan[0].id}')
                 return
 
-        # if self.bayadbfrstm == True:
-        #     """mikhaym ye bar dg nazdik tarin doshman ro peyda konim. shayad umade bashe tu ye masire dg nazdik tar"""
-        #     minealan = self.get_closest_enemy_path_and_dist(world, world.get_me())
-        #     if minealan[1] <= self.faselealanedoshman and minealan[0] != self.masir:  # havasamam hast ke hamin masir ro dar nazar nagire
-        #         self.faselealanedoshman = minealan[1]
-        #         self.masir = minealan[0]
-        #         self.bayadbfrstm = True  # ghaedatan true e vali mahze ehtiat True kardamesh
-        #         self.baredoshman = 0
-        #         print(f'mikham beferestam baraye defa ruye masire mine alan yani {self.masir.id}')
-        #     if self.put_defa(world, self.masir):
-        #         self.baredoshman += 1
-        #         print(f'be samte doshman ferestadam bare {self.baredoshman} om')
-        #         if self.baredoshman == TEDADE_SARBAZE_DEFA:
-        #             print(f'{TEDADE_SARBAZE_DEFA} bar tamum shod')
-        #             self.bayadbfrstm = False
-        #             self.baredoshman = 0
-        #         return
-        # elif self.bayadbfrstm == False:
-        #     print('''hala bayad masir entekhab koni''')
-        #     t = self.get_closest_enemy_path_and_dist(world, world.get_me())
-        #     if t[1] <= FASELE_DEFA:
-        #         print(f'ye masire jadid baraye doshman peyda kardam: {t[0].id}')
-        #         # print('''in yani bayad beshe masire jadidet''')
-        #         self.faselealanedoshman = t[1]
-        #         self.masir = t[0]
-        #         self.bayadbfrstm = True
-        #         # self.barekhali = 0
-        #         # self.rukhalibfrstm = False
-        #         '''hala ru masire jadid shoroo kon be gozashtan'''
-        #         if self.put_defa(world, self.masir):
-        #             self.baredoshman = 1
-        #             print(f'be samte doshman ferestadam bare {self.baredoshman} om')
-        #         return
-
-            # print('''hala farz kon nabayad befreste ru doshman o bazam true nashode bayadbfrstm''')
-            # if self.rukhalibfrstm == True:
-            #     print('''bayad alan ru masire khale unit befrestim''')
-            #     if self.put_unit_on_path(world, self.masirekhali):
-            #         self.barekhali += 1
-            #         print(f'ru masire khali ({self.masirekhali.id}) ferestadam bare {self.barekhali} om')
-            #         if self.barekhali == 3:
-            #             print('3 bare khali tamum shod')
-            #             self.rukhalibfrstm = False
-            #             self.barekhali = 0
-            #             return
-            # elif self.rukhalibfrstm == False:
-            #     '''hala bayad masir entekhab koni'''
-            #     print('vase khali hala mikham masir entekhab konam')
-            #     masir = self.get_masirekhali(world)
-            #     print(f'id e masire khali: {masir}')
-            #     if masir.id != -1:  # yani masire khali vojood dasht
-            #         print(f'masire jadid vase khali entekhab kardam: {masir.id}')
-            #         '''masire jadid dari'''
-            #         self.masirekhali = masir
-            #         self.rukhalibfrstm = True
-            #         if self.put_unit_on_path(world, self.masirekhali):
-            #             self.barekhali = 1
-            #             print(f'ru masire khali gozashtam bare {self.barekhali} om')
-            #         return
-            #     print('masiri khali nabud')
-
-        # '''hala farzkon khali ham nabud'''
-
         # if self.put_unit_on_path(world, self.get_masireaslieyar(world)):
         if self.put_unit_on_path(world, self.aslieyar_ya_shortest(world)):
             print('roo masire yar ya shortest gozashtam')
@@ -669,7 +605,8 @@ class AI:
             print(f'---masire man: {path.id}')
             for cell in path.cells:
                 for unit in cell.units:
-                    if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id:
+                    if (unit.player_id == world.get_first_enemy().player_id and world.get_first_enemy().king.is_alive) \
+                            or (unit.player_id == world.get_second_enemy().player_id and world.get_second_enemy().king.is_alive):
                         print("---doshman hast in ru")
                         if cell != world.get_first_enemy().king.center and cell != world.get_second_enemy().king.center:
                             cut = 1
@@ -688,7 +625,8 @@ class AI:
             print(f'---masire yaram: {path.id}')
             for cell in path.cells:
                 for unit in cell.units:
-                    if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id:
+                    if (unit.player_id == world.get_first_enemy().player_id and world.get_first_enemy().king.is_alive) \
+                            or (unit.player_id == world.get_second_enemy().player_id and world.get_second_enemy().king.is_alive):
                         print("---doshman hast in ru")
                         if cell != world.get_first_enemy().king.center and cell != world.get_second_enemy().king.center:
                             cut = 1
