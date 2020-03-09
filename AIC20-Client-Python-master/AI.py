@@ -561,6 +561,7 @@ class AI:
         '''agar ye doshmani 8 ta ya kamtar fasele dasht, 3 ta befrest'''
         '''bayadbfrstm mige ke bayad ruye masire doshman befresti'''
         shortesteking = self.minemasirbeshah(world)
+        minealan = self.get_closest_enemy_path_and_dist(world, world.get_me())
 
         '''------------------------------------------------------------------------------------------------------ '''
         '''PARSA VA MEHDI SHOMA AGAR KHASTID CHIZIO AVAZ KONID, FAGHAT BE INA DAST BEZANID'''
@@ -568,24 +569,26 @@ class AI:
         TEDADE_SARBAZE_DEFA = 1
         '''------------------------------------------------------------------------------------------------------ '''
 
-        '''agar turn 15k ya 15k+1 bud, saay mikonim ru masire khali unit beferestim.'''
-        if world.get_current_turn() % 15 == 1 or world.get_current_turn() % 15 == 0:
-            print('turn e 15k ya 15k+1')
-            masirekhali = self.get_masirekhali(world)
-            if masirekhali.id != -1:
-                print('masire khali daram')
-                if self.put_xk(world, masirekhali):
-                    print(f'unit gozashtam ru masire khalie {masirekhali.id}')
-                    return
+        '''agar fasele zire 8 kasi nabud in karo kon:'''
+        if minealan[1] > 8:
+            '''agar turn 15k ya 15k+1 bud, saay mikonim ru masire khali unit beferestim.'''
+            if world.get_current_turn() % 15 == 1 or world.get_current_turn() % 15 == 0:
+                print('turn e 15k ya 15k+1')
+                masirekhali = self.get_masirekhali(world)
+                if masirekhali.id != -1:
+                    print('masire khali daram')
+                    if self.put_xk(world, masirekhali):
+                        print(f'unit gozashtam ru masire khalie {masirekhali.id}')
+                        return
+                    else:
+                        print('vali pool nadashtam ru masire khali bzarm')
                 else:
-                    print('vali pool nadashtam ru masire khali bzarm')
-            else:
-                print('masiri khali nabud. pas edame midam be myfunction')
+                    print('masiri khali nabud. pas edame midam be myfunction')
 
-        minealan = self.get_closest_enemy_path_and_dist(world, world.get_me())
-        if self.put_defa(world, minealan[0]):
-            print(f'defa kardam roo masire {minealan[0].id}')
-            return
+        if minealan[1] <= FASELE_DEFA:
+            if self.put_defa(world, minealan[0]):
+                print(f'defa kardam roo masire {minealan[0].id}')
+                return
 
         # if self.bayadbfrstm == True:
         #     """mikhaym ye bar dg nazdik tarin doshman ro peyda konim. shayad umade bashe tu ye masire dg nazdik tar"""
