@@ -145,11 +145,20 @@ class AI:
                     # self.unit_that_have_damage_upgrade = unit
                     #     print(f'damage dadam be {unit.unit_id}')
 
+
+        print('spell haye in turn')
+        for spell in world.get_me().spells:
+            print(f'spell {spell.type_id}')
+
+
         if self.check_spell_in_spells(myself.spells, 0):
-            # print('haste darimaaaaaaaaa---------------------------------------------------------------')
+            print('haste darimaaaaaaaaa---------------------------------------------------------------')
             if self.check_unit_in_units(world.get_me().units, all_base_units[0]):
                 haste_units = my_units + world.get_friend().units
-                if len(haste_units) > 2:
+                received_spell = self.spell_in_spells(myself.spells, 0)
+                cell = self.return_best_cell_for_spell(world, received_spell)
+                if len(haste_units) > 2 or world.get_current_turn() > world.get_game_constants().max_turns * 3 / 4:
+                    print(f'number haste {self.number_of_unit_in_best_cell}')
                     for unit in haste_units:
                         if self.distance_from_king(unit.cell, world.get_first_enemy().king.center) < 7 or \
                                 self.distance_from_king(unit.cell, world.get_second_enemy().king.center) < 7:
@@ -158,31 +167,61 @@ class AI:
                                 received_spell = self.spell_in_spells(myself.spells, 0)
                                 if last_unit.base_unit.type_id != 5:
                                     world.cast_area_spell(center=last_unit.cell, spell=received_spell)
-                                    # print(f'{last_unit.unit_id} haste khord')
+                                    print(f'{last_unit.unit_id} haste ba shart king khord')
+                        if self.number_of_unit_in_best_cell >= 4:
+                            world.cast_area_spell(center=cell, spell=received_spell)
+                            print(f'number haste {self.number_of_unit_in_best_cell}')
+                            print(cell.row)
+                            print(cell.col)
+                        elif self.number_of_unit_in_best_cell >= 3 and \
+                                world.get_current_turn() > world.get_game_constants().max_turns / 2:
+                            world.cast_area_spell(center=cell, spell=received_spell)
+                            print(f'number haste {self.number_of_unit_in_best_cell}')
+                            print(cell.row)
+                            print(cell.col)
+                        elif len(my_units) < 3:
+                            world.cast_area_spell(center=cell, spell=received_spell)
+                            print(f'number haste {self.number_of_unit_in_best_cell}')
+                            print(cell.row)
+                            print(cell.col)
+
 
         if self.check_spell_in_spells(myself.spells, 1):
-            # print('damage darimaaaaaaaaa---------------------------------------------------------------')
+            print('damage darimaaaaaaaaa---------------------------------------------------------------')
             # if len(my_units) > 1:
             #     last_unit = my_units[0].target
             #     if last_unit is not None:
             #         print(last_unit.unit_id)
             received_spell = self.spell_in_spells(myself.spells, 1)
             cell = self.return_best_cell_for_spell(world, received_spell)
+            print(f'number damage {self.number_of_unit_in_best_cell}')
             if self.number_of_unit_in_best_cell >= 5:
                 world.cast_area_spell(center=cell, spell=received_spell)
-                # print(f'{last_unit.unit_id} damage khord')
+                print(cell.row)
+                print(cell.col)
+            elif self.number_of_unit_in_best_cell >= 4 and \
+                    world.get_current_turn() >= world.get_game_constants().max_turns / 2:
+                world.cast_area_spell(center=cell, spell=received_spell)
+                print(cell.row)
+                print(cell.col)
+            elif self.number_of_unit_in_best_cell >= 3 and \
+                    world.get_current_turn() >= world.get_game_constants().max_turns / 4 * 3:
+                world.cast_area_spell(center=cell, spell=received_spell)
+                print(cell.row)
+                print(cell.col)
+
 
         if self.check_spell_in_spells(myself.spells, 2):
-            # print('heal darimaaaaaaaaa---------------------------------------------------------------')
+            print('heal darimaaaaaaaaa---------------------------------------------------------------')
             if len(my_units) > 2:
-                last_unit = my_units[1]
+                last_unit = my_units[0]
                 received_spell = self.spell_in_spells(myself.spells, 2)
                 if last_unit.hp < last_unit.base_unit.max_hp - 1:
                     world.cast_area_spell(center=last_unit.cell, spell=received_spell)
-                    # print(f'{last_unit.unit_id} heal khord')
+                    print(f'{last_unit.unit_id} heal khord')
 
         if self.check_spell_in_spells(myself.spells, 3):
-            # print('tele darimaaaaaaaaa---------------------------------------------------------------')
+            print('tele darimaaaaaaaaa---------------------------------------------------------------')
             if self.check_unit_in_units(world.get_me().units, all_base_units[0]):
                 if len(my_units) > 1:
                     last_unit = my_units[-1]
@@ -196,34 +235,60 @@ class AI:
                         if self.distance_from_my_king(first_unit.cell, world) > self.distance_from_my_king(
                                 path.cells[(int((size + 1) / 2)) - 3], world):
                             world.cast_unit_spell(unit=last_unit, path=path, cell=cell, spell=received_spell)
-                            # print(f'{last_unit.unit_id}raft max')
+                            print(f'{last_unit.unit_id}raft max')
                         else:
                             world.cast_unit_spell(unit=last_unit, path=path, cell=first_unit.cell, spell=received_spell)
-                            # print(f'{last_unit.unit_id}raft khat')
+                            print(f'{last_unit.unit_id}raft khat')
 
         if self.check_spell_in_spells(myself.spells, 4):
-            # print('duplicate darimaaaaaaaaa---------------------------------------------------------------')
+            print('duplicate darimaaaaaaaaa---------------------------------------------------------------')
             received_spell = self.spell_in_spells(myself.spells, 4)
             cell = self.return_best_cell_for_spell(world, received_spell)
-            # print(f'number duplicate {self.number_of_unit_in_best_cell}')
-            if self.number_of_unit_in_best_cell >= 3:
-                for unit in cell.units:
+            print(f'number duplicate {self.number_of_unit_in_best_cell}')
+            if self.number_of_unit_in_best_cell >= 4:
+                for unit in world.get_area_spell_targets(center=cell, spell=received_spell):
                     if unit.target is not None:
+                        last_unit = unit
                         received_spell = self.spell_in_spells(myself.spells, 4)
                         world.cast_area_spell(center=cell, spell=received_spell)
-                        # print(f'{last_unit.unit_id} duplicate khord')
+                        print(f'{last_unit.unit_id} duplicate khord')
+            elif self.number_of_unit_in_best_cell >= 3 and \
+                    world.get_current_turn() > world.get_game_constants().max_turns / 2:
+                for unit in world.get_area_spell_targets(center=cell, spell=received_spell):
+                    if unit.target is not None:
+                        last_unit = unit
+                        received_spell = self.spell_in_spells(myself.spells, 4)
+                        world.cast_area_spell(center=cell, spell=received_spell)
+                        print(f'{last_unit.unit_id} duplicate khord')
+            elif 0 < len(my_units) < 3:
+                received_spell = self.spell_in_spells(myself.spells, 4)
+                world.cast_area_spell(center=my_units[0].cell, spell=received_spell)
+                # print(f'{last_unit.unit_id} duplicate khord')
 
         if self.check_spell_in_spells(myself.spells, 5):
-            # print('poison darimaaaaaaaaa---------------------------------------------------------------')
+            print('poison darimaaaaaaaaa---------------------------------------------------------------')
             # if len(my_units) > 0:
             #     last_unit = my_units[0].target
             #     if last_unit is not None:
             #         print(last_unit.unit_id)
             received_spell = self.spell_in_spells(myself.spells, 5)
             cell = self.return_best_cell_for_spell(world, received_spell)
+            print(f'number poison {self.number_of_unit_in_best_cell}')
             if self.number_of_unit_in_best_cell >= 5:
                 world.cast_area_spell(center=cell, spell=received_spell)
-                # print(f'{last_unit.unit_id} poison khord')
+                print(cell.row)
+                print(cell.col)
+            elif self.number_of_unit_in_best_cell >= 4 and \
+                    world.get_current_turn() >= world.get_game_constants().max_turns / 2:
+                world.cast_area_spell(center=cell, spell=received_spell)
+                print(cell.row)
+                print(cell.col)
+            elif self.number_of_unit_in_best_cell >= 3 and \
+                    world.get_current_turn() >= world.get_game_constants().max_turns / 4 * 3:
+                world.cast_area_spell(center=cell, spell=received_spell)
+                print(cell.row)
+                print(cell.col)
+
 
     def end(self, world: World, scores):
         print("end started!")
