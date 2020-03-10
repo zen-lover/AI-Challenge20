@@ -670,8 +670,7 @@ class AI:
             print(f'---masire man: {path.id}')
             for cell in path.cells:
                 for unit in cell.units:
-                    if (unit.player_id == world.get_first_enemy().player_id and world.get_first_enemy().king.is_alive) \
-                            or (unit.player_id == world.get_second_enemy().player_id and world.get_second_enemy().king.is_alive):
+                    if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id and world.get_second_enemy().king.is_alive:
                         print("---doshman hast in ru")
                         if cell != world.get_first_enemy().king.center and cell != world.get_second_enemy().king.center:
                             cut = 1
@@ -690,8 +689,7 @@ class AI:
             print(f'---masire yaram: {path.id}')
             for cell in path.cells:
                 for unit in cell.units:
-                    if (unit.player_id == world.get_first_enemy().player_id and world.get_first_enemy().king.is_alive) \
-                            or (unit.player_id == world.get_second_enemy().player_id and world.get_second_enemy().king.is_alive):
+                    if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id :
                         print("---doshman hast in ru")
                         if cell != world.get_first_enemy().king.center and cell != world.get_second_enemy().king.center:
                             cut = 1
