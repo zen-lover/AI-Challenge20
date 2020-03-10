@@ -245,14 +245,14 @@ class AI:
             received_spell = self.spell_in_spells(myself.spells, 4)
             cell = self.return_best_cell_for_spell(world, received_spell)
             print(f'number duplicate {self.number_of_unit_in_best_cell}')
-            if self.number_of_unit_in_best_cell >= 4:
+            if self.number_of_unit_in_best_cell >= 3:
                 for unit in world.get_area_spell_targets(center=cell, spell=received_spell):
                     if unit.target is not None:
                         last_unit = unit
                         received_spell = self.spell_in_spells(myself.spells, 4)
                         world.cast_area_spell(center=cell, spell=received_spell)
                         print(f'{last_unit.unit_id} duplicate khord')
-            elif self.number_of_unit_in_best_cell >= 3 and \
+            elif self.number_of_unit_in_best_cell >= 2 and \
                     world.get_current_turn() > world.get_game_constants().max_turns / 2:
                 for unit in world.get_area_spell_targets(center=cell, spell=received_spell):
                     if unit.target is not None:
