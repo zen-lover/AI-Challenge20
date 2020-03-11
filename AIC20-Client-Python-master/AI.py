@@ -101,18 +101,6 @@ class AI:
             world.put_unit(base_unit=all_base_units[2], path=shortesttaking)
             world.put_unit(base_unit=all_base_units[0], path=shortesttaking)
 
-        # self.put_x_units_on_closest(world, 5)
-        # if self.could_help_friend_while_hp_is_low == 0:
-        #     if self.put_the_most_damage_on_friend_path(world):
-        #         # print('could put the previous one')
-        #         self.could_help_friend_while_hp_is_low = 1
-        # if self.friend_is_empty(world) or world.get_friend().king.hp < 80:
-        #     # print(f'friends hp: {world.get_friend().king.hp}')
-        #     self.help_friend(world) #agar unit nadasht ya hp sh kam shod
-        # self.should_put_unit_on_friends_path(world) #agar ru masire ma gozasht
-        # self.check_friends_king(world) #agar shahesh morde bud
-        # # self.choose_and_put_unit(world,all_base_units)
-
         # for range upgrade
         if world.get_range_upgrade_number() > 0:
 
@@ -631,33 +619,6 @@ class AI:
                 # print("couldn't help")
                 self.could_help_friend_while_hp_is_low = 0
 
-    def get_closest_enemy_path_and_dist(self, world, player):
-        print('----------daram masir o fasele nazdik tarin doshman ro hesab mikonam')
-        paths = player.paths_from_player
-        nearest_cell = paths[0].cells[-1]
-        nearest_path = paths[0]
-        min_fasele = 10000
-        for path in paths:
-            cells = path.cells
-            for cell in cells:
-                # print(f'in cell ({cell.row} , {cell.col})')
-                for unit in cell.units:
-                    # print(f'on unit {unit.unit_id}')
-                    if (unit.player_id != player.player_id) and (unit.player_id != world.get_friend().player_id):
-                        # print('the unit is an enemy')
-                        fasele = self.faselecelltaking(world, cell)
-                        if fasele < min_fasele:
-                            print(f'----------min fasele ta nazdik tarin doshman ta alan ({min_fasele}) bude ke bozorgtar az fasele in yekie({fasele})')
-                            '''havaset bashe i < index ro didi faghat <= ro nazadi'''
-                            min_fasele = fasele
-                            nearest_cell = cell
-                            nearest_path = path
-                            print(f'----------nearest enemy of path {path.id} is on cell ({cell.row} , {cell.col})')
-        t = (nearest_path, min_fasele)
-        print(f'----------path e nazdik tarin doshman: {t[0].id} va min e fasele: {min_fasele}')
-
-        return t
-
     def get_friend(self, world, player):
         if player.player_id == 0:
             return world.get_player_by_id(2)
@@ -703,41 +664,88 @@ class AI:
 
         return False
 
+    def get_closest_enemy_path_and_dist(self, world, player):
+        print('----------daram masir o fasele nazdik tarin doshman ro hesab mikonam')
+        paths = player.paths_from_player
+        nearest_cell = paths[0].cells[-1]
+        nearest_path = paths[0]
+        min_fasele = 10000
+        liste_rah_o_fasle = []
+        for path in paths:
+            cells = path.cells
+            for cell in cells:
+                # print(f'in cell ({cell.row} , {cell.col})')
+                for unit in cell.units:
+                    # print(f'on unit {unit.unit_id}')
+                    if (unit.player_id != player.player_id) and (unit.player_id != world.get_friend().player_id):
+                        # print('the unit is an enemy')
+                        fasele = self.faselecelltaking(world, cell)
+                        if fasele < min_fasele:
+                            print(f'----------min fasele ta nazdik tarin doshman ta alan ({min_fasele}) bude ke bozorgtar az fasele in yekie({fasele})')
+                            '''havaset bashe i < index ro didi faghat <= ro nazadi'''
+                            min_fasele = fasele
+                            nearest_cell = cell
+                            nearest_path = path
+                            tup = (path, fasele, cells.index(cell))
+                            liste_rah_o_fasle.append(tup)
+                            print(f'----------nearest enemy of path {path.id} is on cell ({cell.row} , {cell.col})')
+        t = (nearest_path, min_fasele, liste_rah_o_fasle)
+        print(f'----------path e nazdik tarin doshman: {t[0].id} va min e fasele: {min_fasele}')
+
+        return t
+
     def myfunction(self, world):
-        '''agar ye doshmani 8 ta ya kamtar fasele dasht, 3 ta befrest'''
-        '''bayadbfrstm mige ke bayad ruye masire doshman befresti'''
-        minealan = self.get_closest_enemy_path_and_dist(world, world.get_me())
 
         '''------------------------------------------------------------------------------------------------------ '''
         '''PARSA VA MEHDI SHOMA AGAR KHASTID CHIZIO AVAZ KONID, FAGHAT BE INA DAST BEZANID'''
         FASELE_DEFA = 12
-        TEDADE_SARBAZE_DEFA = 1
         '''------------------------------------------------------------------------------------------------------ '''
 
-        '''agar fasele zire 8 kasi nabud in karo kon:'''
-        if minealan[1] > 8:
-            '''agar turn 15k ya 15k+1 bud, saay mikonim ru masire khali unit beferestim.'''
-            if world.get_current_turn() % 15 == 1 or world.get_current_turn() % 15 == 0:
-                print('turn e 15k ya 15k+1')
-                masirekhali = self.get_masirekhali(world)
-                if masirekhali.id != -1:
-                    print('masire khali daram')
-                    if self.put_xk(world, masirekhali):
-                        print(f'unit gozashtam ru masire khalie {masirekhali.id}')
-                        return
-                    else:
-                        print('vali pool nadashtam ru masire khali bzarm')
-                else:
-                    print('masiri khali nabud. pas edame midam be myfunction')
-
-        if minealan[1] <= FASELE_DEFA:
-            if self.put_defa(world, minealan[0]):
-                print(f'defa kardam roo masire {minealan[0].id}')
+        if world.get_me().player_id < world.get_friend().player_id:
+            print('''man ghavie am''')
+            if self.ghavi(world, FASELE_DEFA):
+                return
+        else:
+            print('''man zaeif am''')
+            if self.zaeif(world, FASELE_DEFA):
                 return
 
-        # if self.put_unit_on_path(world, self.get_masireaslieyar(world)):
-        if self.put_unit_on_path(world, self.aslieyar_ya_shortest(world)):
-            print('roo masire yar ya shortest gozashtam')
+
+        # minealan = self.get_closest_enemy_path_and_dist(world, world.get_me(), FASELE_DEFA)
+        # minerah = Path(-1,[])
+        # minefasele = 10000
+        # liste_raha = minealan[2]  #(rah, fasle Manhattani, index cell )
+        # i = 0
+        # for tuple in liste_raha:
+        #     print("TUPLE IS:")
+        #     print(tuple)
+        #     path = tuple[0]
+        #     fasele = tuple[1]
+        #     index = tuple[2]
+        #     for i in range(1,index):
+        #         for unit in path.cells[i].units:
+        #             if unit.player_id == world.get_me().player_id:
+        #                 print(f'rooye cell e ({unit.cell.row},{unit.cell.col}) ')
+        #                 liste_raha = [x for x in liste_raha if x != tuple]
+        #     i += 1
+        # for tuple in liste_raha:
+        #     path = tuple[0]
+        #     fasele = tuple[1]
+        #     index = tuple[2]
+        #     if fasele < minefasele and fasele < FASELE_DEFA:
+        #         minefasele = fasele
+        #         minerah = path
+        # if minerah.id != -1:
+        #     if self.put_defa(world, minerah):
+        #         print('invar khali bud ferestadam')
+        #
+        # if minealan[1] <= FASELE_DEFA:
+        #     if self.put_defa(world, minealan[0]):
+        #         print(f'defa kardam roo masire {minealan[0].id}')
+        #         return
+        #
+        # if self.put_unit_on_path(world, self.aslieyar_ya_shortest(world)):
+        #     print('roo masire yar ya shortest gozashtam')
 
     def get_masirekhali(self, world):
         print('---daram masire khali peyda mikonam')
@@ -887,12 +895,12 @@ class AI:
 
     def aslieyar_ya_shortest(self, world):
         shortest = self.minemasirbeshah(world)
-        print(f'toole shortest e king: {len(shortest.cells)}')
-        print(f"toole masriam ta yar: {len(world.get_me().path_to_friend.cells)}")
+        print(f'---------------toole shortest e king: {len(shortest.cells)}')
+        print(f"---------------toole masriam ta yar: {len(world.get_me().path_to_friend.cells)}")
         if len(shortest.cells) <= len(world.get_me().path_to_friend.cells):
-            print("Shortest e king ro entekhab kardam")
+            print("---------------Shortest e king ro entekhab kardam")
             return shortest
-        print('masire aslie yar gozashtam')
+        print('---------------masire aslie yar gozashtam')
         return self.get_masireaslieyar(world)
 
     def put_xk(self, world, path):
@@ -901,16 +909,107 @@ class AI:
             world.put_unit(base_unit=all_base_units[6], path=path)
             # print(f"put {6}")
             return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[0]) and world.get_me().ap >= 4:
-            world.put_unit(base_unit=all_base_units[0], path=path)
-            # print(f"put {0}")
-            return True
         elif self.check_unit_in_hand(world.get_me().hand, all_base_units[1]) and world.get_me().ap >= 3:
             world.put_unit(base_unit=all_base_units[1], path=path)
             # print(f"put {1}")
             return True
-        elif self.check_unit_in_hand(world.get_me().hand, all_base_units[2]) and world.get_me().ap >= 4:
-            world.put_unit(base_unit=all_base_units[2], path=path)
-            # print(f"put {2}")
+        return False
+
+    def number_of_enemies(self, world, path, FASELE_DEFA):
+        counter = 0
+        for cell in path.cells:
+            if self.faselecelltaking(world, cell) < FASELE_DEFA:
+                for unit in cell.units:
+                    if unit.player_id == world.get_first_enemy().player_id or unit.player_id == world.get_second_enemy().player_id:
+                        counter += 1
+        print(f'---------------Tedade unit haye DOSHMAN rooye masire {path.id}: {counter}')
+        return counter
+
+    def number_of_my_units(self, world, path, FASELE_DEFA):
+        counter = 0
+        for cell in path.cells:
+            if self.faselecelltaking(world, cell) < FASELE_DEFA:
+                for unit in cell.units:
+                    if unit.player_id == world.get_me().player_id:
+                        counter+=1
+        print(f'---------------Tedade unit haye MAN rooye masire {path.id}: {counter}')
+        return counter
+
+    def difference(self, world, path, FASELE_DEFA):
+        '''in adad agar == 0 she yani unit haye ma 2 ta bishtar az unit haye doshmane'''
+        '''har chi in adade bishtar bashe yani olaviate ferestaden bishtare'''
+        dif = 0
+        enemies = self.number_of_enemies(world, path, FASELE_DEFA)
+        if enemies > 0:
+            print(f'----------enemy bud ru masire{path.id}')
+            dif = enemies - self.number_of_my_units(world, path, FASELE_DEFA) + 2
+        else:
+            print(f'----------aslan enemy nabud ru masire {path.id}')
+            dif = enemies - self.number_of_my_units(world, path, FASELE_DEFA)
+        print(f'----------dif e masire {path.id}: {dif}')
+        return dif
+
+    def get_max_difference_path(self,world, FASELE_DEFA):
+        best_path = Path(-1, [])
+        maximum = 0
+        for path in world.get_me().paths_from_player:
+            dif = self.difference(world, path, FASELE_DEFA)
+            if dif > 0 and dif > maximum:
+                print(f'----dif({dif}) > 0 va dif({dif}) > maximum{maximum}')
+                best_path = path
+                maximum = dif
+        print(f'----best_path vase dif: {best_path.id}')
+        return best_path
+
+    def defa(self, world, FASELE_DEFA):
+        path = self.get_max_difference_path(world, FASELE_DEFA)
+        print(f'--masire defa: {path.id}')
+        if path.id != -1:
+            if self.put_unit_on_path(world, path):
+                print('--defa kardam')
+                return True
+        print('--nashod defa konam')
+        return False
+
+    def xk(self,world,FASELE_DEFA):
+        minealan = self.get_closest_enemy_path_and_dist(world, world.get_me())
+        '''agar fasele zire 8 kasi nabud in karo kon tu 15k va 15k+1:'''
+        if minealan[1] > FASELE_DEFA:
+            '''agar turn 10k ya 10k+1 bud, saay mikonim ru masire khali unit beferestim.'''
+            if world.get_current_turn() % 10 == 1 or world.get_current_turn() % 10 == 0:
+                print('---turn e 10k ya 10k+1')
+                masirekhali = self.get_masirekhali(world)
+                if masirekhali.id != -1:
+                    print('---masire khali daram')
+                    if self.put_xk(world, masirekhali):
+                        print(f'---unit gozashtam ru masire khalie {masirekhali.id}')
+                        return True
+                    else:
+                        print('---vali pool ya unit e monaseb nadashtam ru masire khali bzarm')
+                else:
+                    print('---masiri khali nabud. pas edame midam be myfunction')
+
+        return False
+
+    def zaeif(self, world, FASELE_DEFA):
+
+        print('XK')
+        if self.xk(world, FASELE_DEFA):
+            return True
+        print('DEFA')
+        if self.defa(world, FASELE_DEFA):
+            return True
+        print('MASIRE ASLIE YAR')
+        if self.put_unit_on_path(world, self.get_masireaslieyar(world)):
+            return True
+        return False
+
+    def ghavi(self, world, FASELE_DEFA):
+
+        print('D E F A')
+        if self.defa(world, FASELE_DEFA):
+            return True
+        print('S H O R T E S T  E  K I N G')
+        if self.put_unit_on_path(world,self.minemasirbeshah(world)):
             return True
         return False
