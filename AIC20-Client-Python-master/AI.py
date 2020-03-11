@@ -784,7 +784,7 @@ class AI:
     def get_masirekhali(self, world):
         print('---daram masire khali peyda mikonam')
         '''-------------------------------------------------------------------------------------------------------'''
-        MAXIMUM_OF_MASIRE_KHALLI = (160 - world.get_current_turn()) - 5
+        MAXIMUM_OF_MASIRE_KHALLI = (180 - world.get_current_turn()) - 5
         '''-------------------------------------------------------------------------------------------------------'''
         print(f'---MAXIMUM_OF_MASIRE_KHALI = {MAXIMUM_OF_MASIRE_KHALLI}')
         masire_khali = []
@@ -973,13 +973,16 @@ class AI:
         '''in adad agar == 0 she yani unit haye ma 2 ta bishtar az unit haye doshmane'''
         '''har chi in adade bishtar bashe yani olaviate ferestaden bishtare'''
         dif = 0
+        units = self.number_of_my_units(world, path, FASELE_DEFA)
         enemies = self.number_of_enemies(world, path, FASELE_DEFA)
         if enemies > 0:
             print(f'----------enemy bud ru masire{path.id}')
-            dif = enemies - self.number_of_my_units(world, path, FASELE_DEFA) + 2
+            dif = enemies - units + 3
         else:
             print(f'----------aslan enemy nabud ru masire {path.id}')
-            dif = enemies - self.number_of_my_units(world, path, FASELE_DEFA)
+            dif = enemies - units
+        if enemies > 0 and units == 0:
+            dif = 1000
         print(f'----------dif e masire {path.id}: {dif}')
         return dif
 
@@ -1034,12 +1037,16 @@ class AI:
         if self.defa(world, FASELE_DEFA):
             return True
         print('MASIRE ASLIE YAR')
-        if self.put_unit_on_path(world, self.get_masireaslieyar(world)):
-            return True
+        masireaslieyar = self.get_masireaslieyar(world)
+        if 180 - world.get_current_turn() < len(world.get_me().path_to_friend.cells) and self.inshahekie(world,masireaslieyar):
+            if self.put_unit_on_path(world, masireaslieyar):
+                return True
+        else:
+            if self.put_unit_on_path(world, self.minemasirbeshah(world)):
+                return True
         return False
 
     def ghavi(self, world, FASELE_DEFA):
-
         print('D E F A')
         if self.defa(world, FASELE_DEFA):
             return True
@@ -1048,6 +1055,7 @@ class AI:
             return True
         return False
 
+<<<<<<< HEAD
     def check_number_of_spell(self, spells, spell_type_id):
         counter = 0
         for item in spells:
@@ -1072,3 +1080,11 @@ class AI:
                     area_list.append(Cell(row, col))
                     print(f'cell({row},{col}) is in area of {cell} and {FASELE}')
         return area_list
+=======
+    def inshahekie(self, world, path):
+        if path.cells[-1] == world.get_first_enemy().king.center:
+            print(f'cell e ({path.cells[-1].row}, {path.cells[-1].col}) vase shahe {world.get_first_enemy().player_id}')
+            return world.get_first_enemy().king
+        print(f'cell e ({path.cells[-1].row}, {path.cells[-1].col}) vase shahe {world.get_second_enemy().player_id}')
+        return world.get_second_enemy().king
+>>>>>>> 861bc7944ebf9b755f945245d871658c0177ba44
