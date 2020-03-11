@@ -30,6 +30,7 @@ class AI:
         self.number_of_units_put_yet = 0
         self.closest_enemy_path = Path(-1, None, None)
         self.player_small = None
+        self.player_large = None
 
         self.bayadbfrstm = False
         self.masir = Path(-1, None, None)
@@ -72,8 +73,10 @@ class AI:
 
         if world.get_me().player_id > world.get_friend().player_id:
             self.player_small = world.get_friend()
+            self.player_large = world.get_me()
         else:
             self.player_small = world.get_me()
+            self.player_large = world.get_friend()
 
 
         all_base_units = world.get_all_base_units()
@@ -110,17 +113,16 @@ class AI:
                     if unit_range.base_unit.type_id == 0:
                         units_max_range.append(unit_range)
                 unit = self.get_max_hp(units_max_range)
-                # if unit is not None and world.get_current_turn() > 3 * world.get_game_constants().turns_to_upgrade + 10:
-                #     for unit_range in myself.units:
-                #         if unit_range.base_unit.type_id == 6:
-                #             units_max_range.append(unit_range)
-                #     unit = self.get_max_hp(units_max_range)
                 if unit is not None:
                     for i in range(0, world.get_range_upgrade_number()):
                         if world.get_me().range_upgraded_unit is not None:
                             unit = world.get_me().range_upgraded_unit
                         elif world.get_me().damage_upgraded_unit is not None:
                             unit = world.get_me().damage_upgraded_unit
+                        else:
+                            for item in my_units:
+                                if item.range_level > 0 or item.damage_level > 0:
+                                    unit = item
                         world.upgrade_unit_range(unit_id=unit.unit_id)
                     # self.unit_that_have_range_upgrade = unit
                     #     print(f'range dadam be {unit.unit_id}')
@@ -134,17 +136,16 @@ class AI:
                     if unit_damage.base_unit.type_id == 0:
                         units_max_damage.append(unit_damage)
                 unit = self.get_max_hp(units_max_damage)
-                # if unit is not None and world.get_current_turn() > 3 * world.get_game_constants().turns_to_upgrade + 10:
-                #     for unit_damage in myself.units:
-                #         if unit_damage.base_unit.type_id == 6:
-                #             units_max_damage.append(unit_damage)
-                #     unit = self.get_max_hp(units_max_damage)
                 if unit is not None:
                     for i in range(0, world.get_damage_upgrade_number()):
                         if world.get_me().range_upgraded_unit is not None:
                             unit = world.get_me().range_upgraded_unit
                         elif world.get_me().damage_upgraded_unit is not None:
                             unit = world.get_me().damage_upgraded_unit
+                        else:
+                            for item in my_units:
+                                if item.range_level > 0 or item.damage_level > 0:
+                                    unit = item
                         world.upgrade_unit_damage(unit_id=unit.unit_id)
                     # self.unit_that_have_damage_upgrade = unit
                     #     print(f'damage dadam be {unit.unit_id}')
@@ -265,8 +266,41 @@ class AI:
 
         if self.check_spell_in_spells(myself.spells, 3):
             print('tele darimaaaaaaaaa---------------------------------------------------------------')
-            if self.check_unit_in_units(world.get_me().units, all_base_units[0]):
+            if self.check_unit_in_units(world.get_me().units, all_base_units[0]) and\
+                    (world.get_damage_upgrade_number() + world.get_range_upgrade_number() > 2 or
+                     world.get_me().range_upgraded_unit is not None or world.get_me().damage_upgraded_unit is not None
+                     or 75 < world.get_current_turn() < 89):
+                print('tele midim b upgrade')
                 if len(my_units) > 1:
+                    last_unit = my_units[-1]
+                    first_unit = my_units[0]
+                    for item in my_units:
+                        if item.range_level > 0 or item.damage_level > 0:
+                            last_unit = item
+                            if self.player_large.is_alive() and world.get_first_enemy().is_alive():
+                                print('is alive for tele')
+                                # path = world.get_shortest_path_to_cell(from_player=self.player_large,
+                                #                                        cell=world.get_first_enemy().king.center)
+                                path = self.player_large.paths_from_player[1]
+                                size = len(path.cells)
+                                cell = path.cells[(int((size + 1) / 2)) - 3]
+                                print((int((size + 1) / 2)) - 3)
+                                print(f'cell tele {cell}')
+                                received_spell = self.spell_in_spells(myself.spells, 3)
+                                for i in range((int((size + 1) / 2)) - 3, 5, -1):
+                                    print('range cell')
+                                    cell = path.cells[i]
+                                    print(cell)
+                                    if last_unit.base_unit.type_id == 0 and self.check_area(world, cell, 4):
+                                        world.cast_unit_spell(unit=last_unit, path=path, cell=cell,
+                                                              spell=received_spell)
+                                        print(f'{last_unit.unit_id}raft max')
+                                        break
+
+            if self.check_unit_in_units(world.get_me().units, all_base_units[0]) and\
+                    (self.check_number_of_spell(myself.spells, 3) > 1 or world.get_current_turn() > 100):
+                if len(my_units) > 1:
+                    print('tele turn 100 b bad')
                     last_unit = my_units[-1]
                     first_unit = my_units[0]
                     my_paths = myself.paths_from_player
@@ -274,7 +308,7 @@ class AI:
                     size = len(path.cells)
                     cell = path.cells[(int((size + 1) / 2)) - 3]
                     received_spell = self.spell_in_spells(myself.spells, 3)
-                    if last_unit.base_unit.type_id == 0:
+                    if last_unit.base_unit.type_id != 4:
                         if self.distance_from_my_king(first_unit.cell, world) > self.distance_from_my_king(
                                 path.cells[(int((size + 1) / 2)) - 3], world):
                             world.cast_unit_spell(unit=last_unit, path=path, cell=cell, spell=received_spell)
@@ -1013,3 +1047,28 @@ class AI:
         if self.put_unit_on_path(world,self.minemasirbeshah(world)):
             return True
         return False
+
+    def check_number_of_spell(self, spells, spell_type_id):
+        counter = 0
+        for item in spells:
+            if item.type_id == spell_type_id:
+                counter += 1
+        return counter
+
+    def check_area(self, world, cell, FASELE):
+        area_cells = self.get_area(world, cell, FASELE)
+        for cell in area_cells:
+            for unit in cell.units:
+                if unit.player_id == world.get_first_enemy().player_id or \
+                        unit.player_id == world.get_second_enemy().player_id:
+                    return False
+        return True
+
+    def get_area(self, world, cell, FASELE):
+        area_list = []
+        for row in range(0, world.get_map().row_num):
+            for col in range(0, world.get_map().col_num):
+                if self.fasele2tacell(cell, Cell(row, col)) <= FASELE:
+                    area_list.append(Cell(row, col))
+                    print(f'cell({row},{col}) is in area of {cell} and {FASELE}')
+        return area_list
