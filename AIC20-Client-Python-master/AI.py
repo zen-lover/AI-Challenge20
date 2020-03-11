@@ -267,9 +267,8 @@ class AI:
         if self.check_spell_in_spells(myself.spells, 3):
             print('tele darimaaaaaaaaa---------------------------------------------------------------')
             if self.check_unit_in_units(world.get_me().units, all_base_units[0]) and\
-                    (world.get_damage_upgrade_number() + world.get_range_upgrade_number() > 2 or
-                     world.get_me().range_upgraded_unit is not None or world.get_me().damage_upgraded_unit is not None
-                     or 75 < world.get_current_turn() < 89):
+                    (world.get_damage_upgrade_number() + world.get_range_upgrade_number() > 2
+                     or 69 < world.get_current_turn() < 90):
                 print('tele midim b upgrade')
                 if len(my_units) > 1:
                     last_unit = my_units[-1]
@@ -784,7 +783,7 @@ class AI:
     def get_masirekhali(self, world):
         print('---daram masire khali peyda mikonam')
         '''-------------------------------------------------------------------------------------------------------'''
-        MAXIMUM_OF_MASIRE_KHALLI = (180 - world.get_current_turn()) - 5
+        MAXIMUM_OF_MASIRE_KHALLI = (world.get_game_constants().max_turns - world.get_current_turn()) - 5
         '''-------------------------------------------------------------------------------------------------------'''
         print(f'---MAXIMUM_OF_MASIRE_KHALI = {MAXIMUM_OF_MASIRE_KHALLI}')
         masire_khali = []
@@ -977,7 +976,7 @@ class AI:
         enemies = self.number_of_enemies(world, path, FASELE_DEFA)
         if enemies > 0:
             print(f'----------enemy bud ru masire{path.id}')
-            dif = enemies - units + 3
+            dif = enemies - units + 2
         else:
             print(f'----------aslan enemy nabud ru masire {path.id}')
             dif = enemies - units
@@ -1038,7 +1037,8 @@ class AI:
             return True
         print('MASIRE ASLIE YAR')
         masireaslieyar = self.get_masireaslieyar(world)
-        if 180 - world.get_current_turn() < len(world.get_me().path_to_friend.cells) and self.inshahekie(world,masireaslieyar):
+        if world.get_game_constants().max_turns - world.get_current_turn() > len(world.get_me().path_to_friend.cells) and\
+                self.inshahekie(world,masireaslieyar).is_alive:
             if self.put_unit_on_path(world, masireaslieyar):
                 return True
         else:
@@ -1055,7 +1055,6 @@ class AI:
             return True
         return False
 
-<<<<<<< HEAD
     def check_number_of_spell(self, spells, spell_type_id):
         counter = 0
         for item in spells:
@@ -1080,11 +1079,11 @@ class AI:
                     area_list.append(Cell(row, col))
                     print(f'cell({row},{col}) is in area of {cell} and {FASELE}')
         return area_list
-=======
+
     def inshahekie(self, world, path):
         if path.cells[-1] == world.get_first_enemy().king.center:
             print(f'cell e ({path.cells[-1].row}, {path.cells[-1].col}) vase shahe {world.get_first_enemy().player_id}')
             return world.get_first_enemy().king
         print(f'cell e ({path.cells[-1].row}, {path.cells[-1].col}) vase shahe {world.get_second_enemy().player_id}')
         return world.get_second_enemy().king
->>>>>>> 861bc7944ebf9b755f945245d871658c0177ba44
+
