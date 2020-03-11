@@ -170,23 +170,27 @@ class AI:
                     for unit in haste_units:
                         if self.distance_from_king(unit.cell, world.get_first_enemy().king.center) < 7 or \
                                 self.distance_from_king(unit.cell, world.get_second_enemy().king.center) < 7:
-                            if unit.target is None:
+                            if unit.target is None and unit.player_id < 2:
                                 last_unit = unit
                                 received_spell = self.spell_in_spells(myself.spells, 0)
                                 if last_unit.base_unit.type_id != 5:
                                     world.cast_area_spell(center=last_unit.cell, spell=received_spell)
                                     print(f'{last_unit.unit_id} haste ba shart king khord')
                         if self.number_of_unit_in_best_cell >= 4:
-                            world.cast_area_spell(center=cell, spell=received_spell)
-                            print(f'number haste {self.number_of_unit_in_best_cell}')
-                            print(cell.row)
-                            print(cell.col)
+                            for item in world.get_area_spell_targets(center=cell, spell=received_spell):
+                                if item.target is not None and item.player_id < 2:
+                                    world.cast_area_spell(center=cell, spell=received_spell)
+                                    print(f'number haste {self.number_of_unit_in_best_cell}')
+                                    print(cell.row)
+                                    print(cell.col)
                         elif self.number_of_unit_in_best_cell >= 3 and \
                                 world.get_current_turn() > world.get_game_constants().max_turns / 2:
                             world.cast_area_spell(center=cell, spell=received_spell)
-                            print(f'number haste {self.number_of_unit_in_best_cell}')
-                            print(cell.row)
-                            print(cell.col)
+                            for item in world.get_area_spell_targets(center=cell, spell=received_spell):
+                                if item.target is not None and item.player_id < 2:
+                                    print(f'number haste {self.number_of_unit_in_best_cell}')
+                                    print(cell.row)
+                                    print(cell.col)
                         elif len(my_units) < 3:
                             world.cast_area_spell(center=cell, spell=received_spell)
                             print(f'number haste {self.number_of_unit_in_best_cell}')
@@ -255,7 +259,7 @@ class AI:
             print(f'number duplicate {self.number_of_unit_in_best_cell}')
             if self.number_of_unit_in_best_cell >= 3:
                 for unit in world.get_area_spell_targets(center=cell, spell=received_spell):
-                    if unit.target is not None:
+                    if unit.target is not None and unit.player_id < 2:
                         last_unit = unit
                         received_spell = self.spell_in_spells(myself.spells, 4)
                         world.cast_area_spell(center=cell, spell=received_spell)
@@ -263,7 +267,7 @@ class AI:
             elif self.number_of_unit_in_best_cell >= 2 and \
                     world.get_current_turn() > world.get_game_constants().max_turns / 2:
                 for unit in world.get_area_spell_targets(center=cell, spell=received_spell):
-                    if unit.target is not None:
+                    if unit.target is not None and unit.player_id < 2:
                         last_unit = unit
                         received_spell = self.spell_in_spells(myself.spells, 4)
                         world.cast_area_spell(center=cell, spell=received_spell)
