@@ -307,7 +307,7 @@ class AI:
                     size = len(path.cells)
                     cell = path.cells[(int((size + 1) / 2)) - 3]
                     received_spell = self.spell_in_spells(myself.spells, 3)
-                    if last_unit.base_unit.type_id != 4 and last_unit.range_level == 0 and last_unit.damage_level == 0:
+                    if last_unit.base_unit.type_id != 4:
                         if self.distance_from_my_king(first_unit.cell, world) > self.distance_from_my_king(
                                 path.cells[(int((size + 1) / 2)) - 3], world):
                             world.cast_unit_spell(unit=last_unit, path=path, cell=cell, spell=received_spell)
