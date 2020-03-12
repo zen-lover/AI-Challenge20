@@ -290,7 +290,7 @@ class AI:
                                     print('range cell')
                                     cell = path.cells[i]
                                     print(cell)
-                                    if last_unit.base_unit.type_id == 0 and self.check_area(world, cell, 4):
+                                    if last_unit.base_unit.type_id == 0 and self.check_area(world, cell, 5):
                                         world.cast_unit_spell(unit=last_unit, path=path, cell=cell,
                                                               spell=received_spell)
                                         print(f'{last_unit.unit_id}raft max')
