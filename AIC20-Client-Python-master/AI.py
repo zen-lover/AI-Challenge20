@@ -976,7 +976,7 @@ class AI:
         enemies = self.number_of_enemies(world, path, FASELE_DEFA)
         if enemies > 0:
             print(f'----------enemy bud ru masire{path.id}')
-            dif = enemies - units + 2
+            dif = enemies - units + 3
         else:
             print(f'----------aslan enemy nabud ru masire {path.id}')
             dif = enemies - units
