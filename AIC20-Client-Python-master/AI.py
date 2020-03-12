@@ -40,6 +40,8 @@ class AI:
         self.masirekhali = Path(-1, None, None)
         self.faselealanedoshman = 1000
 
+        self.ragbari = True
+
     # this function is called in the beginning for deck picking and pre process
     def pick(self, world: World):
         map = world.get_map()
@@ -736,8 +738,7 @@ class AI:
 
         if world.get_me().player_id < world.get_friend().player_id:
             print('''man ghavie am''')
-            if self.ghavi(world, FASELE_DEFA):
-                return
+            self.ghavi(world, FASELE_DEFA)
         else:
             print('''man zaeif am''')
             if self.zaeif(world, FASELE_DEFA):
@@ -1053,9 +1054,12 @@ class AI:
         print('D E F A')
         if self.defa(world, FASELE_DEFA):
             return True
-        print('S H O R T E S T  E  K I N G')
-        if self.put_unit_on_path(world,self.minemasirbeshah(world)):
+        print(f'R A G B A R I   AP:{world.get_me().ap}')
+        # if self.put_unit_on_path(world,self.minemasirbeshah(world)):
+        if self.put_ragbari(world):
+            print('RAGBARI true dad')
             return True
+        print('RAGBARI false dad yani dare por mikone')
         return False
 
     def check_number_of_spell(self, spells, spell_type_id):
@@ -1111,3 +1115,15 @@ class AI:
                 length = len(path.cells)+len(world.get_me().path_to_friend.cells)
         print(f'--shortest be shahe {king.player_id} masire {shortest.id} hastesh')
         return shortest
+
+    def put_ragbari(self, world):
+        max_ap = world.get_game_constants().max_ap
+        if world.get_me().ap >= max_ap - 1:
+            self.ragbari = True
+        ap = world.get_me().ap
+        if self.ragbari == True:
+            if self.put_unit_on_path(world, self.minemasirbeshah(world)):
+                return True
+            else:
+                self.ragbari = False
+                return False
