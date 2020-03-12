@@ -835,7 +835,7 @@ class AI:
         return Path(-1, [])
 
     def get_masireaslieyar(self, world):
-        print('          daram masire aslie yar ro peyda mikonam')
+        print('-----daram masire aslie yar ro peyda mikonam')
         units = world.get_friend().units
         paths = []
         for path in world.get_map().paths:
@@ -850,9 +850,9 @@ class AI:
             if item[1] >= max:
                 max = item[1]
                 path = item[0]
-        print(f'          masire aslie yar: {path.id}')
+        print(f'-----masire aslie yar: {path.id}')
         if max == 0:
-            print("          yar masire asli nadasht. be masire 0sh ferestadim")
+            print("-----yar masire asli nadasht. be masire 0sh ferestadim")
             path = world.get_friend().paths_from_player[0]
         return path
 
@@ -1015,15 +1015,18 @@ class AI:
             if world.get_current_turn() % 10 == 1 or world.get_current_turn() % 10 == 0:
                 print('---turn e 10k ya 10k+1')
                 masirekhali = self.get_masirekhali(world)
-                if masirekhali.id != -1:
-                    print('---masire khali daram')
-                    if self.put_xk(world, masirekhali):
-                        print(f'---unit gozashtam ru masire khalie {masirekhali.id}')
-                        return True
+                if len(masirekhali.cells) < world.get_game_constants().max_turns - world.get_current_turn() \
+                    and self.inshahekie(world, masirekhali).is_alive:
+                    """dar soorati roo masire khali mifereste ke munde bashe turn e kafi """
+                    if masirekhali.id != -1:
+                        print('---masire khali daram')
+                        if self.put_xk(world, masirekhali):
+                            print(f'---unit gozashtam ru masire khalie {masirekhali.id}')
+                            return True
+                        else:
+                            print('---vali pool ya unit e monaseb nadashtam ru masire khali bzarm')
                     else:
-                        print('---vali pool ya unit e monaseb nadashtam ru masire khali bzarm')
-                else:
-                    print('---masiri khali nabud. pas edame midam be myfunction')
+                        print('---masiri khali nabud. pas edame midam be myfunction')
 
         return False
 
@@ -1037,7 +1040,7 @@ class AI:
             return True
         print('MASIRE ASLIE YAR')
         masireaslieyar = self.get_masireaslieyar(world)
-        if world.get_game_constants().max_turns - world.get_current_turn() > len(world.get_me().path_to_friend.cells) and\
+        if world.get_game_constants().max_turns - world.get_current_turn() -5 > len(world.get_me().path_to_friend.cells)  and\
                 self.inshahekie(world,masireaslieyar).is_alive:
             if self.put_unit_on_path(world, masireaslieyar):
                 return True
@@ -1087,3 +1090,24 @@ class AI:
         print(f'cell e ({path.cells[-1].row}, {path.cells[-1].col}) vase shahe {world.get_second_enemy().player_id}')
         return world.get_second_enemy().king
 
+    def get_kootahtarinmasirbeinshah(self, world, king):
+        '''ye shahi ro midi behesh. kootahtarin masir az khodet va yaret be un shahe ro mide behet'''
+        shortest = Path(-1, [])
+        length = 10000
+        best = []
+        for path in world.get_me().paths_from_player:
+            if self.inshahekie(world, path) == king:
+                best.append(path)
+        for path in best:
+            if len(path.cells) < length:
+                shortest = path
+                length = len(path.cells)
+        for path in world.get_friend().paths_from_player:
+            if self.inshahekie(world, path) == king:
+                best.append(path)
+        for path in best:
+            if len(path.cells)+len(world.get_me().path_to_friend.cells) < length:
+                shortest = path
+                length = len(path.cells)+len(world.get_me().path_to_friend.cells)
+        print(f'--shortest be shahe {king.player_id} masire {shortest.id} hastesh')
+        return shortest
